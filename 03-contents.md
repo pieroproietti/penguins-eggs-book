@@ -2,7 +2,7 @@
 
 #  {#section .TOC-Heading}
 
-[What is the Penguins-eggs book?](/blob/main/01-about.md)
+[What is the Penguins-eggs book?](/01-about.md)
 
 [Introduction [7](#introduction)](#introduction)
 
