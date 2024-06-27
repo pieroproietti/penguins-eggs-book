@@ -30,5 +30,5 @@ like the Raspberry Pi, across `amd64`, `i386`, and `arm64` architectures.
 For more information and updates, visit the [Penguins' eggs official
 website](https://penguins-eggs.net).
 
-Penguins' eggs are generated and new birds are ready to fly...
+__Penguins' eggs are generated and new birds are ready to fly...__
 
