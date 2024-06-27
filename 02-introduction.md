@@ -17,16 +17,18 @@ the eggs, and other commands like `kill` for removing produced
 ISOs, `update` for software updates, and `install` for
 configuring the graphical installer.
 
-The eggs tool is written primarily in TypeScript, Penguins**'** Eggs is
+The eggs tool is written primarily in TypeScript, Penguins' eggs is
 designed to be compatible with various Linux distributions, despite
-differences in package managers, file paths, and more**.** The tool
+differences in package managers, file paths, and more. The tool
 currently supports Debian, Devuan, Ubuntu, Arch, Manjaro, and their
-derivatives, across multiple architectures including amd64, i386, and
-arm64**.** With the release of version 9**.**6**.**x, Penguins**'** Eggs
+derivatives, across multiple architectures including `amd64`, `i386`, and
+`arm64`. With the release of version 9.6.x, Penguins' eggs
 is now available as a Debian package, catering to a wide range of
-systems including PCs, older machines, and single**-**board ARM systems
-like the Raspberry Pi, across amd64, i386, and arm64 architectures**.**
-For more information and updates, visit the Penguins**'** Eggs official
-website**.**
+systems including PCs, older machines, and single - board ARM systems
+like the Raspberry Pi, across `amd64`, `i386`, and `arm64` architectures.
 
-### ***Penguins\' eggs are generated and new birds are ready to fly\...***
+For more information and updates, visit the [Penguins' eggs official
+website](https://penguins-eggs.net).
+
+Penguins' eggs are generated and new birds are ready to fly...
+
