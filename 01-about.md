@@ -131,11 +131,6 @@ utility development to facilitate my work as an IT infrastructure
 manager.
 
 
-**Contact me**:
-
-piero.proietti@gmail.com
-
-[[\
-]{.underline}](https://ora.ai/profile/symbolic-pink-7h8q)
+**Contact me**: piero.proietti@gmail.com
 
 ![](media/image4.jpg)
