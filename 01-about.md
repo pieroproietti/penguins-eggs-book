@@ -88,9 +88,9 @@ Graphic Designer.
     -   Implemented over 800 security controls and comprehensive
         configurations to protect against various attacks.
 
-**My website:**
+**My website:** <https://seilany.ir/>
 
-<https://seilany.ir/>
+
 
 About the Technical Editor
 
@@ -105,11 +105,6 @@ innovation, and technical progress.
 
 🔧 **Key Highlights:**
 
-\* **Clipper**: management of different activities on DOS;
-
-\* **Database**: management software of different activities implemented
-on Windows with SQL backend and VB6 frontend;
-
 \* **Collaboration**: Collaboration for adoption an IT protocol public
 source based on Zope and Python, on institutional workflows.
 Collaboration for development of products based on JBoss and Oracle
@@ -120,12 +115,6 @@ version 0.7.x, progressively following all versions until the current
 one. Over the years, I began to use it as a main workstation as well,
 for development by making my own live installable version;
 
-\* **Dart and JavaScript Enthusiast**: I followed Google\'s Dart project
-a lot in its infancy, switching, however, to using the more popular
-JavaScript, using it mostly with nodejs: server-side or for system
-utility development to facilitate my work as an IT infrastructure
-manager.
-
 \* **Linux Enthusiast**: Since the beginning of the millennium, I have
 been immersed in the Linux ecosystem. Started with Red Hat, to Debian,
 then mostly or the others, I now support my own project, Penguins\'
@@ -135,6 +124,13 @@ perform backups and clone the system. Whether using Debian, Devuan,
 Ubuntu, Arch or their derivatives, Penguins\' Eggs can cover all amd64,
 i386 and arm64 architectures.
 
+\* **Dart and JavaScript Enthusiast**: I followed Google\'s Dart project
+a lot in its infancy, switching, however, to using the more popular
+JavaScript, using it mostly with nodejs: server-side or for system
+utility development to facilitate my work as an IT infrastructure
+manager.
+
+
 **Contact me**:
 
 piero.proietti@gmail.com
@@ -142,5 +138,4 @@ piero.proietti@gmail.com
 [[\
 ]{.underline}](https://ora.ai/profile/symbolic-pink-7h8q)
 
-![](media/image4.jpg){width="6.641666666666667in"
-height="5.098611111111111in"}
+![](media/image4.jpg)
