@@ -1,5 +1,4 @@
 ![](media/image3.jpeg)
-\pagebreak
 
 **Penguins' Eggs Tool**
 
@@ -15,19 +14,19 @@ Creating Linux distro with and ISO image file by using Penguins**-**eggs
 platform tool
 
 June 2024
-\pagebreak
+
 # What is the Penguins-eggs book?
 
 This book serves as a comprehensive guide to Penguins' eggs tool,
 covering its purpose, installation process in Linux, and the creation of
 installable ISO images from your existing Linux system using
-Penguins**-**eggs**.** Penguins**-**eggs itself is a dynamic console
+Penguins' eggs. Penguins' eggs itself is a dynamic console
 tool that empowers users to remaster their operating systems, allowing
 for customization distribution as live images via USB sticks or through
-PXE**.** With Penguins**-**eggs, users gain the ability to tailor their
+PXE. With Penguins' eggs, users gain the ability to tailor their
 Linux distributions to their specific needs, making it a valuable
 resource for those seeking to create and share their customized Linux
-experiences**.**
+experiences.
 
 **Selected topics included**:
 
@@ -67,9 +66,6 @@ Graphic Designer.
 
     -   Contributed to its development and security enhancements.
 
-```{=html}
-<!-- -->
-```
 2.  **Emperor-OS Linux**
 
     -   An ambitious project focused on creating an all-in-one operating
@@ -77,9 +73,6 @@ Graphic Designer.
 
     -   Collaborated on feature development and stability improvements.
 
-```{=html}
-<!-- -->
-```
 3.  **Little-Psycho Linux:**
 
     -   A project centered around destructive and stress testing of
@@ -87,9 +80,6 @@ Graphic Designer.
 
     -   Developed tools for overclocking and health testing.
 
-```{=html}
-<!-- -->
-```
 4.  **Hubuntu Linux:**
 
     -   Hubuntu, short for "Hardened Ubuntu," is a security-focused
