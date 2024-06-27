@@ -2,7 +2,7 @@
 
 #  {#section .TOC-Heading}
 
-[What is the Penguins-eggs book?](/01-about.md)
+[What is the Penguins-eggs book?](/01-about.md#what-is-the-penguins-eggs-book)
 
 [Introduction [7](#introduction)](#introduction)
 
