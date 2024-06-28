@@ -78,7 +78,7 @@
     * [Stacer](/30-chapter-3.md#stacer)
     * [Sweeper](/30-chapter-3.md#sweeper)
 
-* [Chapter 4 [63](#chapter-4)](/40-chapter-4.md#chapter-4)
+* [Chapter 4](/40-chapter-4.md#chapter-4)
     * [Necessary file and tools](/40-chapter-4.md#necessary-file-and-tools)
     * [Filesystem Hierarchy Standard (FHS)](/40-chapter-4.md#filesystem-hierarchy-standard-fhs)
     * [Necessary tools and packages](/40-chapter-4.md#necessary-tools-and-packages)
@@ -109,7 +109,7 @@
     * [syslinux-common](/40-chapter-4.md#syslinux-common-1)
     * [Genisoimage](/40-chapter-4.md#genisoimage-2)
 
-[Chapter 5](/50-chapter-5.md#chapter-5)
+* [Chapter 5](/50-chapter-5.md#chapter-5)
     * [Installing Eggs](/50-chapter-5.md#installing-eggs)
     * [Installing Nodejs](/50-chapter-5.md#installing-nodejs)
     * [DEB Supported Versions](/50-chapter-5.md#deb-supported-versions)
