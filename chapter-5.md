@@ -630,9 +630,9 @@ The command has the following flags:
 
 **FLAGS**
 
-\--verbose Shows additional information about the CLI.
+`--verbose` Shows additional information about the CLI.
 
-\--json Formats the output as JSON.
+`--json` Formats the output as JSON.
 
 By running the eggs version command without any flags, you will get the
 version of the **"**eggs**"** CLI tool. It will display the version
