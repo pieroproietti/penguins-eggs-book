@@ -68,26 +68,15 @@
     * [User Experience and Text Handling](/20-chapter-2.md#user-experience-and-text-handling)
     * [Maintenance and System Administration](/20-chapter-2.md#maintenance-and-system-administration)
 
-[Chapter 3 [49](#chapter-3)](#chapter-3)
-
-[Unnecessary tools and files
-[49](#unnecessary-tools-and-files)](#unnecessary-tools-and-files)
-
-[Cleaning [49](#cleaning)](#cleaning)
-
-[how to create a privacy-focused Linux environment?
-[50](#how-to-create-a-privacy-focused-linux-environment)](#how-to-create-a-privacy-focused-linux-environment)
-
-[Exclude File and directory
-[55](#exclude-file-and-directory)](#exclude-file-and-directory)
-
-[Cleaning Tools [59](#cleaning-tools)](#cleaning-tools)
-
-[BleachBit [60](#bleachbit)](#bleachbit)
-
-[Stacer [60](#stacer)](#stacer)
-
-[Sweeper [60](#sweeper)](#sweeper)
+* [Chapter 3](/30-chapter-3.md#chapter-3)
+    * [Unnecessary tools and files](/30-chapter-3.md#unnecessary-tools-and-files)
+    * [Cleaning](/30-chapter-3.md#cleaning)
+    * [how to create a privacy-focused Linux environment?](/30-chapter-3.md#how-to-create-a-privacy-focused-linux-environment)
+    * [Exclude File and directory](/30-chapter-3.md#exclude-file-and-directory)
+    * [Cleaning Tool](/30-chapter-3.md#cleaning-tools)
+    * [BleachBit](/30-chapter-3.md#bleachbit)
+    * [Stacer](/30-chapter-3.md#stacer)
+    * [Sweeper](/30-chapter-3.md#sweeper)
 
 [Chapter 4 [63](#chapter-4)](#chapter-4)
 
