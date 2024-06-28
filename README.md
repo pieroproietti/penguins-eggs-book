@@ -1,3 +1,4 @@
-# penguins-book
+# penguins' eggs book
 
-penguins' eggs book
+* [contents](/03-contents.md)
+
