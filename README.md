@@ -1,6 +1,6 @@
-# Contents
+# Penguins' eggs book
 
-#  {#section .TOC-Heading}
+## Contents
 
 * [What is the Penguins-eggs book?](/01-about.md#what-is-the-penguins-eggs-book)
     * [Introduction](/02-introduction.md#introduction)
