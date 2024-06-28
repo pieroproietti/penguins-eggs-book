@@ -4,9 +4,9 @@
 
 [What is the Penguins-eggs book?](/01-about.md#what-is-the-penguins-eggs-book)
 
-[Introduction [7](#introduction)](#introduction)
+[Introduction](/02-introduction.md#introduction)
 
-[Contents at a Glance [8](#contents)](#contents)
+[Contents at a Glance](/03-contents.md#contents)
 
 [Contents [**Error! Bookmark not
 defined.**](#_Toc170404975)](#_Toc170404975)
