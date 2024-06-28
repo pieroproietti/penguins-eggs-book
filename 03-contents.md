@@ -41,75 +41,33 @@
     * [Customization and Optimization](/20-chapter-2.md#customization-and-optimization)
     * [Compatibility and Performance](/20-chapter-2.md#compatibility-and-performance)
     * [Mksquashfs ](/20-chapter-2.md#mksquashfs)
-    *
+    * [Introduction to UEFI Boot](/20-chapter-2.md#introduction-to-uefi-boot)
+    * [Key Advantages of UEFI Boot](/20-chapter-2.md#key-advantages-of-uefi-boot)
+    * [UEFI Boot Process](/20-chapter-2.md#uefi-boot-process)
+    * [Compatibility with Legacy BIOS](/20-chapter-2.md#compatibility-with-legacy-bios)
+    * [UEFI Boot Components](/20-chapter-2.md#uefi-boot-components)
+    * [Secure Boot and UEFI](/20-chapter-2.md#secure-boot-and-uefi)
+    * [UEFI Shell](/20-chapter-2.md#uefi-shell)
+    * [UEFI Variables](/20-chapter-2.md#uefi-variables)
+    * [Vendor-specific UEFI Features](/20-chapter-2.md#vendor-specific-uefi-features)
+    * [Legacy BIOS](/20-chapter-2.md#legacy-bios)
+    * [Operating Principles of Legacy BIOS](/20-chapter-2.md#operating-principles-of-legacy-bios)
+    * [Key Characteristics of Legacy BIOS](/20-chapter-2.md#key-characteristics-of-legacy-bios)
+    * [Legacy and Modern Computing Environments](/20-chapter-2.md#legacy-and-modern-computing-environments)
+    * [ISOLINUX [40](#isolinux)](/20-chapter-2.md#isolinux)
 
-[Introduction to UEFI Boot
-[36](#introduction-to-uefi-boot)](#introduction-to-uefi-boot)
-
-[Key Advantages of UEFI Boot
-[36](#key-advantages-of-uefi-boot)](#key-advantages-of-uefi-boot)
-
-[UEFI Boot Process [37](#uefi-boot-process)](#uefi-boot-process)
-
-[Compatibility with Legacy BIOS
-[37](#compatibility-with-legacy-bios)](#compatibility-with-legacy-bios)
-
-[UEFI Boot Components
-[38](#uefi-boot-components)](#uefi-boot-components)
-
-[Secure Boot and UEFI
-[38](#secure-boot-and-uefi)](#secure-boot-and-uefi)
-
-[UEFI Shell [38](#uefi-shell)](#uefi-shell)
-
-[UEFI Variables [38](#uefi-variables)](#uefi-variables)
-
-[Vendor-specific UEFI Features
-[39](#vendor-specific-uefi-features)](#vendor-specific-uefi-features)
-
-[Legacy BIOS [39](#legacy-bios)](#legacy-bios)
-
-[Operating Principles of Legacy BIOS
-[39](#operating-principles-of-legacy-bios)](#operating-principles-of-legacy-bios)
-
-[Key Characteristics of Legacy BIOS
-[39](#key-characteristics-of-legacy-bios)](#key-characteristics-of-legacy-bios)
-
-[Legacy and Modern Computing Environments
-[40](#legacy-and-modern-computing-environments)](#legacy-and-modern-computing-environments)
-
-[ISOLINUX [40](#isolinux)](#isolinux)
-
-[Syslinux [41](#syslinux)](#syslinux)
-
-[Mkisofs [42](#mkisofs)](#mkisofs)
-
-[Genisoimage [43](#genisoimage)](#genisoimage)
-
-[Isohybrid [45](#isohybrid)](#isohybrid)
-
-[Host.conf [45](#host.conf)](#host.conf)
-
-[language: \'en_US.UTF-8\'
-[45](#language-en_us.utf-8)](#language-en_us.utf-8)
-
-[Background and Significance
-[46](#background-and-significance)](#background-and-significance)
-
-[Implementation and Configuration
-[46](#implementation-and-configuration)](#implementation-and-configuration)
-
-[Language Support and Internationalization
-[46](#language-support-and-internationalization)](#language-support-and-internationalization)
-
-[Impact on Software Development and Localization
-[47](#impact-on-software-development-and-localization)](#impact-on-software-development-and-localization)
-
-[User Experience and Text Handling
-[47](#user-experience-and-text-handling)](#user-experience-and-text-handling)
-
-[Maintenance and System Administration
-[47](#maintenance-and-system-administration)](#maintenance-and-system-administration)
+    * [Syslinux [41](#syslinux)](/20-chapter-2.md#syslinux)
+    * [Mkisofs [42](#mkisofs)](/20-chapter-2.md#mkisofs)
+    * [Genisoimage [43](#genisoimage)](/20-chapter-2.md#genisoimage)
+    * [Isohybrid [45](#isohybrid)](/20-chapter-2.md#isohybrid)
+    * [Host.conf [45](#host.conf)](/20-chapter-2.md#host.conf)
+    * [language: \'en_US.UTF-8\'](/20-chapter-2.md#language-en_us.utf-8)
+    * [Background and Significance](/20-chapter-2.md#background-and-significance)
+    * [Implementation and Configuration](/20-chapter-2.md#implementation-and-configuration)
+    * [Language Support and Internationalization](/20-chapter-2.md#language-support-and-internationalization)
+    * [Impact on Software Development and Localization](/20-chapter-2.md#impact-on-software-development-and-localization)
+    * [User Experience and Text Handling](/20-chapter-2.md#user-experience-and-text-handling)
+    * [Maintenance and System Administration](/20-chapter-2.md#maintenance-and-system-administration)
 
 [Chapter 3 [49](#chapter-3)](#chapter-3)
 
