@@ -2,104 +2,46 @@
 
 #  {#section .TOC-Heading}
 
-[What is the Penguins-eggs book?](/01-about.md#what-is-the-penguins-eggs-book)
+* [What is the Penguins-eggs book?](/01-about.md#what-is-the-penguins-eggs-book)
+    * [Introduction](/02-introduction.md#introduction)
+    * [Contents at a Glance](/03-contents.md#contents) index
+    * [The road map of this book](/04-road-map.md#the-road-map-of-this-book)
+* [Chapter 1](/10-chapter-1.md#chapter-1)
+    * [What is Penguins-eggs?](/10-chapter-1.md#what-is-penguins-eggs)
+    * [Why Penguins-eggs?](/10-chapter-1.md#why-penguins-eggs)
+    * [Top Penguins-eggs features](/10-chapter-1.md#top-penguins-eggs-features)
+    * [fast and efficient](/10-chapter-1.md#fast-and-efficient)
+    * [Supports Compression Algorithm)](/10-chapter-1.md#supports-compression-algorithm)
+    * [Supports Clone](/10-chapter-1.md#supports-clone)
+    * [Cuckoo and PXE boot](/10-chapter-1.md#cuckoo-and-pxe-boot)
+    * [Supports Both TUI/GUI Installer](/10-chapter-1.md#supports-both-tuigui-installer)
+    * [Repository lists](/10-chapter-1.md#repository-lists)
+    * [Wardrobe](/10-chapter-1.md#wardrobe)
+    * [Supporting Multiple Distributions](/10-chapter-1.md#supporting-multiple-distributions)
+    * [Supports hardware architectures](/10-chapter-1.md#supports-hardware-architectures)
+    * [Supports privacy and security](/10-chapter-1.md#supports-privacy-and-security)
 
-[Introduction](/02-introduction.md#introduction)
-
-[Contents at a Glance](/03-contents.md#contents)
-
-[Contents [**Error! Bookmark not
-defined.**](#_Toc170404975)](#_Toc170404975)
-
-[The road map of this book
-[15](#the-road-map-of-this-book)](#the-road-map-of-this-book)
-
-[Chapter 1 [18](#chapter-1)](#chapter-1)
-
-[What is Penguins-eggs?
-[18](#what-is-penguins-eggs)](#what-is-penguins-eggs)
-
-[Why Penguins-eggs? [19](#why-penguins-eggs)](#why-penguins-eggs)
-
-[Top Penguins-eggs features
-[19](#top-penguins-eggs-features)](#top-penguins-eggs-features)
-
-[fast and efficient [19](#fast-and-efficient)](#fast-and-efficient)
-
-[Supports Compression Algorithm
-[19](#supports-compression-algorithm)](#supports-compression-algorithm)
-
-[Supports Clone [20](#supports-clone)](#supports-clone)
-
-[Cuckoo and PXE boot [20](#cuckoo-and-pxe-boot)](#cuckoo-and-pxe-boot)
-
-[Supports Both TUI/GUI Installer
-[20](#supports-both-tuigui-installer)](#supports-both-tuigui-installer)
-
-[Repository lists [21](#repository-lists)](#repository-lists)
-
-[Wardrobe [21](#wardrobe)](#wardrobe)
-
-[Supporting Multiple Distributions
-[21](#supporting-multiple-distributions)](#supporting-multiple-distributions)
-
-[Supports hardware architectures
-[23](#supports-hardware-architectures)](#supports-hardware-architectures)
-
-[Supports privacy and security
-[23](#supports-privacy-and-security)](#supports-privacy-and-security)
-
-[Chapter 2 [25](#_Toc170404991)](#_Toc170404991)
-
-[Pre-build and concept
-[25](#pre-build-and-concept)](#pre-build-and-concept)
-
-[Live ISO images [25](#live-iso-images)](#live-iso-images)
-
-[Understanding Live ISO Images
-[25](#understanding-live-iso-images)](#understanding-live-iso-images)
-
-[Benefits of Live ISO Images
-[25](#benefits-of-live-iso-images)](#benefits-of-live-iso-images)
-
-[Creating Live ISO Images in Linux
-[26](#creating-live-iso-images-in-linux)](#creating-live-iso-images-in-linux)
-
-[Remastering [26](#remastering)](#remastering)
-
-[Building process [27](#building-process)](#building-process)
-
-[The ISO image file [27](#the-iso-image-file)](#the-iso-image-file)
-
-[ISO-9660 [28](#_Toc155423194)](#_Toc155423194)
-
-[Universal Disk Format (UDF)
-[29](#universal-disk-format-udf)](#universal-disk-format-udf)
-
-[Live system file [29](#live-system-file)](#live-system-file)
-
-[Introduction to SquashFS
-[29](#introduction-to-squashfs)](#introduction-to-squashfs)
-
-[File Compression [30](#file-compression)](#file-compression)
-
-[Structure of SquashFS
-[30](#structure-of-squashfs)](#structure-of-squashfs)
-
-[Read-Only Nature [30](#read-only-nature)](#read-only-nature)
-
-[Use Cases [30](#use-cases)](#use-cases)
-
-[Handling Compression
-[31](#handling-compression)](#handling-compression)
-
-[Customization and Optimization
-[32](#customization-and-optimization)](#customization-and-optimization)
-
-[Compatibility and Performance
-[32](#compatibility-and-performance)](#compatibility-and-performance)
-
-[Mksquashfs [32](#mksquashfs)](#mksquashfs)
+* [Chapter 2)](/20-chapter-2.md)
+    * [Pre-build and concept](/20-chapter-2.md#pre-build-and-concept)
+    * [Live ISO images](/20-chapter-2.md#live-iso-images)
+    * [Understanding Live ISO Images](/20-chapter-2.md#understanding-live-iso-images)
+    * [Benefits of Live ISO Images](/20-chapter-2.md#benefits-of-live-iso-images)
+    * [Creating Live ISO Images in Linux](/20-chapter-2.md#creating-live-iso-images-in-linux)
+    * [Remastering](/20-chapter-2.md#remastering)
+    * [Building process](/20-chapter-2.md#building-process)
+    * [The ISO image file](/20-chapter-2.md#the-iso-image-file)
+    * [UDF - Universal disk format](/20-chapter-2.md#universal-disk-format-udf)
+    * [Live system file](/20-chapter-2.md#live-system-file)
+    * [Introduction to SquashFS](/20-chapter-2.md#introduction-to-squashfs)
+    * [File Compression](/20-chapter-2.md#file-compression)
+    * [Structure of SquashFS](/20-chapter-2.md#structure-of-squashfs)
+    * [Read-Only Nature](/20-chapter-2.md#read-only-nature)
+    * [Use Cases](/20-chapter-2.md#use-cases)
+    * [Handling Compression](/20-chapter-2.md#handling-compression)
+    * [Customization and Optimization](/20-chapter-2.md#customization-and-optimization)
+    * [Compatibility and Performance](/20-chapter-2.md#compatibility-and-performance)
+    * [Mksquashfs ](/20-chapter-2.md#mksquashfs)
+    *
 
 [Introduction to UEFI Boot
 [36](#introduction-to-uefi-boot)](#introduction-to-uefi-boot)
