@@ -1,8 +1,8 @@
 # Chapter 1
 
-# What is Penguins-eggs?
+# What is penguins' eggs?
 
-Penguins' Eggs stands out as a versatile command-line tool, offering the
+Penguins' eggs stands out as a versatile command-line tool, offering the
 capability to transform your existing distro into a redistributable live
 ISO image. Notably, the tool also extends its support to Debian/Ubuntu
 flavors, making it compatible with variations such as Xubuntu, Kubuntu,
@@ -13,7 +13,7 @@ ISO embodying their Debian/Devuan/Ubuntu-based, Arch Linux, or Manjaro
 system, complete with all installed applications and personalized
 configurations housed within the home folder.
 
-Penguins\' Eggs goes beyond creating live ISOs. It allows you to
+Penguins' eggs goes beyond creating live ISOs. It allows you to
 configure the generated ISO for offline installation, useful for
 environments without internet access. It also offers a scripting mode
 for managing ISOs through custom scripts. You can even personalize the
@@ -26,131 +26,131 @@ generate a complete backup of your existing Debian/Ubuntu system,
 including user data, all rolled into a bootable ISO. Using Penguins\'
 Eggs simplifies these tasks and gives you full control over the content
 and distribution of your custom Linux environments. To learn more,
-explore the official Penguins\' Eggs website and its community resources
+explore the official Penguins' eggs website and its community resources
 
-[]{dir="rtl"}Penguins\' Eggs takes the complexity out of remastering
+[]{dir="rtl"}Penguins' eggs takes the complexity out of remastering
 Linux systems. It offers a user-friendly interface with powerful
 features, making customization and distribution a breeze. The tool works
 across various systems based on Debian, Ubuntu, Arch Linux, and Manjaro.
 This means you can create live ISOs tailored to your specific needs, no
-matter your preferred base distro. Penguins\' Eggs also supports
+matter your preferred base distro. Penguins' eggs also supports
 derivatives of these popular distributions, giving you even more
 options. Here\'s the real benefit: you can not only preserve your
 current system setup and applications but also easily share them with
-others. Penguins\' Eggs cleverly removes user and system data from the
+others. Penguins' eggs cleverly removes user and system data from the
 ISOs it creates. This ensures a clean starting point for new users,
 while still allowing you to curate a unique Linux experience for them.
 
 # Why Penguins-eggs?
 
 Penguins**-**eggs is a versatile tool that offers an array of features
-and benefits for Linux users**.** Whether you want to create an
+and benefits for Linux users. Whether you want to create an
 installable ISO from your current Linux system or explore various
-customization options, Penguins**-**eggs has got you covered**.** To get
+customization options, Penguins**-**eggs has got you covered. To get
 started with Penguins**-**eggs, you\'ll need to install it on your Linux
-distribution**.** The tool supports a wide range of Linux distributions
+distribution. The tool supports a wide range of Linux distributions
 and their major derivatives, including Arch, Debian, Devuan, Manjaro,
-Ubuntu, and more**.** Additionally, you can easily add support for
+Ubuntu, and more. Additionally, you can easily add support for
 additional derivatives, expanding the tool\'s capabilities even
-further**.**
+further.
 
 # Top Penguins-eggs features
 
 ## fast and efficient
 
-Penguins**-**eggs is designed to be fast and efficient**.** Unlike
+Penguins**-**eggs is designed to be fast and efficient. Unlike
 traditional methods that involve copying the entire file system,
 Penguins**-**eggs utilizes livefs, which allows for instant acquisition
-of the live system**.** By default, the tool :
+of the live system. By default, the tool :
 
 ## Supports Compression Algorithm
 
 Employs the compression algorithm, significantly reducing the time
-required for the process when creating an installable ISO**.**
+required for the process when creating an installable ISO.
 
 Penguins**-**eggs Linux, with its innovative utilization of the xz
 compression algorithm as the default, is poised to revolutionize the
 realm of Linux distributions by redefining the parameters of speed and
-efficiency**.** This cutting**-**edge approach to compression stands as
+efficiency. This cutting**-**edge approach to compression stands as
 a testament to the relentless pursuit of optimization and performance
 enhancements, enabling users to experience unparalleled gains in speed
-and responsiveness**.**
+and responsiveness.
 
 ## Supports Clone
 
-Penguins**-**eggs provides various options to suit your needs**.** With
+Penguins**-**eggs provides various options to suit your needs. With
 the **\--**clone flag, you can preserve the data and accounts of
 unencrypted users, ensuring a seamless experience for users accessing
-the live system**.** Moreover, you can opt for a crypted clone, where
+the live system. Moreover, you can opt for a crypted clone, where
 user data and accounts are saved in an encrypted LUKS volume within the
-ISO image, enhancing security and privacy**.**
+ISO image, enhancing security and privacy.
 
 Penguins**-**Eggs Linux introduces a groundbreaking feature in the form
 of
 
 Crypted Clone, setting a new standard of security and data protection
-within the realm of Linux distributions**.** By default,
+within the realm of Linux distributions. By default,
 Penguins**-**Eggs tool empowers users to safeguard their sensitive user
 data and accounts by encapsulating them within an encrypted LUKS
 **(**Linux Unified Key Setup**)** volume, seamlessly integrated within
-the ISO image**.**
+the ISO image.
 
 ## Cuckoo and PXE boot
 
 In addition to ISO creation, Penguins**-**eggs offers a unique feature
-called Cuckoo**.** By starting Cuckoo from the live system, you can set
+called Cuckoo. By starting Cuckoo from the live system, you can set
 up a PXE boot server, making it accessible to all computers on the
-network**.** This functionality opens up possibilities for network
-booting and streamlined deployment**.** The activation of Cuckoo from
+network. This functionality opens up possibilities for network
+booting and streamlined deployment. The activation of Cuckoo from
 live as the default setting within Penguins Eggs heralds a
 transformative leap in the domain of Linux distributions, affording
 users the ability to harness the unparalleled potential of PXE booting
-and network**-**wide deployment with ease**.**
+and network**-**wide deployment with ease.
 
 ## Supports Both TUI/GUI Installer
 
 To simplify the installation process, Penguins**-**eggs provides its own
-system installer called krill**.** This installer is particularly useful
+system installer called krill. This installer is particularly useful
 when a GUI **(**Graphical User Interface**)** is not available, allowing
-for installation in various situations**.** However, if you are using a
+for installation in various situations. However, if you are using a
 desktop system, Penguins**-**eggs recommends and configures the
 calamares GUI installer, ensuring a seamless and user**-**friendly
-experience**.**
+experience.
 
 Penguins Eggs Linux spearheads a transformative revolution in the realm
 of system installation with the incorporation of its TUI
 **(**Text**-**based User Interface**)** **/** GUI **(**Graphical User
 Interface**)** installer, setting a new standard of versatility and
-accessibility within the landscape of Linux distributions**.** The
+accessibility within the landscape of Linux distributions. The
 integration of these installation mechanisms underscores Penguins Eggs
-Linux**'**s unwavering commitment to accommodating diverse user needs
+Linux's unwavering commitment to accommodating diverse user needs
 and streamlining installation workflows with unparalleled flexibility
-and user**-**centric design**.**
+and user**-**centric design.
 
 ## Repository lists
 
 One of the key advantages of Penguins**-**eggs is its commitment to
-utilizing only the original distro\'s packages**.** This means that no
+utilizing only the original distro\'s packages. This means that no
 modifications are made to your repository lists, ensuring a safe and
-reliable environment**.** Penguins**-**eggs prioritizes maintaining the
-integrity and authenticity of your Linux distribution**.**
+reliable environment. Penguins**-**eggs prioritizes maintaining the
+integrity and authenticity of your Linux distribution.
 
 ## Wardrobe
 
 To enhance customization options, Penguins**-**eggs introduces the
-concept of Wardrobe**.** With Wardrobe and its various components, such
+concept of Wardrobe. With Wardrobe and its various components, such
 as costumes, you can easily organize and manage your customizations,
-samples, and more**.** This feature enables a streamlined and efficient
+samples, and more. This feature enables a streamlined and efficient
 workflow, allowing you to tailor your Linux system to your
-preferences**.**
+preferences.
 
 ## Supporting Multiple Distributions
 
 Eggs supporting multiple distributions and their derivatives.
 
 **Supports**: Arch, Debian, Devuan, Manjaro, Ubuntu and major
-derivatives: Linuxmint, KDE neon, EndeavourOS, Garuda, etc**.** You can
-easily add more derivatives**.**
+derivatives: Linuxmint, KDE neon, EndeavourOS, Garuda, etc. You can
+easily add more derivatives.
 
 Arch Linux is a popular Linux distribution known for its simplicity,
 flexibility, and rolling release model. Unlike many distros that come
@@ -188,22 +188,22 @@ system that is easy to use and works well without a lot of tinkering.
 
 ## Supports hardware architectures
 
-Supports a wide range of hardware architectures**.**
+Supports a wide range of hardware architectures.
 
 Supports: i386, amd64 and arm64 architecture, from old PCs, common PCs
 to single board computers like Raspberry Pi 4**/**5
 
 The i386 architecture, originating from the Intel 80386 microprocessor,
-has long been a stalwart in the domain of personal computing**.**
+has long been a stalwart in the domain of personal computing.
 Initially serving as the cornerstone for many early PCs, the i386
 architecture laid the groundwork for the evolution of consumer computing
 devices, providing the processing power and framework for the burgeoning
-digital revolution**.**
+digital revolution.
 
 In parallel to the x86**-**64 architecture, the arm64 architecture
 stands as a testament to the dynamism of computing, catering to a
 diverse array of devices, ranging from smartphones and tablets to
-embedded systems, IoT devices, and single**-**board computers**.**
+embedded systems, IoT devices, and single**-**board computers.
 
 ## Supports privacy and security 
 
@@ -214,5 +214,4 @@ modifications in the repository lists.
 
 <https://github.com/pieroproietti/penguins-eggs/tree/master/changelog.d>
 
-![](media/image6.jpg){width="6.692361111111111in"
-height="9.01388888888889in"}
+![image6.jpg](media/image6.jpg)

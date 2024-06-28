@@ -121,7 +121,7 @@ then mostly or the others, I now support my own project, Penguins\'
 Eggs. This Linux remastering software - built initially with JavaScript,
 then switched to TypeScript - allows users to create custom ISO images,
 perform backups and clone the system. Whether using Debian, Devuan,
-Ubuntu, Arch or their derivatives, Penguins\' Eggs can cover all amd64,
+Ubuntu, Arch or their derivatives, Penguins' eggs can cover all amd64,
 i386 and arm64 architectures.
 
 * **Dart and JavaScript Enthusiast**: I followed Google\'s Dart project

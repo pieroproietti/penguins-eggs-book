@@ -5,7 +5,7 @@
 
 ## Part1: configuration automatically 
 
-You can configure eggs tool automatically and also manually**.** To
+You can configure eggs tool automatically and also manually. To
 configure the Eggs tool automatically, you can follow the steps outlined
 below:
 
@@ -13,16 +13,16 @@ below:
 
 Autocomplete command is indeed a handy tool for quickly accessing
 available commands and their supported flags in the eggs package
-manager**.** To utilize autocomplete in the eggs package manager, you
-can start by typing eggs and then press the TAB key**.** This action
+manager. To utilize autocomplete in the eggs package manager, you
+can start by typing eggs and then press the TAB key. This action
 will display a list of the available commands that you can choose
-from**.** Here\'s an example of the available commands:
+from. Here\'s an example of the available commands:
 
 ![](media/image44.png){width="5.183963254593176in"
 height="1.045767716535433in"}
 
 Once you have selected a command, you can type it out and then press TAB
-to see the flags supported by that specific command**.** For instance,
+to see the flags supported by that specific command. For instance,
 if you enter eggs produce **\--** and then press TAB, you will be
 presented with the available flags for the produce command, like this:
 
@@ -30,7 +30,7 @@ presented with the available flags for the produce command, like this:
 height="1.0216852580927385in"}
 
 If you wish to access the help screen for a particular command, you can
-utilize the **\--**help flag**.** For instance, to obtain detailed
+utilize the **\--**help flag. For instance, to obtain detailed
 information about the usage and options available for
 the produce command, you can enter the following:
 
@@ -38,14 +38,14 @@ eggs produce \--help
 
 Executing this command will provide you with comprehensive information
 about the produce command, including its usage and available
-options**.**
+options.
 
 ![](media/image46.png){width="5.130082020997375in"
 height="3.45290791776028in"}
 
 The eggs autocomplete \[SHELL\] command in the eggs package manager is
 used to display autocomplete installation instructions for a specific
-shell type**.** Here is the usage and options for the eggs autocomplete
+shell type. Here is the usage and options for the eggs autocomplete
 \[SHELL\] command:
 
 **USAGE:**
@@ -58,15 +58,15 @@ height="2.4025021872265966in"}
 **ARGUMENTS:**
 
 -   SHELL: Specifies the shell type for which you want to display
-    autocomplete installation instructions**.**
+    autocomplete installation instructions.
 
 **FLAGS:**
 
 -   **-**r, **\--**refresh**-**cache: Refreshes the cache and ignores
-    displaying instructions**.**
+    displaying instructions.
 
 **DESCRIPTION**: This command is used to display autocomplete
-installation instructions for the specified shell type**.**
+installation instructions for the specified shell type.
 
 **EXAMPLES:**:
 
@@ -99,12 +99,12 @@ height="0.7098086176727909in"}
 ## Eggs adaptive resolutions 
 
 The eggs adapt command allows you to conveniently resize the video
-output to fit the size of a virtual machine window**.** This feature is
+output to fit the size of a virtual machine window. This feature is
 particularly useful when working with virtual machines that have
 graphical interfaces other than cinnamon, gnome3, and KDE, as it
-provides a way to adjust the screen resolution accordingly**.** This
+provides a way to adjust the screen resolution accordingly. This
 functionality is not directly associated with ISO production but proves
-extremely handy when dealing with virtual machine environments**.**
+extremely handy when dealing with virtual machine environments.
 
 **Usage:**
 
@@ -116,32 +116,32 @@ height="3.1845505249343833in"}
 **Flags:**
 
 -   **-**h, **\--**help: Displays the help documentation for the
-    CLI**.**
+    CLI.
 
 -   **-**v, **\--**verbose: Enables verbose mode for more detailed
-    output**.**
+    output.
 
 **Description:**
 
 The eggs adapt command is specifically designed to adapt the monitor
-resolution for virtual machines**.** By invoking this command, the
+resolution for virtual machines. By invoking this command, the
 underlying mechanism **(**utilizing xrandr**)** adjusts the screen
-resolution to match the current settings of the virtual machine**.**
+resolution to match the current settings of the virtual machine.
 This ensures that the video output is properly scaled and fits the
-dimensions of the virtual machine window**.** This feature is
+dimensions of the virtual machine window. This feature is
 particularly useful when working with virtual machines that have
 different graphical interfaces, allowing for a seamless and optimized
-viewing experience**.**
+viewing experience.
 
 **EXAMPLES::**
 
 \$ sudo eggs adapt
 
 In this example, the eggs adapt command is executed without any
-additional flags or arguments**.** This triggers the process of adapting
+additional flags or arguments. This triggers the process of adapting
 the monitor resolution for the virtual machine, ensuring that the video
 output is properly scaled and fits the size of the virtual machine
-window**.**
+window.
 
 ![](media/image52.png){width="4.972542650918635in"
 height="2.160559930008749in"}
@@ -154,33 +154,33 @@ the display output settings for a specific output named
 **"**Virtual**-**0**".** Here\'s a breakdown of the command:
 
 **-** \`**xrandr**\`: This is the command**-**line tool used for
-configuring the screen settings in X Window System**.**
+configuring the screen settings in X Window System.
 
 **-** **\`\--output Virtual-0**\`: This option specifies the output
 display that we want to modify, in this case, **"**Virtual**-**0**".**
-It refers to a virtual display output within the virtual machine**.**
+It refers to a virtual display output within the virtual machine.
 
 **-** **\`\--auto**\`: This option tells \`xrandr\` to automatically
 detect and set the optimal resolution and refresh rate for the specified
-output**.**
+output.
 
 By executing this command, \`xrandr\` will adjust the display settings
 for the **"**Virtual**-**0**"** output in the virtual machine,
 automatically determining the best resolution and refresh rate based on
-the capabilities of the virtual display**.**
+the capabilities of the virtual display.
 
 The purpose of using this command in the provided code snippet is likely
 to ensure that the display output named **"**Virtual**-**0**"** in the
 virtual machine is set to the appropriate resolution and refresh rate,
 adapting it to the size of the window where the virtual machine is
-running**.**
+running.
 
 ## eggs analyze
 
-Eggs will analyze your system, to get users and servers data**.**
+Eggs will analyze your system, to get users and servers data.
 
 The eggs analyze command is used to perform system analysis and gather
-data related to users and servers**.** Here\'s a description of the
+data related to users and servers. Here\'s a description of the
 command and its options:
 
 **Usage:**
@@ -193,16 +193,16 @@ height="2.5951629483814522in"}
 **Flags:**
 
 -   **-**h, **\--**help: Displays the help documentation for the
-    CLI**.**
+    CLI.
 
 -   **-**v, **\--**verbose: Enables verbose mode, providing more
-    detailed output during the analysis process**.**
+    detailed output during the analysis process.
 
 **Description**: The eggs analyze command is designed to conduct a
 comprehensive analysis of the system, specifically targeting user and
-server**-**related data**.** By executing this command, the program will
+server**-**related data. By executing this command, the program will
 gather relevant information and insights about the system\'s users and
-servers**.**
+servers.
 
 **EXAMPLES::**
 
@@ -212,18 +212,18 @@ servers**.**
 height="2.62284230096238in"}
 
 In this example, the sudo command is used to execute the eggs
-analyze command with administrative privileges**.** This allows the
+analyze command with administrative privileges. This allows the
 system analysis to access and collect data that may require elevated
-permissions**.**
+permissions.
 
 Please note that the provided information is a combination of the
-original text and additional descriptions to enhance understanding**.**
+original text and additional descriptions to enhance understanding.
 
 ## Eggs Config
 
 DESCRIPTION: The eggs config command sets up and installs the necessary
-Debian packages needed to run the program**.** It ensures that all
-dependencies and prerequisites are properly configured**.**
+Debian packages needed to run the program. It ensures that all
+dependencies and prerequisites are properly configured.
 
 **USAGE**:
 
@@ -235,15 +235,15 @@ height="3.5560640857392825in"}
 **FLAGS:**
 
 -   **-**c, **\--**clean: Removes the previous configuration before
-    creating a new one**.**
+    creating a new one.
 
 -   **-**h, **\--**help: Displays the command**-**line interface
-    **(**CLI**)** help**.**
+    **(**CLI**)** help.
 
 -   **-**n, **\--**nointeractive: Performs the configuration without
-    requiring user interaction**.**
+    requiring user interaction.
 
--   **-**N, **\--**noicons: Disables the display of icons**.**
+-   **-**N, **\--**noicons: Disables the display of icons.
 
 **EXAMPLES::**
 
@@ -285,8 +285,8 @@ height="1.3129757217847768in"}
 
 The **"**eggs dad**"** command is a CLI **(**Command Line Interface**)**
 command that provides a TUI **(**Text User Interface**)** configuration
-helper**.** It allows you to interactively configure certain settings or
-options using a command line interface**.** []{dir="rtl"}Here is a
+helper. It allows you to interactively configure certain settings or
+options using a command line interface. []{dir="rtl"}Here is a
 breakdown of the different components of the command:
 
 **Command: **
@@ -299,7 +299,7 @@ height="3.01455271216098in"}
 **Flags:**
 
 -   **-**c, **\--**clean: This flag indicates that the old configuration
-    should be removed before creating a new one**.**
+    should be removed before creating a new one.
 
 ![](media/image62.png){width="5.3405041557305335in"
 height="3.2190726159230096in"}
@@ -309,13 +309,13 @@ height="1.60873031496063in"}
 
 -   **-**d, **\--**default: This flag indicates that the old
     configuration should be removed and the default configuration should
-    be applied**.**
+    be applied.
 
 -   **-**h, **\--**help: This flag displays the help information for the
-    command**.**
+    command.
 
 -   **-**v, **\--**verbose: This flag enables verbose output, providing
-    more detailed information during the configuration process**.**
+    more detailed information during the configuration process.
 
 Description: **"**ask help from daddy **-** TUI configuration
 helper**"**
@@ -323,13 +323,13 @@ helper**"**
 This description suggests that the **"**eggs dad**"** command is a tool
 that assists in configuring settings or options, with the help of a TUI
 **(**Text User Interface**)** that guides the user through the
-configuration process**.**
+configuration process.
 
 **EXAMPLES:**:
 
 sudo dad
 
-This example runs the **"**dad**"** command with default settings**.**
+This example runs the **"**dad**"** command with default settings.
 
 ![](media/image64.png){width="5.147857611548557in"
 height="3.509977034120735in"}
@@ -337,20 +337,20 @@ height="3.509977034120735in"}
 sudo dad --clean
 
 This example runs the **"**dad**"** command and removes the old
-configuration before creating a new one**.**
+configuration before creating a new one.
 
 sudo dad --default
 
 This example runs the **"**dad**"** command and removes the old
-configuration, then applies the default configuration**.**
+configuration, then applies the default configuration.
 
 # Eggs Configuration 
 
 ## Part2: configuration manually 
 
 During the installation of the eggs program, three different
-configuration files are automatically generated**.** These files can be
-found in the following directory**.** The eggs configuration file path
+configuration files are automatically generated. These files can be
+found in the following directory. The eggs configuration file path
 is: 
 
 /etc/penguins-eggs.d
@@ -359,8 +359,8 @@ is: 
 height="2.687639982502187in"}
 
 After installing eggs, the main configuration file can be found at the
-above**-**mentioned path**.** This file allows manual configuration of
-the eggs program**.**
+above**-**mentioned path. This file allows manual configuration of
+the eggs program.
 
 The contents of the configuration **eggs.yaml** file are as follows:
 
@@ -372,18 +372,18 @@ file:
 
 By modifying these configuration options within the file, you can
 manually configure the eggs program according to your specific
-requirements**.** []{dir="rtl"}The provided text has been rewritten, and
+requirements. []{dir="rtl"}The provided text has been rewritten, and
 additional explanations have been included for each line to enhance
-understanding**.** Information from the web has been used to provide
+understanding. Information from the web has been used to provide
 accurate descriptions of the purpose and functionalities of the
-configuration file**.** This configuration file will change with this
-command: we introduced this command before**.**
+configuration file. This configuration file will change with this
+command: we introduced this command before.
 
 \$sudo eggs config
 
 ## Krill config file
 
-The krill config file described before**.** This is the entry of it:
+The krill config file described before. This is the entry of it:
 
 ![](media/image67.png){width="5.217258311461068in"
 height="5.0878313648293965in"}
@@ -394,39 +394,39 @@ height="5.0878313648293965in"}
 height="3.8151727909011375in"}
 
 YAML is a human**-**readable data serialization format often used for
-configuration files**.** Based on the provided YAML content, it appears
+configuration files. Based on the provided YAML content, it appears
 to be a configuration file for the Calamares installer, specifically for
-setting up the installation environment with certain parameters**.**
+setting up the installation environment with certain parameters.
 Let\'s go through the different sections:
 
 -   language: Specifies the language to be used during the installation
-    process**.** In this case, it\'s set to \'en_US**.**UTF**-**8\',
-    indicating American English**.**
+    process. In this case, it\'s set to \'en_US.UTF**-**8\',
+    indicating American English.
 
 -   region and zone: Define the geographical region and time zone for
-    the installation**.** Here, it\'s set to \'America\' and
-    \'New_York\', respectively**.**
+    the installation. Here, it\'s set to \'America\' and
+    \'New_York\', respectively.
 
 -   keyboardModel, keyboardLayout, keyboardVariant, and keyboardOption:
-    Specify keyboard**-**related settings**.** It seems to be set for a
-    PC with a US keyboard layout**.**
+    Specify keyboard**-**related settings. It seems to be set for a
+    PC with a US keyboard layout.
 
 -   installationDevice, installationMode, and filesystemType: These
     settings are related to the installation process and file system
-    type**.** They are left unchanged in the provided configuration**.**
+    type. They are left unchanged in the provided configuration.
 
 -   name, fullname, password, rootPassword, autologin, and hostname:
     These settings define the default user account, password, and system
-    hostname**.** In this case, the default user is named \'artisan\'
-    with the password \'evolution\', and autologin is enabled**.**
+    hostname. In this case, the default user is named \'artisan\'
+    with the password \'evolution\', and autologin is enabled.
 
 -   iface, addressType, address, netmask, gateway, domain, and dns:
-    These settings are related to network configuration**.** They are
-    left unchanged in the provided configuration**.**
+    These settings are related to network configuration. They are
+    left unchanged in the provided configuration.
 
 ## Exclude.list files
 
-We wrote about it in the previous chapter**.**
+We wrote about it in the previous chapter.
 
 /etc/penguins-eggs.d/exclude.list.d/
 
@@ -470,7 +470,7 @@ height="3.0541382327209097in"}
 ## eggs status
 
 The eggs status command provides information about the status of the
-**"**eggs**"** system**.** Here is some information about the command:
+**"**eggs**"** system. Here is some information about the command:
 
 ![](media/image76.png){width="4.97088801399825in"
 height="2.094772528433946in"}
@@ -483,15 +483,15 @@ height="2.54130905511811in"}
 **FLAGS**
 
 -   **-**h, **\--**help: Displays help information about the
-    command**.**
+    command.
 
 -   **-**v, **\--**verbose: Provides more detailed and verbose
-    output**.**
+    output.
 
 **DESCRIPTION** The eggs status command is used to retrieve information
-about the status of the **"**eggs**"** system**.** It can provide
+about the status of the **"**eggs**"** system. It can provide
 details about the current state of the system, including information
-about running processes, system health, resource usage, and more**.**
+about running processes, system health, resource usage, and more.
 
 **EXAMPLES:** Here are some EXAMPLES: of how to use the eggs
 status command:
@@ -499,15 +499,15 @@ status command:
 \$ sudo eggs status
 
 This command will display the status information of the **"**eggs**"**
-system**.** Please note that the specific output and available
+system. Please note that the specific output and available
 information may vary depending on the implementation of the
-**"**eggs**"** system and the version of the CLI tool you are using**.**
+**"**eggs**"** system and the version of the CLI tool you are using.
 
 # Eggs Change log notes
 
 ## penguins-eggs-9.6.x
 
-Since version 9.6.x Penguins\' eggs is released - as Debian package -
+Since version 9.6.x Penguins' eggs is released - as Debian package -
 for: amd64, i386 and arm64 architectures, supporting the majority of
 PCs, old ones and single board systems like Raspberry Pi. Read more on
 the article [Triple
