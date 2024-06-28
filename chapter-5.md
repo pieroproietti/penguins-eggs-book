@@ -2,502 +2,63 @@
 
 # Installing Eggs
 
+penguins-eggs, starting from version 10.x require nodejs>18, 
+Debian bookworm, Devuan daedalus and Ubuntu noble have nodejs on their
+repositories, others distros not.
+
+We need to add repository for nodejs>18 or better from [nodesource](https://github.com/nodesource/distributions).
+
+
+## Ubuntu 20.04 focal, Ubuntu 22.04 jammy
+
+```
+sudo apt-get install -y curl
+curl -fsSL https://deb.nodesource.com/setup_18.x -o nodesource_setup.sh
+sudo -E bash nodesource_setup.sh
+```
+
+## UBUNTU 18.04 bionic, Debian stretch and derivatives**
+
+If you are using Ubuntu 18.04 bionic, or derivatives, you can't use nodejs>16, but I have good news
+too: we have a special version called penguins-eggs-10.0.x-bionic-x.deb compiled against nodejs 16!
+
+Just add node16 repo from [nodesource](https://github.com/nodesource/distributions).
+
+```
+sudo apt-get install -y curl
+curl -fsSL https://deb.nodesource.com/setup_16.x -o nodesource_setup.sh
+sudo -E bash nodesource_setup.sh
+```
+
 There are multiple ways to install eggs as a .deb package.
 
-Important: Before installing Penguins' eggs, be aware that versions in
-the penguins-eggs-10.0.x series require Node.js version 18 or higher.
-This version may not be available by default on all Linux distributions.
+The most practical method is to add and use the `penguins-eggs-ppa` repository.
 
-However, you can easily install the required Node.js version using
-NodeSource. This chapter provides instructions for installing Node.js
-Binary Distributions using both .rpm and .deb packages, along with setup
-and support scripts.
-
-## Installing Nodejs
-
-DEB Available architectures
-
-NodeSource will continue to maintain the following architectures and may
-add additional ones in the future.
-
--   amd64 (64-bit)
-
--   armhf (ARM 32-bit hard-float, ARMv7 and up: arm-linux-gnueabihf)
-
--   arm64 (ARM 64-bit, ARMv8 and up: aarch64-linux-gnu)
-
-### DEB Supported Versions
-
-#### **Ubuntu versions**
-
-  -----------------------------------------------------------------------
-  Distro Name             Node 18x    Node 20x    Node 21x    Node 22x
-  ----------------------- ----------- ----------- ----------- -----------
-  Ubuntu Bionic \^18.04   ❌          ❌          ❌          ❌
-
-  Ubuntu Focal \^20.04    ✅          ✅          ✅          ✅
-
-  Ubuntu Jammy \^22.04    ✅          ✅          ✅          ✅
-  -----------------------------------------------------------------------
-
-#### **Debian versions**
-
-  -----------------------------------------------------------------------
-  Distro Name             Node 18x    Node 20x    Node 21x    Node 22x
-  ----------------------- ----------- ----------- ----------- -----------
-  Debian 8 Jessie         ❌          ❌          ❌          ❌
-
-  Debian 9 Stretch        ❌          ❌          ❌          ❌
-
-  Debian 10 Buster        ✅          ✅          ✅          ✅
-
-  Debian 11 Bullseye      ✅          ✅          ✅          ✅
-
-  Debian 12 Bookworm      ✅          ✅          ✅          ✅
-  -----------------------------------------------------------------------
-
-Installation Instructions (DEB)
-
-####  
-
-**Node.js 22:**
-
-##### Using Ubuntu (Node.js 22)
-
-Before you begin, ensure that curl is installed on your system.
-If curl is not installed, you can install it using the following
-command:
-
-sudo apt-get install -y curl
-
-1.  **Download the Node.js setup script:**
-
-**curl -fsSL https://deb.nodesource.com/setup_22.x -o**
-nodesource_setup.sh
-
-2.  **Run the Node.js setup script with sudo:**
-
-sudo -E bash nodesource_setup.sh
-
-3.  **Install Node.js:**
-
-sudo apt-get install -y nodejs
-
-4.  **Verify the installation:**
-
-node -v
-
-##### **Using Debian, as root (Node.js 22)**
-
-Before you begin, ensure that curl is installed on your system.
-If curl is not installed, you can install it using the following
-command:
-
-apt-get install -y curl
-
-1.  **Download the Node.js setup script:**
-
-**curl -fsSL https://deb.nodesource.com/setup_22.x -o**
-**nodesource_setup.sh**
-
-2.  **Run the Node.js setup script with sudo:**
-
-bash nodesource_setup.sh
-
-3.  **Install Node.js:**
-
-apt-get install -y nodejs
-
-4.  **Verify the installation:**
-
-node -v
-
-**Node.js v20.x**:
-
-##### **Using Ubuntu (Node.js 20)**
-
-Before you begin, ensure that curl is installed on your system.
-If curl is not installed, you can install it using the following
-command:
-
-sudo apt-get install -y curl
-
-1.  **Download the Node.js setup script:**
-
-**curl -fsSL https://deb.nodesource.com/setup_20.x -o**
-**nodesource_setup.sh**
-
-2.  **Run the Node.js setup script with sudo:**
-
-sudo -E bash nodesource_setup.sh
-
-3.  **Install Node.js:**
-
-sudo apt-get install -y nodejs
-
-4.  **Verify the installation:**
-
-node -v
-
-##### **Using Debian, as root (Node.js 20)**
-
-Before you begin, ensure that curl is installed on your system.
-If curl is not installed, you can install it using the following
-command:
-
-apt-get install -y curl
-
-1.  **Download the Node.js setup script:**
-
-curl -fsSL https://deb.nodesource.com/setup_20.x -o nodesource_setup.sh
-
-2.  **Run the Node.js setup script with sudo:**
-
-bash nodesource_setup.sh
-
-3.  **Install Node.js:**
-
-apt-get install -y nodejs
-
-4.  **Verify the installation:**
-
-node -v
-
-**No**
-
-**de.js v18.x**:
-
-##### **Using Ubuntu (Node.js 18)**
-
-Before you begin, ensure that curl is installed on your system.
-If curl is not installed, you can install it using the following
-command:
-
-sudo apt-get install -y curl
-
-1.  **Download the Node.js setup script:**
-
-**curl -fsSL https://deb.nodesource.com/setup_18.x -o**
-**nodesource_setup.sh**
-
-2.  **Run the Node.js setup script with sudo:**
-
-sudo -E bash nodesource_setup.sh
-
-3.  **Install Node.js:**
-
-sudo apt-get install -y nodejs
-
-4.  **Verify the installation:**
-
-node -v
-
-## Removing Nodejs
-
-Uninstall nodejs Ubuntu & Debian packages
-
-To completely remove Node.js installed from the deb.nodesource.com
-package methods above:
-
-**Use sudo on Ubuntu or run this as root on debian**
-
-apt-get purge nodejs &&\\
-
-rm -r /etc/apt/sources.list.d/nodesource.list &&\\
-
-rm -r /etc/apt/keyrings/nodesource.gpg
-
-**Installing Nodejs**
-
-Enterprise Linux Based Distributions
-
-### **RPM Available architectures**
-
-NodeSource will continue to maintain the following architectures and may
-add additional ones in the future.
-
--   **x86_64** (64-bit)
-
--   **arm64** (ARM 64-bit, ARMv8 and up: *aarch64-linux-gnu*)
-
-### **RPM Supported Versions**
-
-#### Fedora versions
-
-  ------------------------------------------------------------------------
-  **Distro Name**          **Node      **Node      **Node      **Node
-                           18x**       20x**       21x**       22x**
-  ------------------------ ----------- ----------- ----------- -----------
-  Fedora \>= 20 (20-\>28)  ❌          ❌          ❌          ❌
-
-  Fedora \>= 29            ✅          ✅          ✅          ✅
-
-  Fedora \>= 36            ✅          ✅          ✅          ✅
-  ------------------------------------------------------------------------
-
-#### Redhat versions
-
-  ------------------------------------------------------------------------
-  **Distro Name**      **Node 18x** **Node 20x** **Node 21x** **Node 22x**
-  -------------------- ------------ ------------ ------------ ------------
-  Redhat 7             ❌           ❌           ❌           ❌
-
-  Redhat 8             ✅           ✅           ✅           ✅
-
-  Redhat 9             ✅           ✅           ✅           ✅
-
-  Redhat 9-minimal     ✅           ✅           ✅           ✅
-  ------------------------------------------------------------------------
-
-#### Amazon Linux versions
-
-  --------------------------------------------------------------------------
-  **Distro Name**        **Node 18x** **Node 20x** **Node 21x** **Node 22x**
-  ---------------------- ------------ ------------ ------------ ------------
-  Amazon Linux 2         ❌           ❌           ❌           ❌
-
-  Amazon Linux 2023      ✅           ✅           ✅           ✅
-  --------------------------------------------------------------------------
-
-### RPM Installation Instructions
-
-**Node.js v22.x**
-
-##### Using RPM-based Systems (Node.js 22)
-
-Before you begin, ensure that curl is installed on your system.
-If curl is not installed, you can install it using the following
-command:
-
-sudo yum install -y curl
-
-1.  **Download the Node.js setup script:**
-
-curl -fsSL https://rpm.nodesource.com/setup_22.x -o nodesource_setup.sh
-
-2.  **Run the Node.js setup script as root:**
-
-sudo bash nodesource_setup.sh
-
-3.  **Install Node.js:**
-
-sudo yum install -y nodejs
-
-4.  **Verify the installation:**
-
-node -v
-
-##### 
-
-##### **No root privileges (Node.js 22)**
-
-Before you begin, ensure that curl is installed on your system.
-If curl is not **installed, you can install it using the following
-command:**
-
-yum install -y curl
-
-1.  **Download the Node.js setup script:**
-
-curl -fsSL https://rpm.nodesource.com/setup_22.x -o nodesource_setup.sh
-
-2.  **Run the Node.js setup script as root:**
-
-bash nodesource_setup.sh
-
-3.  **Install Node.js:**
-
-yum install -y nodejs
-
-4.  **Verify the installation:**
-
-node -v
-
-**Node.js v20.x**
-
-##### **As root (Node.js 20)**
-
-Before you begin, ensure that curl is installed on your system.
-If curl is not installed, you can install it using the following
-command:
-
-sudo yum install -y curl
-
-1.  **Download the Node.js setup script:**
-
-curl -fsSL https://rpm.nodesource.com/setup_20.x -o nodesource_setup.sh
-
-2.  **Run the Node.js setup script as root:**
-
-sudo bash nodesource_setup.sh
-
-3.  **Install Node.js:**
-
-sudo yum install -y nodejs
-
-4.  **Verify the installation:**
-
-node -v
-
-##### 
-
-##### **No root privileges (Node.js 20)**
-
-Before you begin, ensure that curl is installed on your system.
-If curl is not installed, you can install it using the following
-command:
-
-yum install -y curl
-
-1.  **Download the Node.js setup script:**
-
-curl -fsSL https://rpm.nodesource.com/setup_20.x -o nodesource_setup.sh
-
-2.  **Run the Node.js setup script as root:**
-
-bash nodesource_setup.sh
-
-3.  **Install Node.js:**
-
-yum install -y nodejs
-
-4.  **Verify the installation:**
-
-node -v
-
-**Node.js v18.x**
-
-##### **As root (Node.js 18)**
-
-Before you begin, ensure that curl is installed on your system.
-If curl is not installed, you can install it using the following
-command:
-
-sudo yum install -y curl
-
-1.  **Download the Node.js setup script:**
-
-curl -fsSL https://rpm.nodesource.com/setup_18.x -o nodesource_setup.sh
-
-2.  **Run the Node.js setup script as root:**
-
-sudo bash nodesource_setup.sh
-
-3.  **Install Node.js:**
-
-sudo yum install -y nodejs
-
-4.  **Verify the installation:**
-
-node -v
-
-**Uninstall nodejs Enterprise Linux packages**
-
-To completely remove Node.js installed from the rpm.nodesource.com
-package methods above:
-
-Use sudo or run this as root
-
-yum remove nodejs &&\\
-
-rm -r /etc/yum.repos.d/nodesource\*.repo &&\\
-
-yum clean all
-
-**Installing Nodejs**
-
-Other Distro
-
-**Debian buster / bullseye, Ubuntu 20.04 / 22.04**
-
-Changing from version 9.7.x to 10.0.x I\'m using a new way to package
-penguins-eggs: nodejs is not more included on the package like before,
-but rely on it\'s presence in available repos.
-
-This is configured on the penguins-eggs package, who actually ask for
-: nodejs (\>= 18)  on it\'s DEBIAN/control file.
-
-Unfortunately, distros on this note and derivatives, have nodejs \>=18
-available on the their original repository.
-
-sudo apt-get install -y curl
-
-curl -fsSL https://deb.nodesource.com/setup_18.x -o nodesource_setup.sh
-
-sudo -E bash nodesource_setup.sh
-
-**UBUNTU 18.04 bionic, Debian stretch and derivatives**
-
-If you are using Ubuntu 18.04 bionic, or derivatives, I have good news
-too!
-
-It\'s not possible to install nodejs 18 on Ubuntu 18.04, but it\'s
-possible to use the same procedure to install nodejs 16.
-
-sudo apt-get install -y curl
-
-curl -fsSL https://deb.nodesource.com/setup_16.x -o nodesource_setup.sh
-
-sudo -E bash nodesource_setup.sh
-
-Installing eggs
-
-The most practical method is to add and use the
-penguins-eggs**-**ppa repository.
-
-## Method1:
-
-## Install from source
+## Method1: get-eggs (Debian/Devuan/Ubuntu)
 
 Install penguins-eggs and configure it with a single
-command[.]{dir="rtl"}
+command.
 
-The get**-**eggs command is used to add the **"**penguins-eggs**"**
+The `get-eggs` command is used to add the `penguins-eggs-ppa`
 repository and configure it on Arch, Debian, Devuan, Ubuntu, or their
-derivatives. Here\'s how you can use it:
+derivatives. Here's how you can use it:
 
-1.  Clone the get**-**eggs repository:
-
-![](media/image10.png){width="4.700588363954505in"
-height="3.0358081802274715in"}
-
+```
 git clone https://github.com/pieroproietti/get-eggs
-
-![](media/image11.png){width="5.125984251968504in"
-height="1.5060531496062992in"}
-
-Change into the get**-**eggs directory:
-
-\$ cd get-eggs
-
-![](media/image12.png){width="5.361157042869642in"
-height="0.8749442257217848in"}
-
-Run the get**-**eggs script with root privileges:
-
-![](media/image13.png){width="4.582352362204724in"
-height="1.6591863517060368in"}
-
+cd get-eggs
 sudo ./get-eggs
+```
 
-[]{dir="rtl"}By executing this script with root privileges, it will add
+By executing this script with root privileges, it will add
 the necessary repositories to your system. On Arch Linux, it will
-add the AUR repository **(**formerly known as **"**addaura**").** On
-Debian**-**based systems, including Ubuntu, it will add a PPA
-**(**Personal Package Archive**)** for **"**penguins-eggs**".**
+add the AUR repository (formerly known as addaura). On
+Debian-based systems, including Ubuntu, it will add [penguins-eggs-ppa]()
 
 Please note that running scripts with root privileges should be done
 with caution. Make sure you trust the source and understand the
 actions being performed by the script.
 
-![](media/image14.png){width="5.144325240594926in"
-height="2.9400798337707785in"}
-
-## Method2: 
-
-## penguins-eggs-ppa 
-
-**Repository (Debian based)**
+## Method2: penguins-eggs-ppa (Debian/Devuan/Ubuntu)
 
 Using ppa depository on Debian based:
 
@@ -505,47 +66,37 @@ To use the repository, follow these steps:
 
 1.  Copy and paste the following two lines into a terminal window:
 
-\$curl -fsSL https://pieroproietti.github.io/penguins-eggs-ppa/KEY.gpg
-\| sudo gpg \--dearmor -o /etc/apt/trusted.gpg.d/penguins-eggs.gpg
-
-\$sudo echo "deb \[arch=\$(dpkg \--print-architecture)\]
-https://pieroproietti.github.io/penguins-eggs-ppa ./" \| sudo tee
+```
+curl -fsSL https://pieroproietti.github.io/penguins-eggs-ppa/KEY.gpg
+| sudo gpg \--dearmor -o /etc/apt/trusted.gpg.d/penguins-eggs.gpg
+$sudo echo "deb \[arch=\$(dpkg \--print-architecture)\]
+https://pieroproietti.github.io/penguins-eggs-ppa ./" | sudo tee
 /etc/apt/sources.list.d/penguins-eggs.list \> /dev/null
-
-![](media/image15.png){width="5.212497812773403in"
-height="1.4185389326334208in"}
+```
 
 Now, you can use standard apt commands to install and upgrade the eggs
 package. Remember to run sudo apt update to update the package lists
 before installing or upgrading the eggs package.
 
-\$sudo apt update
+```
+sudo apt update
+sudo apt install penguins-eggs
+```
 
-\$ sudo apt install eggs
-
-[]{dir="rtl"}Once the eggs package is successfully installed, you can
-use the eggs command**-**line tool to add the penguins-eggs**-**ppa
+Once the eggs package is successfully installed, you can
+use the eggs command-line tool to add the penguins-eggs-ppa
 repository and receive updates via apt. To add the repository,
 execute the following command:
 
-\$ sudo eggs tools ppa \--add
 
-![](media/image16.png){width="5.34287510936133in"
-height="1.336706036745407in"}
-
-Final:
-
-![](media/image17.png){width="5.4301891951006125in"
-height="2.1295417760279967in"}
-
-[]{dir="rtl"}By following these steps, you can install the eggs package,
-resolve any missing dependencies, and add the penguins-eggs**-**ppa
+By following these steps, you can install the eggs package,
+resolve any missing dependencies, and add the penguins-eggs-ppa
 repository for future updates.
 
-##  Method4: eggs package (Debian based)
+##  Method4: download the package from sourceforge
 
-[]{dir="rtl"}If you prefer not to include the penguins-eggs**-**ppa
-repository in your system\'s repositories, you have an alternative
+If you prefer not to include the `penguins-eggs-ppa`
+repository in your system's repositories, you have an alternative
 method to install the eggs package. Follow these steps:
 
 1)  Visit the sourceforge site to download the latest version of the
@@ -556,41 +107,33 @@ method to install the eggs package. Follow these steps:
 
 https://sourceforge.net/projects/penguins-eggs/files/DEBS/
 
-![](media/image18.png){width="5.322057086614174in"
-height="1.4489162292213473in"}
-
 3)  Install the eggs package using the dpkg command with sudo. For
     example:
 
-sudo dpkg -i eggs-9.4.x.deb
-
-![](media/image19.png){width="5.356871172353456in"
-height="1.259342738407699in"}
+```
+sudo dpkg -i eggs-10.0.13.deb
+```
 
 4)  Since this is your first installation, there may be missing
     dependencies preventing the package from being fully installed.
     To resolve this, run the following command:
 
-\$ sudo apt install -f
+```
+sudo apt install -f
+```
 
-[]{dir="rtl"}This command will automatically install any missing
+This command will automatically install any missing
 dependencies required by the eggs package.
-
-![](media/image20.png){width="5.192057086614173in"
-height="1.279242125984252in"}
 
 5)  If you have the gdebi package manager installed on your system, you
     can use it to install the eggs package in graphical mode. Simply
-    right**-**click on the .deb file, select **"**Open with GDebi
-    Package Installer,**"** and follow the on**-**screen
+    right-click on the .deb file, select "Open with GDebi
+    Package Installer," and follow the on-screen
     instructions.
-
-![](media/image21.png){width="5.3798468941382325in"
-height="4.09976924759405in"}
 
 More details:
 
-[]{dir="rtl"}SourceForge.net is a widely recognized platform that
+SourceForge.net is a widely recognized platform that
 has been serving the software development community for many years.
 It has established itself as a reliable source for hosting and
 distributing open**-**source software projects. By hosting projects
@@ -604,7 +147,7 @@ the designated page for the penguins-eggs project on
 SourceForge.net, you can access the list of available .deb
 files.
 
-[]{dir="rtl"}Downloading the appropriate .deb file for your system
+Downloading the appropriate .deb file for your system
 architecture is crucial for a successful installation. Whether you
 are using an AMD64 or i386 system, SourceForge.net offers the
 necessary files to cater to your specific requirements. Once you
@@ -615,7 +158,7 @@ important to note that running the installation command as a superuser
 **(**using \`sudo\`**)** ensures that the necessary permissions are
 granted for the installation process.
 
-[]{dir="rtl"}During the installation, you may encounter dependency
+During the installation, you may encounter dependency
 issues. Dependencies are additional software components that need to
 be present on your system for the eggs package to function
 correctly. Resolving these dependencies is essential for a smooth
@@ -626,7 +169,7 @@ the package manager to fix any dependency**-**related issues.
 
 After successfully installing the eggs package and resolving any
 dependencies, it is always a good idea to verify the installation.
-Using the \`eggs status\` command, you can check the current status of
+Using the `eggs status` command, you can check the current status of
 the eggs package on your system. This command provides information
 about the installed version and any relevant updates or
 notifications.
@@ -635,19 +178,31 @@ By following these steps and utilizing SourceForge.net as a reliable
 source for the eggs package, you can ensure a seamless installation
 process and enjoy the benefits of this software on your system.
 
-## Method5: installing on Arch Linux
+## Method5: get-eggs (Arch linux)
 
-To configure the Chaotic**-**AUR repository and install the
+```
+git clone https://github.com/pieroproietti/get-eggs
+cd get-eggs
+sudo ./get-eggs
+```
+
+get-eggs, will autoconfigre chaotic-aur repository and will install penguins-eggs for you.
+
+
+## Methos6: Install from chaothis-aur repository (Archlinux)
+
+To configure the Chaotic-AUR repository and install the
 penguins-eggs package on Arch Linux, follow these steps:
 
-1)  Import the Chaotic**-**AUR repository key by running the following
+1)  Import the Chaotic-AUR repository key by running the following
     command:
 
-pacman-key \--recv-key FBA220DFC880C036 \--keyserver
-keyserver.ubuntu.com
+```
+pacman-key --recv-key FBA220DFC880C036 --keyserver keyserver.ubuntu.com
+```
 
-[]{dir="rtl"}Description: The pacman**-**key **\--**recv**-**key command
-is used in Arch Linux**-**based distributions, such as Manjaro, to
+Description: The pacman-key --recv-key command
+is used in Arch Linux-based distributions, such as Manjaro, to
 import and trust a specific GPG key. This command is typically used
 to validate the authenticity and integrity of packages downloaded from
 specific repositories.
@@ -663,16 +218,19 @@ Open a terminal or command prompt.
 
 Run the following command:
 
-\$ sudo pacman-key \--recv-key FBA220DFC880C036 \--keyserver
-keyserver.ubuntu.com
+```
+sudo pacman-key --recv-key FBA220DFC880C036 --keyserver keyserver.ubuntu.com
+```
 
-[]{dir="rtl"}This command will retrieve the specified key from the
+This command will retrieve the specified key from the
 keyserver and import it into your system\'s keyring. After the key
 is imported, you need to trust it by running the following command:
 
-\$ sudo pacman-key \--lsign-key FBA220DFC880C036
+```
+sudo pacman-key --lsign-key FBA220DFC880C036
+```
 
-[]{dir="rtl"}This command will locally sign the key, indicating that you
+This command will locally sign the key, indicating that you
 trust it.
 
 By importing and trusting the key, you can ensure the authenticity of
@@ -681,34 +239,41 @@ related package managers.
 
 2)  Sign the imported key by running the following command:
 
-\$ sudo pacman-key \--lsign-key FBA220DFC880C036
+```
+sudo pacman-key --lsign-key FBA220DFC880C036
+```
 
-3)  Install the Chaotic**-**AUR keyring and mirrorlist packages by
+3)  Install the Chaotic-AUR keyring and mirrorlist packages by
     running the following command:
 
-\$sudo pacman -U
-\'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-keyring.pkg.tar.zst\'
-\'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-mirrorlist.pkg.tar.zst\'
+```
+sudo pacman -U https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-keyring.pkg.tar.zst https://cdn-mirror.chaotic.cx/chaotic-aur chaotic-mirrorlist.pkg.tar.zst
+```
 
-4)  Open the **/**etc**/**pacman.conf file in a text editor and add
+
+4)  Open the `/etc/pacman.conf` file in a text editor and add
     the following lines at the end:
 
-\[chaotic-aur\]
-
+```
+[chaotic-aur\]
 Include = /etc/pacman.d/chaotic-mirrorlist
+```
 
 5)  Save the changes and exit the text editor.
 
 6)  Update the package lists by running the following command:
 
-\$ sudo pacman -Sy
+```
+sudo pacman -Sy
+``
 
 7)  Finally, install the penguins-eggs package by running the
     following command:
+```
+sudo pacman -Sy penguins-eggs
+```
 
-\$ sudo pacman -Sy penguins-eggs
-
-[]{dir="rtl"}By following these steps, you will successfully configure
+By following these steps, you will successfully configure
 the Chaotic**-**AUR repository and install the penguins-eggs package
 on your Arch Linux system.
 
@@ -1102,8 +667,6 @@ This will show additional information about the CLI, including the
 architecture, Node.js version, operating system, and versions of any
 plugins being used.
 
-![](media/image28.png){width="4.263176946631671in"
-height="3.601175634295713in"}
 
 If you prefer the output to be in JSON format, you can use
 the **\--**json flag. This will format the output as JSON, which can
@@ -1111,8 +674,5 @@ be useful if you want to programmatically parse the version
 information. []{dir="rtl"}Remember to include the eggs command
 before the version subcommand when running the command.
 
-![](media/image29.png){width="4.549653324584427in"
-height="1.6859120734908137in"}
 
-![image30.jpg](media/image30.jpg){width="7.103583770778653in"
-height="9.05511811023622in"}
+![image30.jpg](media/image30.jpg)
