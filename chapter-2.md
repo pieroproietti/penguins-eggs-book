@@ -166,34 +166,34 @@ structure.
 ### ISO-9660
 ISO-9660 is a standard file system for optical disc media, such
 as CD-ROMs and DVDs. It was developed by the International
-Organization for Standardization **(**ISO**)** and is widely used for
-storing data on these types of discs. The ISO**-**9660 file system
+Organization for Standardization (ISO) and is widely used for
+storing data on these types of discs. The ISO-9660 file system
 has certain limitations, such as a maximum file size of 4GB and a
 maximum directory depth of 8 levels. It also has restrictions on
 file and directory naming, limiting them to certain character sets and
-lengths**. []{dir="rtl"}** Despite its limitations, ISO**-**9660 is
+lengths. Despite its limitations, ISO-9660 is
 widely supported across different operating systems, making it a popular
 choice for distributing software and other data on optical discs. It
-allows for cross**-**platform compatibility, as most modern computers
+allows for cross-platform compatibility, as most modern computers
 and other devices can read ISO-9660 discs.
 
 ## Universal Disk Format (UDF)
 
 UDF is a file system standard for optical disc media, as well as for
 other types of storage devices such as flash drives and hard drives.
-UDF was developed to address the limitations of ISO**-**9660 and provide
+UDF was developed to address the limitations of ISO-9660 and provide
 more flexibility and features for storing and organizing data. UDF
 supports larger file sizes, longer file names, and deeper directory
-structures compared to ISO**-**9660. It also includes features such
+structures compared to ISO-9660. It also includes features such
 as support for metadata, file versioning, and resizable volumes. UDF
 is designed to be more adaptable to different types of storage media and
-is intended to be a more future**-**proof file system standard.
+is intended to be a more future-proof file system standard.
 
 UDF has gained wide adoption, particularly in the context of DVD and
-Blu**-**ray discs, where it is often used as the primary file
+Blu-ray discs, where it is often used as the primary file
 system. It is also supported by most modern operating systems,
 making it a versatile choice for data storage and distribution. In
-summary, ISO**-**9660 is an older file system standard primarily used
+summary, ISO-9660 is an older file system standard primarily used
 for optical disc media, while UDF is a more modern and flexible file
 system standard that is widely supported across different types of
 storage devices. Both standards have their own specific features and
@@ -202,9 +202,9 @@ case and compatibility requirements.
 
 # Live system file
 
-The SquashFS **(**SQUASH File System**)** is a read**-**only, compressed
-file system widely used in Linux**-**based operating systems. It is
-designed to be a space**-**efficient file system that can be mounted and
+The SquashFS (SQUASH File System) is a read-only, compressed
+file system widely used in Linux-based operating systems. It is
+designed to be a space-efficient file system that can be mounted and
 accessed as a normal file system, while also providing compression to
 minimize the storage requirements. Here's an in**-**depth
 explanation of SquashFS:
