@@ -660,5 +660,5 @@ network
 
 https://github.com/pieroproietti/penguins-eggs/tree/master/src/krill/modules
 
-![](media/image43.jpg){width="7.103583770778653in"
+![image43](media/image43.jpg){width="7.103583770778653in"
 height="9.05511811023622in"}

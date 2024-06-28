@@ -623,5 +623,5 @@ Here are a few popular privacy**-**focused cleaning tools for Linux:
     on the **"**Configure Sweeper**"** button. When you\'re ready,
     click the **"**Clean**"** button to start the cleaning process.
 
-![](media/image8.jpg){width="7.103583770778653in"
+![image8.jpg](media/image8.jpg){width="7.103583770778653in"
 height="9.05511811023622in"}

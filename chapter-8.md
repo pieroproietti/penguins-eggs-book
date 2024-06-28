@@ -905,5 +905,5 @@ Default grub boot menu:
 ![](media/image100.png){width="3.612580927384077in"
 height="1.8858366141732283in"}
 
-![](media/image101.jpg){width="7.103583770778653in"
+![image101.jpg](media/image101.jpg){width="7.103583770778653in"
 height="9.05511811023622in"}

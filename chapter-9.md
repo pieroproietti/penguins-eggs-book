@@ -1031,5 +1031,5 @@ In the third example, running the command with
 **"**wagtail**/**waydroid**"** specified will wear the
 **"**waydroid**"** costume from the **"**wagtail**"** wardrobe.
 
-![](media/image108.jpg){width="7.103472222222222in"
+![image108.jpg](media/image108.jpg){width="7.103472222222222in"
 height="9.052777777777777in"}

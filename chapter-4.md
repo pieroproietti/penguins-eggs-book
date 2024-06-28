@@ -1322,5 +1322,5 @@ ISO file image and remaster the system.
 
 6)  It supports bootable media customization, including boot
 
-![](media/image9.jpg){width="7.103583770778653in"
+![image9.jpg](media/image9.jpg){width="7.103583770778653in"
 height="9.05511811023622in"}

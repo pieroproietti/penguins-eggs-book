@@ -773,5 +773,5 @@ For that reason I decided to highlight the change by changing in
 addition to the release also the name of the package itself, no
 longer eggs but penguins-eggs. Commands and logic remain the same.
 
-![](media/image78.jpg){width="7.103583770778653in"
+![image78.jpg](media/image78.jpg){width="7.103583770778653in"
 height="9.05511811023622in"}

@@ -1009,5 +1009,4 @@ environments. Here's an in**-**depth exploration of the
     character encoding, text display, or language**-**specific
     functionality within the system environment.
 
-![](media/image7.jpg){width="6.692361111111111in"
-height="9.027777777777779in"}
+![image7.jpg](media/image7.jpg)

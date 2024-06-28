@@ -1115,5 +1115,5 @@ before the version subcommand when running the command.
 ![](media/image29.png){width="4.549653324584427in"
 height="1.6859120734908137in"}
 
-![](media/image30.jpg){width="7.103583770778653in"
+![image30.jpg](media/image30.jpg){width="7.103583770778653in"
 height="9.05511811023622in"}
