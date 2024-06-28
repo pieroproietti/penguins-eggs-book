@@ -26,7 +26,7 @@ hardware compatibility, trying out different Linux distributions,
 troubleshooting system issues, and performing various administrative
 tasks. Linux distributions often provide official Live ISO images
 for users to download and use. These images typically include a
-fully functional desktop environment, a set of pre**-**installed
+fully functional desktop environment, a set of pre-installed
 applications, and tools for installation and system maintenance.
 Additionally, users can create their own customized Live ISO images to
 tailor the environment to their specific needs.
@@ -56,9 +56,9 @@ administrators. These benefits include:
 
 Creating a Live ISO image in Linux involves customizing a base Linux
 distribution and packaging it into a bootable ISO file. Here's a
-step**-**by**-**step guide to creating a Live ISO image using popular
-open**-**source tools such as Ubuntu Customization Kit **(**UCK**)** and
-the command**-**line tool mkisofs.
+step-by-step guide to creating a Live ISO image using popular
+open-source tools such as Ubuntu Customization Kit (UCK) and
+the command-line tool mkisofs.
 
 1.  Choose a Base Distribution: Select a base Linux distribution such as
     Ubuntu, Fedora, or Debian to serve as the foundation for your Live
@@ -75,10 +75,10 @@ the command**-**line tool mkisofs.
 4.  Install Optional tools : If using your own distro you can
     customization process through a user**-**friendly interface.
 
-5.  Use Command**-**line Tools: Alternatively, use command**-**line
-    tools such as chroot to create a chroot environment, modify the
+5.  Use Command-line Tools: Alternatively, use command-line
+    tools such as `chroot` to create a chroot environment, modify the
     filesystem, and subsequently create the Live ISO image using the
-    mkisofs tool.
+    `mkisofs` tool.
 
 6.  Test the Live ISO Image: Once the customization is complete, test
     the Live ISO image in a virtual machine or by writing it to a USB
@@ -107,7 +107,7 @@ configurations, adding scripts or additional files, and making any other
 necessary adjustments.
 
 Tools like Cubic, Ubuntu Customization Kit, and SUSE Studio are useful
-for customizing Ubuntu and SUSE Linux**-**based distributions,
+for customizing Ubuntu and SUSE Linux-based distributions,
 respectively. These tools provide a graphical interface for
 modifying the ISO image without requiring extensive knowledge of the
 command line. Once you have made all the desired customizations, you
@@ -122,33 +122,39 @@ distributions tailored to particular use cases.
 
 The .iso file extension denotes an uncompressed archive disk image
 file that mirrors the entire data content of an optical disc, such as a
-CD or DVD. Adhering to the ISO**-**9660 standard, the ISO image file
+CD or DVD. Adhering to the ISO-9660 standard, the ISO image file
 format embodies the disc data along with its associated filesystem
 information, allowing ISO files to house precise replicas of content and
 make perfect copies of CDs**/**DVDs for bootable data storage and
-installation. These files are usually burned onto USB**/**CD**/**DVD
-for booting during installation and are identified by the MIME type
-application**/**x**-**iso9660**-**image.
+installation. These files are usually burned onto USB/CD/DVD
+for booting during installation and are identified by the 
+`MIME type application/x-iso9660-image`.
 
 The ISO file format is unique, as it encapsulates specified data content
 within a binary file accurately representing the content and filesystem
 structure. ISO images, regardless of the standard, can be created
 from optical discs, a collection of files, or by conversion from another
 disk image file, and can be written onto optical discs like CDs, DVDs,
-and Blue**-**Rays. They store user data from each optical disc
+and Blue-Rays. 
+
+They store user data from each optical disc
 sector, excluding control headers and error correction data, yielding
 slightly smaller file sizes. Aside from ISO 9660 media, an ISO image
 may also contain a UDF file system, often utilized by DVDs and
-Blu**-**ray Discs, including the data in binary format as it was stored
-on the disc. The .iso file extension is the most common for this
+Blu-ray Discs, including the data in binary format as it was stored
+on the disc. 
+
+The .iso file extension is the most common for this
 type of disc image, while the .img extension is found in some ISO
-image files with slightly different contents. ISO files store only
+image files with slightly different contents.
+
+ISO files store only
 the user data from each sector on an optical disc, rendering them
 substantially smaller than raw optical disc images. ISO images can
-be opened with almost every multi**-**format file archiver and, with the
-appropriate driver software, can be **"**mounted**"** to interface with
-it as if it were a physical optical disc. Most Unix**-**based
-operating systems and versions of Windows have built**-**in capabilities
+be opened with almost every multi-format file archiver and, with the
+appropriate driver software, can be `mounted` to interface with
+it as if it were a physical optical disc. Most Unix-based
+operating systems and versions of Windows have built-in capabilities
 for handling ISO images, allowing files to be copied or transferred over
 any data link or removable storage medium. The ISO 9660 standard
 specifies three levels of interchange, each with specific limits on
@@ -157,9 +163,9 @@ hierarchy and path length of files. The standard ensures the
 efficient organization and access of data within the ISO 9660 directory
 structure.
 
-[]{#_Toc155423194 .anchor}**ISO-9660\
-** ISO**-**9660 is a standard file system for optical disc media, such
-as CD**-**ROMs and DVDs. It was developed by the International
+### ISO-9660
+ISO-9660 is a standard file system for optical disc media, such
+as CD-ROMs and DVDs. It was developed by the International
 Organization for Standardization **(**ISO**)** and is widely used for
 storing data on these types of discs. The ISO**-**9660 file system
 has certain limitations, such as a maximum file size of 4GB and a
