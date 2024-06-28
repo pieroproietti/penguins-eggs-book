@@ -206,16 +206,16 @@ The SquashFS (SQUASH File System) is a read-only, compressed
 file system widely used in Linux-based operating systems. It is
 designed to be a space-efficient file system that can be mounted and
 accessed as a normal file system, while also providing compression to
-minimize the storage requirements. Here's an in**-**depth
+minimize the storage requirements. Here's an in-depth
 explanation of SquashFS:
 
 ## Introduction to SquashFS
 
 SquashFS was originally developed and is released under the GNU General
 Public License. It is known for its high compression ratio and
-read**-**only nature, making it particularly useful for embedding into
+read-only nature, making it particularly useful for embedding into
 operating system images, live CDs, and other scenarios where
-read**-**only access to compressed file systems is required.
+read-only access to compressed file systems is required.
 
 ## File Compression
 
@@ -228,26 +228,26 @@ advantageous for distributions where storage space is a concern.
 ## Structure of SquashFS
 
 SquashFS consists of multiple components, including the main file system
-image, an associated meta**-**data block, and an optional index
+image, an associated meta-data block, and an optional index
 table. The file system image contains the compressed data, while the
-meta**-**data block stores information about files, directories, and
+meta-data block stores information about files, directories, and
 their attributes, facilitating quick file lookup and access. The
 index table, if present, improves access performance by providing a
 sorted listing of file system components.
 
 ## Read-Only Nature
 
-SquashFS is intended to be a read**-**only file system and does not
+SquashFS is intended to be a read-only file system and does not
 support write operations. This is beneficial for scenarios where a
-file system needs to be distributed as a read**-**only image, ensuring
+file system needs to be distributed as a read-only image, ensuring
 that its contents remain unchanged. While this makes SquashFS
-unsuitable for use as a general**-**purpose read**-**write file system,
-its focus on read**-**only access aligns with its primary use cases.
+unsuitable for use as a general-purpose read-write file system,
+its focus on read-only access aligns with its primary use cases.
 
 ## Use Cases
 
 SquashFS is commonly employed in scenarios where efficient,
-read**-**only access to a compressed file system is necessary. Some
+read-only access to a compressed file system is necessary. Some
 prominent use cases include:
 
 -   Live CDs and bootable USB drives: Many Linux distributions use
@@ -256,8 +256,8 @@ prominent use cases include:
     needing to install it on their hard drive.
 
 -   Embedded systems: SquashFS is often used in embedded devices, such
-    as routers, set**-**top boxes, and other appliances, where
-    space**-**efficient storage and read**-**only access are
+    as routers, set-top boxes, and other appliances, where
+    space-efficient storage and read-only access are
     essential.
 
 -   Software distribution: software vendors to create compressed file
@@ -285,14 +285,14 @@ method based on their specific requirements and constraints.
 
 1)  **gzip:** This is a widely used compression algorithm known for its
     balance between compression ratio and speed. It is
-    well**-**suited for general**-**purpose compression and
+    well-suited for general-purpose compression and
     compatibility but may not provide the highest compression ratios or
     fastest decompression speeds.
 
 2)  **lzo:** LZO is known for its fast compression and decompression
     speeds, making it suitable for scenarios where rapid file access is
     essential. While it may not achieve the highest compression
-    ratios, it excels in performance**-**critical applications.
+    ratios, it excels in performance-critical applications.
 
 3)  **lz4:** LZ4 is another fast compression algorithm, known for its
     exceptional compression and decompression speeds, making it ideal
@@ -302,7 +302,7 @@ method based on their specific requirements and constraints.
 
 4)  **xz:** XZ, based on the LZMA compression algorithm, offers
     excellent compression ratios at the cost of slightly slower
-    compression and decompression speeds. It is well**-**suited for
+    compression and decompression speeds. It is well-suited for
     scenarios where optimal compression is a priority, such as archival
     and distribution purposes.
 
@@ -329,11 +329,11 @@ operations. Through its integration with the Linux kernel, it
 delivers robust performance and seamless interoperability with the
 broader Linux ecosystem.
 
-# Mksquashfs
+# `mksquashfs`
 
-Mksquashfs is a command**-**line tool used for creating squashfs
-filesystem images on Unix**-**like operating systems. Squashfs is a
-compressed read**-**only file system that can be used for embedded
+`mksquashfs` is a command-line tool used for creating squashfs
+filesystem images on Unix-like operating systems. Squashfs is a
+compressed read-only file system that can be used for embedded
 systems, live CDs, and other similar scenarios. Mksquashfs enables
 users to generate squashfs file system images from a designated
 directory structure, preserving file attributes, ownership, and
@@ -351,7 +351,7 @@ distribution. By integrating mksquashfs with other tools and
 processes, users can automate the creation of squashfs images,
 streamlining repetitive tasks and workflows.
 
-[]{dir="rtl"}The hierarchical file and directory structures can be
+The hierarchical file and directory structures can be
 preserved within the squashfs image, ensuring the fidelity and
 organization of the source data. Mksquashfs is widely used for
 creating compressed file system images for embedded devices, where
@@ -362,7 +362,7 @@ images. Documentation and community support for mksquashfs provide
 users with the necessary resources and guidance to effectively utilize
 its features and address potential challenges.
 
-[]{dir="rtl"}Mksquashfs allows the creation of multiple squashfs images,
+Mksquashfs allows the creation of multiple squashfs images,
 each tailored to specific use cases, such as embedded systems, live
 environments, and data distribution. The command**-**line interface
 of mksquashfs allows for precise and granular control over squashfs
@@ -373,7 +373,7 @@ squashfs images. Mksquashfs' support for integrating additional
 metadata and annotations into squashfs images enhances their
 informational and organizational value.
 
-[]{dir="rtl"}The validation and verification mechanisms provided by
+The validation and verification mechanisms provided by
 mksquashfs aid in confirming the integrity and completeness of squashfs
 images, promoting trust and reliability in their use.
 Mksquashfs's adherence to well**-**established conventions and best
@@ -384,7 +384,7 @@ By accommodating long file names, deep directory trees, and complex file
 attributes, mksquashfs ensures the creation of comprehensive squashfs
 images suitable for diverse scenarios.
 
-[]{dir="rtl"}The tool's efficiency in handling a wide variety of
+The tool's efficiency in handling a wide variety of
 file attributes and metadata ensures the faithful representation of the
 source data within the squashfs image. The comprehensive options
 provided by mksquashfs for fine**-**tuning the squashfs image generation
@@ -393,7 +393,7 @@ preferences. The facilitation of squashfs image creation through the
 efficient processing and compression of source file systems streamlines
 the archiving and distribution of data.
 
-[]{dir="rtl"}The integration of resource forks, extended attributes, and
+The integration of resource forks, extended attributes, and
 special file types into squashfs images by mksquashfs preserves the
 richness and complexity of the source file system. Mksquashfs's
 support for hierarchical directory structures and symbolic links ensures
@@ -402,7 +402,7 @@ squashfs image. The streamlined integration of mksquashfs with other
 tools and processes enables the creation of squashfs images as part of
 broader build systems and workflows.
 
-[]{dir="rtl"}The comprehensive error reporting and feedback mechanisms
+The comprehensive error reporting and feedback mechanisms
 of mksquashfs contribute to the transparency and comprehensibility of
 the squashfs image creation process. When creating squashfs images,
 mksquashfs ensures the resilience and stability of the resulting file
@@ -413,7 +413,7 @@ challenges. The continuous improvement and adaptation of mksquashfs
 to emerging technologies and standards reflect its commitment to
 remaining relevant and effective in modern computing environments.
 
-[]{dir="rtl"}The seamless integration of squashfs images created with
+The seamless integration of squashfs images created with
 mksquashfs with various operating systems and virtualization platforms
 ensures broad compatibility. Mksquashfs's validation
 capabilities for ensuring the structural and content integrity of
@@ -425,15 +425,15 @@ to industry standards and are readily accessible on various
 platforms.
 
 The mksquashfs command in Linux is used to create a compressed
-read**-**only file system in squashfs format. It is a useful tool
-for creating efficient and space**-**saving file systems, commonly used
+read-only file system in squashfs format. It is a useful tool
+for creating efficient and space-saving file systems, commonly used
 in embedded systems, Live CDs, and other scenarios where space is at a
 premium.
 
 The command has the following syntax:
-
-\$sudo mksquashfs \<source_directory\> \<output_file\> \[options\...\]
-
+```
+sudo mksquashfs <source_directory> <output_file> [options\...]
+```
 Where:
 
 -   **\<**source_directory**\>** is the directory that will be converted
