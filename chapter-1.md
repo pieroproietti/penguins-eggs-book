@@ -213,6 +213,6 @@ security and system integrity through its default practice of
 exclusively utilizing original distributions' packages without any
 modifications in the repository lists.
 
-<https://github.com/pieroproietti/penguins-eggs/tree/master/changelog.d>
+Yuo can fine more information on [CHANGELOG](https://github.com/pieroproietti/penguins-eggs/CHANGELOG.md)
 
 ![image6.jpg](media/image6.jpg)
