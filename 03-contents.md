@@ -132,47 +132,24 @@
     * [Updating the eggs](/50-chapter-5.md#updating-the-eggs)
     * [eggs version](/50-chapter-5.md#eggs-version)
 
-[Chapter 6 [124](#chapter-6)](#chapter-6)
-[Eggs Installer [124](#eggs-installer)](#eggs-installer)
-[1.Calamares Installer (GUI):
-[124](#calamares-installer-gui)](#calamares-installer-gui)
+* [Chapter 6](/60-chapter-6.md#chapter-6)
 
-[2.Krill Installer (TUI):
-[124](#krill-installer-tui)](#krill-installer-tui)
-
-[Method 1. Calamares installer (GUI)
-[125](#method-1.-calamares-installer-gui)](#method-1.-calamares-installer-gui)
-
-[What is calamares [125](#what-is-calamares)](#what-is-calamares)
-
-[Calamares modules [125](#calamares-modules)](#calamares-modules)
-
-[Calamares installation
-[127](#calamares-installation)](#calamares-installation)
-
-[Step 1:  installing Calamares using the distribution\'s repository
-[127](#step-1-installing-calamares-using-the-distributions-repository)](#step-1-installing-calamares-using-the-distributions-repository)
-
-[Step 2: installing calamares with eggs
-[130](#step-2-installing-calamares-with-eggs)](#step-2-installing-calamares-with-eggs)
-
-[Calamares settings [132](#calamares-settings)](#calamares-settings)
-
-[settings.conf [133](#settings.conf)](#settings.conf)
-
-[Branding [135](#branding)](#branding)
-
-[modules [140](#modules)](#modules)
-
-[Method2: The Krill installer (TUI)
-[142](#method2-the-krill-installer-tui)](#method2-the-krill-installer-tui)
-
-[Config krill manually:
-[143](#config-krill-manually)](#config-krill-manually)
-
-[The content of krill.yaml
-[144](#the-content-of-krill.yaml)](#the-content-of-krill.yaml)
-
+    * [Calamares Installer](/60-chapter-6.md#calamares-installer-gui)
+    * [Krill Installer](/60-chapter-6.md#krill-installer-tui)
+    * [Method 1. Calamares installer (GUI)](/60-chapter-6.md#method-1.-calamares-installer-gui)
+    * [What is calamares](/60-chapter-6.md#what-is-calamares)
+    * [Calamares modules](/60-chapter-6.md#calamares-modules)
+    * [Calamares installation](/60-chapter-6.md#calamares-installation)](#calamares-installation)
+    * [Step 1:  installing Calamares using the distribution\'s repository](/60-chapter-6.md#step-1-installing-calamares-using-the-distributions-repository)
+    * [Step 2: installing calamares with eggs](/60-chapter-6.md#step-2-installing-calamares-with-eggs)
+    * [Calamares settings](/60-chapter-6.md#calamares-settings)
+    * [settings.conf](/60-chapter-6.md#settings.conf)
+    * [Branding](/60-chapter-6.md#branding)
+    * [modules ](/60-chapter-6.md#modules)
+    * [Method2: The Krill installer (TUI)](/60-chapter-6.md#method2-the-krill-installer-tui)
+    * [Config krill manually:](/60-chapter-6.md#config-krill-manually)
+    * [The content of krill.yaml](/60-chapter-6.md#the-content-of-krill.yaml)
+    
 [Chapter 7 [148](#chapter-7)](#chapter-7)
 
 [Eggs Configuration [148](#eggs-configuration)](#eggs-configuration)
