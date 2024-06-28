@@ -395,6 +395,7 @@ npm --version
 ```
 sudo pacman -Syu
 ```
+
 2)  Install Node.js and npm:
 
 ```
@@ -440,7 +441,9 @@ use penguins-eggs from the source code:
     the pnpm package manager. On Manjaro, you can run the following
     command to install them:
 
+```
 sudo pamac install nodejs pnpm devel-base
+```
 
 On Debian/Devuan/Ubuntu, it is recommended to use the NodeSource
 repository to install Node.js version 18.x.
@@ -448,7 +451,9 @@ repository to install Node.js version 18.x.
 2)  Once Node.js and npm are installed, you can
     install pnpm globally by running the following command:
 
+```
 sudo npm i pnpm -g
+```
 
 3)  Clone the penguins-eggs source code repository by running the
     following command:
@@ -478,6 +483,7 @@ command:
 ```
 sudo ./eggs produce --verbose
 ```
+
 Please note that when using the source code, you need to specify the
 path to start eggs as `/eggs`, and you should launch it from
 the `~/penguins-eggs` directory. 
@@ -492,8 +498,8 @@ packages.
 
 # Updating the eggs
 
-Once the package is installed, you can use the command `eggs tools ppa
---add` to add the repository `penguins-eggs-ppa` and get all the
+Once the package is installed, you can use the command 
+`eggs tools ppa --add` to add the repository `penguins-eggs-ppa` and get all the
 updates to eggs via the command apt. To do this simply issue the
 command:
 
@@ -530,32 +536,32 @@ sources or removing access to certain packages. Exercise caution and
 ensure that you are familiar with the PPA and its contents before adding
 or removing it.
 
-Here\'s a more detailed description of each flag used in the eggs tools
+Here's a more detailed description of each flag used in the eggs tools
 ppa command:
 
--   **-**a, **\--**add: This flag adds the penguins-eggs PPA
+-   `-a, --add`: This flag adds the penguins-eggs PPA
     repository to the system. PPAs are additional software
     repositories commonly used in Debian**-**based systems to provide
     access to packages not available in the official repositories.
     Adding a PPA allows you to install software from that
     repository.
 
--   **-**h, **\--**help: This flag displays the help message for
+-   `-h, --help`: This flag displays the help message for
     the eggs tools ppa command. It provides information about the
     command\'s usage, flags, and EXAMPLES:.
 
--   **-**n, **\--**nointeractive: This flag allows the operation to be
+-   `-n, --nointeractive`: This flag allows the operation to be
     performed without any user interaction. When this flag is used,
     the command will not prompt for any confirmation or additional
     input. It can be useful when you want to automate the process of
     adding or removing a PPA repository.
 
--   **-**r, **\--**remove: This flag removes the penguins-eggs PPA
+-   `-r, --remove`: This flag removes the penguins-eggs PPA
     repository from the system. Removing a PPA repository can be
     useful if you no longer need the packages provided by that
     repository or if you want to clean up your system.
 
--   **-**v, **\--**verbose: This flag enables verbose output, providing
+-   `-v, --verbose`: This flag enables verbose output, providing
     more detailed information during the execution of the eggs tools
     ppa command. It can be helpful for understanding the progress
     and actions taken during the operation.
@@ -566,14 +572,15 @@ access additional software packages, while removing a PPA removes access
 to those packages.
 
 Here are a couple of EXAMPLES::
-
-\$ sudo eggs tools ppa \--add
-
+```
+sudo eggs tools ppa --add
+```
 This command adds the penguins-eggs PPA repository to the system,
 allowing you to install software packages from that repository.
 
-\$ sudo eggs tools ppa \--remove
-
+```
+sudo eggs tools ppa --remove
+```
 This command removes the penguins-eggs PPA repository from the
 system, preventing further installations or updates from that
 repository. Please note that adding or removing PPA repositories can
