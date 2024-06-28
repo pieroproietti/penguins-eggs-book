@@ -78,70 +78,37 @@
     * [Stacer](/30-chapter-3.md#stacer)
     * [Sweeper](/30-chapter-3.md#sweeper)
 
-[Chapter 4 [63](#chapter-4)](#chapter-4)
-
-[Necessary file and tools
-[63](#necessary-file-and-tools)](#necessary-file-and-tools)
-
-[Filesystem Hierarchy Standard (FHS)
-[70](#filesystem-hierarchy-standard-fhs)](#filesystem-hierarchy-standard-fhs)
-
-[Necessary tools and packages
-[71](#necessary-tools-and-packages)](#necessary-tools-and-packages)
-
-[Isolinux [71](#isolinux-1)](#isolinux-1)
-
-[Live-boot [72](#live-boot)](#live-boot)
-
-[Live-boot-doc [72](#live-boot-doc)](#live-boot-doc)
-
-[Live-boot-initramfs-tools
-[73](#live-boot-initramfs-tools)](#live-boot-initramfs-tools)
-
-[Squashfs-tools [74](#squashfs-tools)](#squashfs-tools)
-
-[Syslinux [74](#syslinux-1)](#syslinux-1)
-
-[Syslinux-common [75](#syslinux-common)](#syslinux-common)
-
-[Cryptsetup [76](#cryptsetup)](#cryptsetup)
-
-[Dosfstools [76](#dosfstools)](#dosfstools)
-
-[Dpkg-dev [77](#dpkg-dev)](#dpkg-dev)
-
-[Coreutils [77](#coreutils)](#coreutils)
-
-[Genisoimage [78](#genisoimage-1)](#genisoimage-1)
-
-[Whoami [79](#whoami)](#whoami)
-
-[Cryptsetup [79](#cryptsetup-1)](#cryptsetup-1)
-
-[Curl [80](#curl)](#curl)
-
-[Dosfstools [81](#dosfstools-1)](#dosfstools-1)
-
-[Dpkg-dev [81](#dpkg-dev-1)](#dpkg-dev-1)
-
-[lsb-release [82](#lsb-release)](#lsb-release)
-
-[lvm2 [83](#lvm2)](#lvm2)
-
-[parted [83](#parted)](#parted)
-
-[pxelinux [84](#pxelinux)](#pxelinux)
-
-[rsync [85](#rsync)](#rsync)
-
-[Squashfs-tools [85](#squashfs-tools-1)](#squashfs-tools-1)
-
-[sshfs [86](#sshfs)](#sshfs)
-
-[syslinux-common [87](#syslinux-common-1)](#syslinux-common-1)
-
-[Genisoimage [87](#genisoimage-2)](#genisoimage-2)
-
+* [Chapter 4 [63](#chapter-4)](/40-chapter-4.md#chapter-4)
+    * [Necessary file and tools](/40-chapter-4.md#necessary-file-and-tools)
+    * [Filesystem Hierarchy Standard (FHS)](/40-chapter-4.md#filesystem-hierarchy-standard-fhs)
+    * [Necessary tools and packages](/40-chapter-4.md#necessary-tools-and-packages)
+    * [Isolinux](/40-chapter-4.md#isolinux-1)
+    * [Live-boot](/40-chapter-4.md#live-boot)
+    * [Live-boot-doc](/40-chapter-4.md#live-boot-doc)
+    * [Live-boot-initramfs-tools](/40-chapter-4.md#live-boot-initramfs-tools)
+    * [Squashfs-tools](/40-chapter-4.md#squashfs-tools)
+    * [Syslinux](/40-chapter-4.md#syslinux-1)
+    * [Syslinux-common](/40-chapter-4.md#syslinux-common)
+    * [Cryptsetup](/40-chapter-4.md#cryptsetup)
+    * [Dosfstools](/40-chapter-4.md#dosfstools)
+    * [Dpkg-dev](/40-chapter-4.md#dpkg-dev)
+    * [Coreutils](/40-chapter-4.md#coreutils)
+    * [Genisoimage](/40-chapter-4.md#genisoimage-1)
+    * [Whoami](/40-chapter-4.md#whoami)
+    * [Cryptsetup](/40-chapter-4.md#cryptsetup-1)
+    * [Curl](/40-chapter-4.md#curl)
+    * [Dosfstools](/40-chapter-4.md#dosfstools-1)
+    * [Dpkg-dev](/40-chapter-4.md#dpkg-dev-1)
+    * [lsb-release](/40-chapter-4.md#lsb-release)
+    * [lvm2](/40-chapter-4.md#lvm2)
+    * [parted](/40-chapter-4.md#parted)
+    * [pxelinux](/40-chapter-4.md#pxelinux)
+    * [rsync](/40-chapter-4.md#rsync)
+    * [Squashfs-tools](/40-chapter-4.md#squashfs-tools-1)
+    * [sshfs](/40-chapter-4.md#sshfs)
+    * [syslinux-common](/40-chapter-4.md#syslinux-common-1)
+    * [Genisoimage](/40-chapter-4.md#genisoimage-2)
+    
 [Chapter 5 [89](#chapter-5)](#chapter-5)
 
 [Installing Eggs [89](#installing-eggs)](#installing-eggs)
