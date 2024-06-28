@@ -498,9 +498,9 @@ root access to access certain files and directories.
 
 # Introduction to UEFI Boot
 
-[]{dir="rtl"}The Unified Extensible Firmware Interface **(**UEFI**)** is
+The Unified Extensible Firmware Interface (UEFI) is
 a modern firmware interface that has largely replaced the traditional
-BIOS **(**Basic Input**/**Output System**)** firmware found in older
+BIOS (Basic Input/Output System) firmware found in older
 computer systems. UEFI offers several advantages over BIOS,
 including support for larger hard drives, faster boot times, improved
 security, and greater flexibility in boot management.
@@ -508,15 +508,15 @@ security, and greater flexibility in boot management.
 ## Key Advantages of UEFI Boot
 
 1)  **Support for GPT:** UEFI supports the GUID Partition Table
-    **(**GPT**)** partitioning scheme, which allows for larger partition
-    sizes and more partitions than the older MBR **(**Master Boot
-    Record**)** scheme used with BIOS. This is particularly
-    beneficial for modern high**-**capacity storage devices.
+    **(GPT)** partitioning scheme, which allows for larger partition
+    sizes and more partitions than the older MBR (Master Boot
+    Record) scheme used with BIOS. This is particularly
+    beneficial for modern high-capacity storage devices.
 
-2)  **Faster Boot Times:** UEFI boot offers faster start**-**up times
+2)  **Faster Boot Times:** UEFI boot offers faster start-up times
     compared to traditional BIOS systems. UEFI firmware initializes
     hardware components in a more streamlined manner, leading to quicker
-    system boot**-**up.
+    system boot-up.
 
 3)  **Secure Boot:** UEFI introduces the concept of Secure Boot, which
     helps protect the boot process from malware and unauthorized
@@ -524,14 +524,14 @@ security, and greater flexibility in boot management.
     loaders, kernel modules, and other firmware components before
     allowing them to execute.
 
-4)  **UEFI Shell:** UEFI includes a built**-**in shell environment,
-    providing a command**-**line interface that allows for advanced
+4)  **UEFI Shell:** UEFI includes a built-in shell environment,
+    providing a command-line interface that allows for advanced
     system management tasks, such as troubleshooting and diagnosing boot
     issues, managing UEFI settings, and running UEFI applications.
 
 5)  **Network Booting:** UEFI supports network booting, enabling
     computers to boot from network resources using protocols such as PXE
-    **(**Preboot Execution Environment**).** This is especially useful
+    (Preboot Execution Environment). This is especially useful
     in enterprise environments for deploying and managing large numbers
     of computers.
 
@@ -547,7 +547,7 @@ security, and greater flexibility in boot management.
 
 # UEFI Boot Process
 
-[]{dir="rtl"}The UEFI boot process involves several stages, including
+The UEFI boot process involves several stages, including
 firmware initialization, execution of the UEFI boot manager, loading and
 executing the bootloader, and ultimately launching the operating
 system. This process is controlled by UEFI firmware, which manages
@@ -556,10 +556,10 @@ system configuration.
 
 # Compatibility with Legacy BIOS
 
-[]{dir="rtl"}UEFI systems often include a Compatibility Support Module
-**(**CSM**)** that allows them to boot legacy BIOS**-**based operating
+UEFI systems often include a Compatibility Support Module
+(CSM) that allows them to boot legacy BIOS**-**based operating
 systems and bootloaders. This ensures backward compatibility with
-older software that may not be UEFI**-**aware.
+older software that may not be UEFI-aware.
 
 ## UEFI Boot Components
 
@@ -591,7 +591,7 @@ executed.
 
 ## UEFI Shell
 
-[]{dir="rtl"}UEFI provides a built**-**in shell environment known as the
+UEFI provides a built-in shell environment known as the
 UEFI Shell. This command**-**line interface allows advanced system
 management tasks, such as diagnosing boot issues, updating UEFI
 settings, and running UEFI applications for configuration or
@@ -599,15 +599,15 @@ troubleshooting purposes.
 
 ## UEFI Variables
 
-[]{dir="rtl"}UEFI defines a standard for storing system configuration
+UEFI defines a standard for storing system configuration
 data known as UEFI variables. These variables can be used to store
 boot settings, system configuration parameters, and other
-firmware**-**related data that can be accessed and modified by the UEFI
+firmware-related data that can be accessed and modified by the UEFI
 firmware and UEFI applications.
 
 ## Vendor-specific UEFI Features
 
-[]{dir="rtl"}Various hardware vendors and system builders often provide
+Various hardware vendors and system builders often provide
 additional UEFI features and utilities tailored to their specific
 platforms. These may include advanced system diagnostics, firmware
 update tools, and UEFI configuration interfaces designed to enhance the
@@ -615,7 +615,7 @@ user experience and manage system settings.
 
 # Legacy BIOS 
 
-[]{dir="rtl"}The Basic Input**/**output System **(**BIOS**)**,
+The Basic Input/output System (BIOS),
 colloquially referred to as Legacy BIOS, traces its origins back to the
 early days of personal computing. Initially introduced by IBM in the
 1980s, BIOS served as the fundamental firmware interface for
@@ -631,22 +631,22 @@ initiating the boot process.
 
 2)  **Boot Process Management:** It executes the boot sequence by
     loading the operating system's bootloader from the Master Boot
-    Record **(**MBR**)** of the storage device, thereby launching the
+    Record (*MBR) of the storage device, thereby launching the
     operating system.
 
-3)  **System Configuration:** BIOS provides a user**-**accessible
+3)  **System Configuration:** BIOS provides a user-accessible
     interface, allowing users to configure various system settings, such
     as boot order, date and time, and hardware parameters.
 
 ## Key Characteristics of Legacy BIOS
 
-1)  **16-bit Real Mode:** Legacy BIOS operates in a 16**-**bit real
+1)  **16-bit Real Mode:** Legacy BIOS operates in a 16-bit real
     mode, reflecting its origins in the early era of x86 computing.
     This mode limits access to system memory and imposes certain
     constraints on system operations.
 
 2)  **Partitioning Scheme:** BIOS traditionally relies on the Master
-    Boot Record **(**MBR**)** partitioning scheme, which has limitations
+    Boot Record (MBR) partitioning scheme, which has limitations
     in terms of maximum partition size and the number of partitions,
     hindering support for modern storage devices.
 
@@ -662,17 +662,17 @@ initiating the boot process.
 
 ## Legacy and Modern Computing Environments
 
-[]{dir="rtl"}Despite the evolution towards UEFI as the dominant firmware
+Despite the evolution towards UEFI as the dominant firmware
 interface for modern computer systems, Legacy BIOS continues to maintain
 relevance, particularly in legacy hardware environments and for
 compatibility with older operating systems and bootloaders. Many
-modern systems offer a Compatibility Support Module **(**CSM**)** to
+modern systems offer a Compatibility Support Module (CSM) to
 enable Legacy BIOS mode for booting legacy software.
 
 # ISOLINUX
 
-[]{dir="rtl"}ISOLINUX is a boot loader for Linux that is used to boot
-operating systems from optical media, such as CDs, DVDs, and Blu**-**ray
+ISOLINUX is a boot loader for Linux that is used to boot
+operating systems from optical media, such as CDs, DVDs, and Blu-ray
 discs. It is part of the Syslinux project, which provides boot
 loaders for various file systems and media types, including hard drives,
 USB drives, and network booting. ISOLINUX is specifically designed
@@ -684,35 +684,35 @@ range of hardware, making it suitable for booting on different computer
 systems. Additionally, ISOLINUX provides a user**-**friendly
 interface for selecting and booting Linux distributions from optical
 media, which can be particularly useful for users who need to install or
-troubleshoot Linux**-**based systems. In summary, ISOLINUX is a boot
-loader designed for booting Linux**-**based operating systems from ISO
+troubleshoot Linux-based systems. In summary, ISOLINUX is a boot
+loader designed for booting Linux-based operating systems from ISO
 9660 file systems on optical media. It provides a customizable boot
 menu and offers compatibility with various hardware configurations,
 making it a valuable tool for creating bootable discs for Linux.
 
 # Syslinux
 
-[]{dir="rtl"}Syslinux is a popular collection of boot loaders for
+Syslinux is a popular collection of boot loaders for
 starting up operating systems on a wide range of devices. Initially
 developed by H. Peter Anvin, Syslinux aims to provide efficient and
 reliable booting solutions for various platforms and file systems.
 
 1)  One of the key components of Syslinux is SYSLINUX, a family of boot
     loaders specifically designed for booting from FAT, NTFS, and ext
-    file systems, as well as from CD**-**ROMs using the ISO 9660 file
+    file systems, as well as from CD-ROMs using the ISO 9660 file
     system.
 
 2)  ISOLINUX is a part of the Syslinux family and is used for booting
-    from optical media, such as CDs, DVDs, and Blu**-**ray discs, using
+    from optical media, such as CDs, DVDs, and Blu-ray discs, using
     the ISO 9660 file system.
 
 3)  PXELINUX is another member of Syslinux, focusing on booting from a
     network server, enabling diskless systems to boot from a remote
-    image using the Preboot eXecution Environment **(**PXE**)**
+    image using the Preboot eXecution Environment (PXE)
     protocol.
 
 4)  EXTLINUX, tailored for the ext file system, is designed to boot from
-    devices formatted with the Extended File System **(**ext**).**
+    devices formatted with the Extended File System (ext).
 
 5)  Syslinux's compatibility with various file systems and boot
     media makes it a versatile choice for booting Linux**-**based
@@ -727,11 +727,11 @@ reliable booting solutions for various platforms and file systems.
     specific needs.
 
 8)  Syslinux's flexibility extends to its support for both
-    BIOS**-**based and UEFI**-**based systems, making it suitable for
+    BIOS-based and UEFI-based systems, making it suitable for
     modern hardware while offering backward compatibility.
 
 9)  Configuring Syslinux is relatively straightforward, with options to
-    customize boot parameters, define boot time**-**out values, and
+    customize boot parameters, define boot time-out values, and
     create a visually distinct boot menu.
 
 10) The Syslinux Project continues to be maintained and expanded by the
@@ -740,9 +740,9 @@ reliable booting solutions for various platforms and file systems.
 
 # Mkisofs
 
-[]{dir="rtl"}mkisofs is a command**-**line tool used to create ISO 9660
+mkisofs is a command-line tool used to create ISO 9660
 file system images, commonly known as ISO images, from a given directory
-structure on Unix**-**like operating systems.
+structure on Unix-like operating systems.
 
 1)  By ensuring, the inclusion of file attributes, permissions, and
     ownership information, mkisofs maintains the integrity and
@@ -766,7 +766,7 @@ structure on Unix**-**like operating systems.
     standards and specifications ensures interoperability and
     compatibility with different operating systems and devices.
 
-6)  The clear and concise command**-**line interface
+6)  The clear and concise command-line interface
     of mkisofs facilitates the creation of ISO images through precise
     specification of parameters and options, allowing for granular
     control over the output.
@@ -780,10 +780,10 @@ structure on Unix**-**like operating systems.
     aiding in the identification and resolution of potential issues.
 
 9)  The continuous maintenance and improvement of mkisofs by its
-    developers and the open**-**source community ensure its adaptation
+    developers and the open-source community ensure its adaptation
     to evolving standards and technologies.
 
-10) By adhering to well**-**established conventions and best
+10) By adhering to well-established conventions and best
     practices, mkisofs fosters consistency and predictability in ISO
     image creation, contributing to a dependable user experience.
 
@@ -801,17 +801,17 @@ structure on Unix**-**like operating systems.
 
 # Genisoimage
 
-[]{dir="rtl"}Genisoimage is a command**-**line tool used for creating
+Genisoimage is a command-line tool used for creating
 ISO 9660 file system images, commonly known as ISO images, on
-Unix**-**like operating systems. Genisoimage provides extensive
+Unix-like operating systems. Genisoimage provides extensive
 functionality to generate ISO images from a specified directory
 structure, preserving the file attributes, ownership, and directory
 information. The tool allows users to customize ISO image creation
 by specifying volume attributes, boot information, and other metadata
-using command**-**line options.
+using command-line options.
 
 1)  The incorporation of volume labels, version information, and
-    application**-**specific metadata into ISO images by genisoimage
+    application-specific metadata into ISO images by genisoimage
     enhances their organization and informative value.
 
 2)  The thorough validation and verification mechanisms provided by
@@ -894,21 +894,21 @@ using command**-**line options.
 
 # Isohybrid
 
-[]{dir="rtl"}ISOHybrid is a technology that allows optical discs, such
+ISOHybrid is a technology that allows optical discs, such
 as CDs and DVDs, to function not only in legacy CD**/**DVD players, but
 also be booted as a USB drive or other removable media, effectively
-making the disc **"**hybrid**"** in nature. ISOHybrid bridges the
+making the disc `hybrid` in nature. ISOHybrid bridges the
 traditional compatibility of optical discs with modern booting methods,
 enabling users to create discs that are not only readable in standard
-CD**/**DVD players but also bootable in newer UEFI**-**based and legacy
-BIOS**-**based systems. The technology involves adding a Master Boot
-Record **(**MBR**)** to the beginning of the ISO 9660 file system,
+CD/DVD players but also bootable in newer UEFI-based and legacy
+BIOS-based systems. The technology involves adding a Master Boot
+Record (MBR) to the beginning of the ISO 9660 file system,
 making it recognizable as a bootable media for computers.
 
 # Host.conf
 
-[]{dir="rtl"}The hosts.conf file, also known as **"**hosts
-file,**"** is a critical configuration file in Unix**-**like operating
+The hosts.conf file, also known as **"**hosts
+file," is a critical configuration file in Unix-like operating
 systems, including Linux. It plays a pivotal role in mapping
 hostnames to IP addresses and is instrumental in local hostname
 resolution. Understanding the structure, purpose, and management of
@@ -916,22 +916,22 @@ the hosts.conf file is crucial for ensuring efficient networking and
 host identification within a Linux environment. Here's a
 comprehensive overview of the hosts.conf file and its
 significance. The hosts.conf file is typically located
-at **/**etc**/**hosts. It is a plain**-**text file that can be
-edited using a text editor or command**-**line tools. Each line
+at `/etc/hosts`. It is a plain-text file that can be
+edited using a text editor or command-ine tools. Each line
 within the file contains an IP address followed by one or more hostnames
 associated with that address.
 
-# language: \'en_US.UTF-8\'
+# language: 'en_US.UTF-8'
 
-[]{dir="rtl"}The 'en_US.UTF**-**8' locale represents the
-American English language and character encoding using UTF**-**8. It
-plays a crucial role in defining language**-**related settings and text
-encoding in Unix**-**like systems, including Linux. Understanding
+The `en_US.UTF-8` locale represents the
+American English language and character encoding using `UTF-8`. It
+plays a crucial role in defining language-related settings and text
+encoding in Unix-like systems, including Linux. Understanding
 the significance, implementation, and impact of the
-'en_US.UTF**-**8' locale is essential for ensuring language
+`en_US.UTF-8` locale is essential for ensuring language
 support and text handling within a diverse range of applications and
 environments. Here's an in**-**depth exploration of the
-'en_US.UTF**-**8' locale and its practical applications.
+`en_US.UTF-8` locale and its practical applications.
 
 ## Background and Significance
 
