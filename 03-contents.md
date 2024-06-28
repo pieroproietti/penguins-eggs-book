@@ -150,7 +150,7 @@
     * [Config krill manually:](/60-chapter-6.md#config-krill-manually)
     * [The content of krill.yaml](/60-chapter-6.md#the-content-of-krill.yaml)
     
-* [Chapter 7)](/70-chapter-7.md#chapter-7)
+* [Chapter 7](/70-chapter-7.md#chapter-7)
     * [Eggs Configuration](/70-chapter-7.md#eggs-configuration)
     * [Part1: configuration automatically](/70-chapter-7.md#part1-configuration-automatically)
     * [Eggs adaptive resolutions](/70-chapter-7.md#eggs-adaptive-resolutions)
@@ -187,47 +187,24 @@
     * [penguins-eggs-9.8.1](/70-chapter-7.md#penguins-eggs-9.8.1)
     * [penguins-eggs-9.8.0](/70-chapter-7.md#penguins-eggs-9.8.0)
 
-[Chapter 8 [179](#chapter-8)](#chapter-8)
-
-[Producing ISO image file
-[179](#producing-iso-image-file)](#producing-iso-image-file)
-
-[Step 1: cleaning the system
-[180](#step-1-cleaning-the-system)](#step-1-cleaning-the-system)
-
-[Cleaning with eggs [180](#cleaning-with-eggs)](#cleaning-with-eggs)
-
-[sudo eggs tools clean []{dir="rtl"}-v
-[180](#sudo-eggs-tools-clean--v)](#sudo-eggs-tools-clean--v)
-
-[Cleaning with bleachbit
-[182](#cleaning-with-bleachbit)](#cleaning-with-bleachbit)
-
-[Bleachbit help [186](#bleachbit-help)](#bleachbit-help)
-
-[Step2: show the status
-[189](#step2-show-the-status)](#step2-show-the-status)
-
-[Step3: preparing the skel folder
-[190](#step3-preparing-the-skel-folder)](#step3-preparing-the-skel-folder)
-
-[eggs tools skel [190](#eggs-tools-skel)](#eggs-tools-skel)
-
-[Step 4: prepare ISO for offline installation
-[195](#step-4-prepare-iso-for-offline-installation)](#step-4-prepare-iso-for-offline-installation)
-
-[Step 5: eggs produce [196](#step-5-eggs-produce)](#step-5-eggs-produce)
-
-[eggs produce command
-[196](#eggs-produce-command)](#eggs-produce-command)
-
-[Chapter 9 [210](#chapter-9)](#chapter-9)
-
-[After Producing [210](#after-producing)](#after-producing)
-
-[eggs syncto command [210](#eggs-syncto-command)](#eggs-syncto-command)
-
-[eggs syncfrom command
+* [Chapter 8 [179](#chapter-8)](/80-chapter-8.md#chapter-8)
+    * [Producing ISO image file](/80-chapter-8.md#producing-iso-image-file)
+    * [Step 1: cleaning the system](/80-chapter-8.md#step-1-cleaning-the-system)
+    * [Cleaning with eggs](/80-chapter-8.md#cleaning-with-eggs)
+    * [sudo eggs tools clean []{dir="rtl"}-v](/80-chapter-8.md#sudo-eggs-tools-clean--v)
+    * [Cleaning with bleachbit](/80-chapter-8.md#cleaning-with-bleachbit)
+    * [Bleachbit help](/80-chapter-8.md#bleachbit-help)
+    * [Step2: show the status](/80-chapter-8.md#step2-show-the-status)
+    * [Step3: preparing the skel folder](/80-chapter-8.md#step3-preparing-the-skel-folder)
+    * [eggs tools skel ](/80-chapter-8.md#eggs-tools-skel)
+    * [Step 4: prepare ISO for offline installation](/80-chapter-8.md#step-4-prepare-iso-for-offline-installation)
+    * [Step 5: eggs produce](/80-chapter-8.md#step-5-eggs-produce)
+    * [eggs produce command](/80-chapter-8.md#eggs-produce-command)
+     
+    [Chapter 9 [210](#chapter-9)](#chapter-9)
+    [After Producing [210](#after-producing)](#after-producing)
+    [eggs syncto command [210](#eggs-syncto-command)](#eggs-syncto-command)
+    [eggs syncfrom command
 [212](#eggs-syncfrom-command)](#eggs-syncfrom-command)
 
 [Testing the ISO [214](#testing-the-iso)](#testing-the-iso)
