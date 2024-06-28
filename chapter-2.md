@@ -436,16 +436,16 @@ sudo mksquashfs <source_directory> <output_file> [options\...]
 ```
 Where:
 
--   **\<**source_directory**\>** is the directory that will be converted
+-   `<source_directory>` is the directory that will be converted
     into a squashfs file system.
 
--   **\<**output_file**\>** is the name of the resulting squashfs
+-   `<output_file>` is the name of the resulting squashfs
     image.
 
--   \[options**\...**\] are the various compression options and settings
+-   `[options ...]` are the various compression options and settings
     that can be applied to the squashfs image.
 
-Now, let's discuss the compression **options** available
+Now, let's discuss the compression options available
 for mksquashfs:
 
 1)  gzip: This is the default compression algorithm used
@@ -478,18 +478,21 @@ The sudo mksquashfs command is used to create a SquashFS file system
 image in Linux. SquashFS is a compressed read**-**only file system
 that is commonly used in embedded systems and Live CDs. To use
 the sudo mksquashfs command, you need to
-replace **\<**source_directory**\>** with the directory you want to
-create an image of, and **\<**output_file**\>** with the desired name
+replace `<source_directory>` with the directory you want to
+create an image of, and `<output_file>` with the desired name
 and path for the resulting SquashFS image.
 
 Here\'s an example command:
-
+```
 sudo mksquashfs source_directory output_file.squashfs
+```
 
-[]{dir="rtl"}Make sure to replace /path/to/source_directory with the
+Make sure to replace `/path/to/source_directory` with the
 actual path to the directory you want to create an image of,
-and /path/to/output_file.squashfs with the desired path and name for the
-SquashFS image file. Note that the sudo command is used to run
+and `/path/to/output_file.squashfs` with the desired path and name for the
+SquashFS image file. 
+
+Note that the `sudo` command is used to run
 the mksquashfs command with administrative privileges, as it may require
 root access to access certain files and directories.
 
