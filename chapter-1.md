@@ -220,6 +220,8 @@ security and system integrity through its default practice of
 exclusively utilizing original distributions' packages without any
 modifications in the repository lists.
 
-Yuo can fine more information on [CHANGELOG](https://github.com/pieroproietti/penguins-eggs/CHANGELOG.md)
+# More informations
+Yuo can fine more information on [CHANGELOG](https://github.com/pieroproietti/penguins-eggs/blob/master/CHANGELOG.md#changelog) 
+on the [penguins-eggs repository](https://github.com/pieroproietti/penguins-eggs).
 
 ![image6.jpg](media/image6.jpg)
