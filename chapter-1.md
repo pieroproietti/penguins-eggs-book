@@ -18,7 +18,7 @@ configure the generated ISO for offline installation, useful for
 environments without internet access. It also offers a scripting mode
 for managing ISOs through custom scripts. You can even personalize the
 look and feel of the live CD and Calamares installer with images. This
-customization power is driven by [penguins-wardrobe](https:github.com/piero.proietti/penguins-wardrobe),\" a repository
+customization power is driven by [penguins-wardrobe](https:github.com/piero.proietti/penguins-wardrobe), a repository
 that provides tools to tailor Linux systems, even for minimal
 command-line installations. It lets you create customized live ISOs
 based on Debian, Ubuntu, and their derivatives. You can even use it to
@@ -66,12 +66,12 @@ traditional methods that involve copying the entire file system,
 eggs utilizes livefs, which allows for instant acquisition
 of the live system. By default, the tool :
 
-## Supports Compression Algorithm
+## Supports differents compression algorithm
 
 Employs the compression algorithm, significantly reducing the time
 required for the process when creating an installable ISO.
 
-penguins-eggs with its innovative utilization of the zstd level 3
+penguins-eggs with its innovative utilization of the `zstd level 3`
 compression algorithm as the default, is poised to revolutionize the
 realm of Linux distributions by redefining the parameters of speed and
 efficiency. This cutting-edge approach to compression stands as
