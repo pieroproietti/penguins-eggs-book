@@ -265,7 +265,7 @@ Include = /etc/pacman.d/chaotic-mirrorlist
 
 ```
 sudo pacman -Sy
-``
+```
 
 7)  Finally, install the penguins-eggs package by running the
     following command:
@@ -278,54 +278,63 @@ the Chaotic**-**AUR repository and install the penguins-eggs package
 on your Arch Linux system.
 
 **on Arch Linux**, you have multiple options to install eggs. One
-popular choice is to use the yay AUR helper. Here\'s how you can
+popular choice is to use the yay AUR helper. Here's how you can
 install eggs using yay:
 
 1)  Open a terminal and run the following command to install yay if you
     don\'t already have it:
 
-\$sudo pacman -Sy yay
+```
+sudo pacman -Sy yay
+```
 
 2)  Once yay is installed, you can use it to install eggs by running the
     following command:
-
-\$ sudo yay -S penguins-eggs
+```
+sudo yay -S penguins-eggs
+```
 
 yay will handle the installation process, including fetching the package
-from the AUR **(**Arch User Repository**)** and resolving any
-dependencies.
+from the AUR and resolving any dependencies.
 
 Alternatively, if you prefer a more traditional approach, you can
 manually build and install the penguins-eggs package from the AUR
-using git and pkgbuild commands. Here\'s how:
+using git and pkgbuild commands. Here's how:
 
 1)  Open a terminal and run the following command to clone
     the penguins-eggs AUR repository:
 
-\$ git clone https://aur.archlinux.org/penguins-eggs.git
+```
+git clone https://aur.archlinux.org/penguins-eggs.git
 penguins-eggs-aur
+```
 
 2)  Change your current directory to the newly cloned repository:
 
-\$ cd penguins-eggs-aur
+```
+cd penguins-eggs-aur
+```
 
 3)  Build and install the package using pkgbuild command:
 
-\$sudo makepkg -si
+```
+sudo makepkg -si
+```
 
 This command will build the package and prompt you for confirmation
 before installing it.
 
 ## Method6: Installing on Manjaro Linux
 
-[]{dir="rtl"}On Manjaro, you can easily install
-the penguins-eggs package from the Manjaro community repository
+On Manjaro, you can easily install the penguins-eggs package from the Manjaro community repository
 using the pamac package manager. Here are the steps to install it:
 
 1)  Open a terminal and run the following command to update your system
     packages:
 
-\$ sudo pamac upgrade
+```
+sudo pamac upgrade
+```
 
 This command ensures that your system is up to date before installing
 any new packages.
@@ -333,7 +342,9 @@ any new packages.
 2)  Once the system is updated, you can install penguins-eggs by
     running the following command:
 
-\$ sudo pamac install penguins-eggs
+```
+sudo pamac install penguins-eggs
+```
 
 The pamac command will handle the installation process, including
 fetching the package from the Manjaro community repository and resolving
@@ -341,15 +352,16 @@ any dependencies. By following these steps, you should be able to
 successfully install the penguins-eggs package on Manjaro using
 the pamac package manager.
 
-## Method7: installing by npm command
+## Method7: installing by pnpm command
 
 While it is technically possible to install penguins-eggs directly
 as an npm package, it is worth noting that the npm packages may still
 have dependencies that need to be installed separately.
 Additionally, since penguins-eggs is developed with Node.js, it
 is more commonly distributed as a package for specific Linux
-distributions or available in the AUR. If you still prefer to
-install penguins-eggs using npm and handle the installation of
+distributions or available in the AUR. 
+
+If you still prefer to install penguins-eggs using npm and handle the installation of
 dependencies separately, you can follow these general steps:
 
 1)  Ensure that you have Node.js and npm installed on your
@@ -371,102 +383,52 @@ and Fedora**-**based systems:
 
 1)  Open a terminal and update the package lists:
 
+```
 sudo apt update
+```
 
 2)  Install Node.js and npm:
 
+```
 sudo apt install nodejs npm
+```
 
 3)  Verify the installation:
 
-node \--version
-
-npm \--version
+```
+node --version
+npm --version
+```
 
 ## Arch-based (e.g., Arch Linux, Manjaro):
 
 1)  Open a terminal and update the package lists:
 
+```
 sudo pacman -Syu
-
+```
 2)  Install Node.js and npm:
 
+```
 sudo pacman -S nodejs npm
-
+```
 3)  Verify the installation:
 
-node \--version
-
-npm \--version
-
-## Red Hat-based (e.g., CentOS, RHEL):
-
-1)  Open a terminal and update the package lists:
-
-sudo yum update
-
-2)  Enable the EPEL repository **(**Extra Packages for Enterprise
-    Linux**)**:
-
-sudo yum install epel-release
-
-3)  Install Node.js and npm:
-
-sudo yum install nodejs npm
-
-4)  Verify the installation:
-
-node \--version
-
-npm \--version
-
-## Fedora-based (e.g., Fedora):
-
-1)  Open a terminal and update the package lists:
-
-sudo dnf update
-
-2)  Install Node.js and npm:
-
-sudo dnf install nodejs npm
-
-3)  Verify the installation:
-
-node \--version
-
-npm \--version
-
-These steps should help you install Node.js and npm on the
-respective Linux distributions. After installation, you can start
-using Node.js and npm for your development needs.
-
-![](media/image22.png){width="5.273392388451444in"
-height="3.5877777777777777in"}
-
-You can check if they are already installed by running the following
-commands in a terminal:
-
-node -v
-
-npm -v
-
-If they are not installed, you can refer to the Node.js and npm
-documentation for instructions on how to install them.
-
-![](media/image23.png){width="4.929396325459318in"
-height="1.6823326771653544in"}
+```
+node --version
+npm --version
+```
 
 2)  Once you have Node.js and npm installed, you can
     install penguins-eggs by running the following command in a
     terminal:
 
-\$ sudo npm install -g penguins-eggs
+```
+sudo npm install -g penguins-eggs
+```
 
 This command will install the penguins-eggs package globally on your
 system.
-
-![](media/image24.png){width="4.949583333333333in"
-height="1.172998687664042in"}
 
 3)  After installing penguins-eggs, you will need to manually handle
     the installation of any dependencies that are required by the
@@ -475,11 +437,8 @@ height="1.172998687664042in"}
     necessary dependencies.
 
 Please note that this method may require more manual effort and may not
-be as straightforward as using the distribution**-**specific package
-managers like apt, yay, or pamac. It is generally recommended to use
-the package manager specific to your Linux distribution whenever
-possible, as it will handle the dependencies and installation process
-more seamlessly.
+be as straightforward as using the distribution-specific package
+managers like `apt`, pacman or pamac. 
 
 ## Method 8: Installing Eggs from npm source
 
@@ -506,7 +465,9 @@ sudo npm i pnpm -g
 3)  Clone the penguins-eggs source code repository by running the
     following command:
 
+```
 git clone https://github.com/pieroproietti/penguins-eggs
+```
 
 4)  Change your current directory to the penguins-eggs directory:
 
@@ -515,8 +476,9 @@ cd penguins-eggs
 5)  Install the project dependencies using pnpm by running the following
     command:
 
-\$ sudo pnpm install
-
+```
+sudo pnpm install
+```
 Note that pnpm is used instead of the traditional npm command, which
 allows for faster compilation.
 
@@ -525,13 +487,16 @@ use penguins-eggs directly from the source code. For example, to
 run the produce command with verbose output, you can use the following
 command:
 
-\$ sudo ./eggs produce \--verbose
-
+```
+sudo ./eggs produce --verbose
+```
 Please note that when using the source code, you need to specify the
-path to start eggs as **./**eggs, and you should launch it from
-the \~**/**penguins-eggs directory. The functionality remains
-the same as when using precompiled packages, but you have the advantage
-of being able to interact with the code directly.
+path to start eggs as `/eggs`, and you should launch it from
+the `~/penguins-eggs` directory. 
+
+The functionality remains the same as when using precompiled packages, 
+but you have the advantage of being able to interact with the 
+code directly.
 
 Keep in mind that using the source code requires some technical
 knowledge and may involve additional steps compared to using precompiled
@@ -539,36 +504,34 @@ packages.
 
 # Updating the eggs
 
-Once the package is installed, you can use the command eggs tools ppa
---add to add the repository penguins-eggs**-**ppa and get all the
+Once the package is installed, you can use the command `eggs tools ppa
+--add` to add the repository `penguins-eggs-ppa` and get all the
 updates to eggs via the command apt. To do this simply issue the
 command:
 
+```
 sudo eggs tools ppa --add
+```
 
-![](media/image25.png){width="5.173255686789151in"
-height="1.9550579615048118in"}
 
-![](media/image17.png){width="5.06507874015748in"
-height="1.9863582677165355in"}
-
-The eggs tools ppa command is used to add or remove PPA **(**Personal
-Package Archive**)** repositories in the Debian family of operating
+The eggs tools ppa command is used to add or remove PPA (Personal
+Package Archive) repositories in the Debian family of operating
 systems. Here is a breakdown of its usage:
-
-![](media/image26.png){width="5.09423009623797in"
-height="3.7283114610673667in"}
 
 In the EXAMPLES: section, you can find two usage EXAMPLES::
 
-\$ sudo eggs tools ppa \--add
+```
+sudo eggs tools ppa \--add
+```
 
 This command adds the penguins-eggs PPA repository to the
 system. PPAs are commonly used in Debian**-**based systems to
 provide additional software packages that are not available in the
 official repositories.
 
-\$ sudo eggs tools ppa \--remove
+```
+sudo eggs tools ppa --remove
+```
 
 This command removes the penguins-eggs PPA repository from the
 system. Removing a PPA repository can be useful if you no longer
