@@ -2,23 +2,23 @@
 
 # What is penguins' eggs?
 
-Penguins' eggs stands out as a versatile command-line tool, offering the
+eggs stands out as a versatile command-line tool, offering the
 capability to transform your existing distro into a redistributable live
 ISO image. Notably, the tool also extends its support to Debian/Ubuntu
 flavors, making it compatible with variations such as Xubuntu, Kubuntu,
 and beyond, in addition to Linux distributions derived from these, such
-as Devuan, Linux Mint. []{dir="rtl"}Upon harnessing the power of
-Penguins' Eggs, users gain the ability to fashion an installable live
+as Devuan, Linux Mint. Upon harnessing the power of
+Penguins' eggs, users gain the ability to fashion an installable live
 ISO embodying their Debian/Devuan/Ubuntu-based, Arch Linux, or Manjaro
 system, complete with all installed applications and personalized
 configurations housed within the home folder.
 
-Penguins' eggs goes beyond creating live ISOs. It allows you to
+eggs goes beyond creating live ISOs. It allows you to
 configure the generated ISO for offline installation, useful for
 environments without internet access. It also offers a scripting mode
 for managing ISOs through custom scripts. You can even personalize the
 look and feel of the live CD and Calamares installer with images. This
-customization power is driven by \"penguins-wardrobe,\" a repository
+customization power is driven by [penguins-wardrobe](https:github.com/piero.proietti/penguins-wardrobe),\" a repository
 that provides tools to tailor Linux systems, even for minimal
 command-line installations. It lets you create customized live ISOs
 based on Debian, Ubuntu, and their derivatives. You can even use it to
@@ -26,28 +26,31 @@ generate a complete backup of your existing Debian/Ubuntu system,
 including user data, all rolled into a bootable ISO. Using Penguins\'
 Eggs simplifies these tasks and gives you full control over the content
 and distribution of your custom Linux environments. To learn more,
-explore the official Penguins' eggs website and its community resources
+explore the official [Penguins' eggs website](https://penguins-eggs.net) and its community resources
 
-[]{dir="rtl"}Penguins' eggs takes the complexity out of remastering
+Penguins' eggs takes the complexity out of remastering
 Linux systems. It offers a user-friendly interface with powerful
 features, making customization and distribution a breeze. The tool works
-across various systems based on Debian, Ubuntu, Arch Linux, and Manjaro.
+across various systems based on Debian, Devuan, Ubuntu, Arch Linux, and Manjaro.
+
 This means you can create live ISOs tailored to your specific needs, no
 matter your preferred base distro. Penguins' eggs also supports
 derivatives of these popular distributions, giving you even more
-options. Here\'s the real benefit: you can not only preserve your
+options. Here's the real benefit: you can not only preserve your
 current system setup and applications but also easily share them with
-others. Penguins' eggs cleverly removes user and system data from the
+others. 
+
+Penguins' eggs cleverly removes user and system data from the
 ISOs it creates. This ensures a clean starting point for new users,
 while still allowing you to curate a unique Linux experience for them.
 
-# Why Penguins-eggs?
+# Why penguins' eggs?
 
-Penguins**-**eggs is a versatile tool that offers an array of features
+eggs is a versatile tool that offers an array of features
 and benefits for Linux users. Whether you want to create an
 installable ISO from your current Linux system or explore various
-customization options, Penguins**-**eggs has got you covered. To get
-started with Penguins**-**eggs, you\'ll need to install it on your Linux
+customization options, penguins-eggs has got you covered. To get
+started with penguins-eggs, you\'ll need to install it on your Linux
 distribution. The tool supports a wide range of Linux distributions
 and their major derivatives, including Arch, Debian, Devuan, Manjaro,
 Ubuntu, and more. Additionally, you can easily add support for
@@ -58,9 +61,9 @@ further.
 
 ## fast and efficient
 
-Penguins**-**eggs is designed to be fast and efficient. Unlike
+eggs is designed to be fast and efficient. Unlike
 traditional methods that involve copying the entire file system,
-Penguins**-**eggs utilizes livefs, which allows for instant acquisition
+eggs utilizes livefs, which allows for instant acquisition
 of the live system. By default, the tool :
 
 ## Supports Compression Algorithm
@@ -68,59 +71,57 @@ of the live system. By default, the tool :
 Employs the compression algorithm, significantly reducing the time
 required for the process when creating an installable ISO.
 
-Penguins**-**eggs Linux, with its innovative utilization of the xz
+penguins-eggs with its innovative utilization of the zstd level 3
 compression algorithm as the default, is poised to revolutionize the
 realm of Linux distributions by redefining the parameters of speed and
-efficiency. This cutting**-**edge approach to compression stands as
+efficiency. This cutting-edge approach to compression stands as
 a testament to the relentless pursuit of optimization and performance
 enhancements, enabling users to experience unparalleled gains in speed
 and responsiveness.
 
 ## Supports Clone
 
-Penguins**-**eggs provides various options to suit your needs. With
-the **\--**clone flag, you can preserve the data and accounts of
-unencrypted users, ensuring a seamless experience for users accessing
-the live system. Moreover, you can opt for a crypted clone, where
+penguins-eggs provides various options to suit your needs. With
+the `--clone` flag, you can preserve the data and accounts of
+yours users, ensuring a seamless experience for users accessing
+the live system. Moreover, you can opt for a `--cryptedclone`, where
 user data and accounts are saved in an encrypted LUKS volume within the
 ISO image, enhancing security and privacy.
 
-Penguins**-**Eggs Linux introduces a groundbreaking feature in the form
-of
-
-Crypted Clone, setting a new standard of security and data protection
+penguins-eggs Linux introduces a groundbreaking feature in the form
+of `--cryptedclone`, setting a new standard of security and data protection
 within the realm of Linux distributions. By default,
-Penguins**-**Eggs tool empowers users to safeguard their sensitive user
+penguins-eggs tool empowers users to safeguard their sensitive user
 data and accounts by encapsulating them within an encrypted LUKS
-**(**Linux Unified Key Setup**)** volume, seamlessly integrated within
+(Linux Unified Key Setup) volume, seamlessly integrated within
 the ISO image.
 
 ## Cuckoo and PXE boot
 
-In addition to ISO creation, Penguins**-**eggs offers a unique feature
-called Cuckoo. By starting Cuckoo from the live system, you can set
+In addition to ISO creation, penguins-eggs offers a unique feature
+called `cuckoo`. By starting `cuckoo` from the live system, you can set
 up a PXE boot server, making it accessible to all computers on the
 network. This functionality opens up possibilities for network
 booting and streamlined deployment. The activation of Cuckoo from
-live as the default setting within Penguins Eggs heralds a
+live as the default setting within penguins-eggs heralds a
 transformative leap in the domain of Linux distributions, affording
 users the ability to harness the unparalleled potential of PXE booting
-and network**-**wide deployment with ease.
+and network wide deployment with ease.
 
 ## Supports Both TUI/GUI Installer
 
-To simplify the installation process, Penguins**-**eggs provides its own
-system installer called krill. This installer is particularly useful
-when a GUI **(**Graphical User Interface**)** is not available, allowing
+To simplify the installation process, penguins-eggs provides its own
+system installer called `krill`. This installer is particularly useful
+when a GUI (Graphical User Interface) is not available, allowing
 for installation in various situations. However, if you are using a
-desktop system, Penguins**-**eggs recommends and configures the
+desktop system, penguins-eggs recommends and configures the
 calamares GUI installer, ensuring a seamless and user**-**friendly
 experience.
 
-Penguins Eggs Linux spearheads a transformative revolution in the realm
+penguins-eggs Linux spearheads a transformative revolution in the realm
 of system installation with the incorporation of its TUI
-**(**Text**-**based User Interface**)** **/** GUI **(**Graphical User
-Interface**)** installer, setting a new standard of versatility and
+(Text-based User Interface) GUI (Graphical User
+Interface) installer, setting a new standard of versatility and
 accessibility within the landscape of Linux distributions. The
 integration of these installation mechanisms underscores Penguins Eggs
 Linux's unwavering commitment to accommodating diverse user needs
@@ -129,15 +130,15 @@ and user**-**centric design.
 
 ## Repository lists
 
-One of the key advantages of Penguins**-**eggs is its commitment to
+One of the key advantages of penguins-eggs is its commitment to
 utilizing only the original distro\'s packages. This means that no
 modifications are made to your repository lists, ensuring a safe and
-reliable environment. Penguins**-**eggs prioritizes maintaining the
+reliable environment. penguins-eggs prioritizes maintaining the
 integrity and authenticity of your Linux distribution.
 
 ## Wardrobe
 
-To enhance customization options, Penguins**-**eggs introduces the
+To enhance customization options, penguins-eggs introduces the
 concept of Wardrobe. With Wardrobe and its various components, such
 as costumes, you can easily organize and manage your customizations,
 samples, and more. This feature enables a streamlined and efficient

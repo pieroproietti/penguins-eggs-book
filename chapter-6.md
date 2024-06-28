@@ -296,7 +296,7 @@ steps:
 
 1)  Open a terminal.
 
-2)  Clone the penguins**-**eggs**-**pkgbuilds repository from GitHub:
+2)  Clone the penguins-eggs**-**pkgbuilds repository from GitHub:
 
 git clone https://github.com/pieroproietti/penguins-eggs-pkgbuilds
 

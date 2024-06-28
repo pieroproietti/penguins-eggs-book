@@ -10,7 +10,7 @@ First Edition
 
 **Piero Proietti**
 
-Creating Linux distro with and ISO image file by using Penguins**-**eggs
+Creating Linux distro with and ISO image file by using penguins-eggs
 platform tool
 
 June 2024

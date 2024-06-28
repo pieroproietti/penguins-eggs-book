@@ -549,7 +549,7 @@ Options:
 Flags:
 
 -   **\--**release: Applies maximum compression,
-    removes penguins**-**eggs and calamares after installation.
+    removes penguins-eggs and calamares after installation.
 
 -   **\--**theme **\<**value**\>**: Specifies the theme to be used for
     the live CD, calamares branding, and partitions.
@@ -732,7 +732,7 @@ according to specific requirements.
 When you include the **\--**release option with the command, it
 signifies that you want to apply specific actions during the release
 process. These actions typically involve tasks such as maximizing
-compression, removing penguins**-**eggs, and removing calamares after
+compression, removing penguins-eggs, and removing calamares after
 the installation. Here\'s a breakdown of the actions commonly
 associated with the **\--**release option:
 
@@ -742,9 +742,9 @@ associated with the **\--**release option:
     the **\--**release option, you instruct the command to prioritize
     compression during the release process.
 
-2)  Removing penguins**-**eggs: This action involves removing or
-    excluding the penguins**-**eggs component from the release. The
-    specific purpose or functionality of penguins**-**eggs depends on
+2)  Removing penguins-eggs: This action involves removing or
+    excluding the penguins-eggs component from the release. The
+    specific purpose or functionality of penguins-eggs depends on
     the context of the command. By using the **\--**release option,
     you indicate that you want to exclude this component from the final
     release.
@@ -844,7 +844,7 @@ sudo eggs produce --release
 
 This command will execute the **"**produce**"** action and apply
 specific actions during the release process, such as maximizing
-compression, removing penguins**-**eggs, and removing calamares after
+compression, removing penguins-eggs, and removing calamares after
 installation.
 
 sudo eggs produce \--filters custom,dev
