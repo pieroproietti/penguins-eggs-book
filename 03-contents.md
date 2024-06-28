@@ -150,98 +150,42 @@
     * [Config krill manually:](/60-chapter-6.md#config-krill-manually)
     * [The content of krill.yaml](/60-chapter-6.md#the-content-of-krill.yaml)
     
-[Chapter 7 [148](#chapter-7)](#chapter-7)
-
-[Eggs Configuration [148](#eggs-configuration)](#eggs-configuration)
-
-[Part1: configuration automatically
-[148](#part1-configuration-automatically)](#part1-configuration-automatically)
-
-[Eggs adaptive resolutions
-[152](#eggs-adaptive-resolutions)](#eggs-adaptive-resolutions)
-
-[eggs analyze [155](#eggs-analyze)](#eggs-analyze)
-
-[Eggs Config [156](#eggs-config)](#eggs-config)
-
-[eggs dad [160](#eggs-dad)](#eggs-dad)
-
-[Eggs Configuration [163](#eggs-configuration-1)](#eggs-configuration-1)
-
-[Part2: configuration manually
-[163](#part2-configuration-manually)](#part2-configuration-manually)
-
-[Krill config file [165](#krill-config-file)](#krill-config-file)
-
-[Tools.yaml [166](#tools.yaml)](#tools.yaml)
-
-[Exclude.list files [167](#exclude.list-files)](#exclude.list-files)
-
-[Part3: Configuration status
-[171](#part3-configuration-status)](#part3-configuration-status)
-
-[eggs status [171](#eggs-status)](#eggs-status)
-
-[Eggs Change log notes
-[172](#eggs-change-log-notes)](#eggs-change-log-notes)
-
-[penguins-eggs-9.6.x [172](#penguins-eggs-9.6.x)](#penguins-eggs-9.6.x)
-
-[penguins-eggs-10.0.13
-[173](#penguins-eggs-10.0.13)](#penguins-eggs-10.0.13)
-
-[penguins-eggs-10.0.11-2
-[173](#penguins-eggs-10.0.11-2)](#penguins-eggs-10.0.11-2)
-
-[penguins-eggs-10.0.11-1
-[173](#penguins-eggs-10.0.11-1)](#penguins-eggs-10.0.11-1)
-
-[penguins-eggs-10.0.10-1
-[173](#penguins-eggs-10.0.10-1)](#penguins-eggs-10.0.10-1)
-
-[penguins-eggs-10.0.9-1
-[174](#penguins-eggs-10.0.9-1)](#penguins-eggs-10.0.9-1)
-
-[penguins-eggs-10.0.8-2
-[174](#penguins-eggs-10.0.8-2)](#penguins-eggs-10.0.8-2)
-
-[penguins-eggs-10.0.8-1
-[174](#penguins-eggs-10.0.8-1)](#penguins-eggs-10.0.8-1)
-
-[penguins-eggs-10.0.7-1
-[174](#penguins-eggs-10.0.7-1)](#penguins-eggs-10.0.7-1)
-
-[penguins-eggs-10.0.6-3
-[175](#penguins-eggs-10.0.6-3)](#penguins-eggs-10.0.6-3)
-
-[Note about bionic version
-[175](#note-about-bionic-version)](#note-about-bionic-version)
-
-[penguins-eggs-10.0.6-1
-[175](#penguins-eggs-10.0.6-1)](#penguins-eggs-10.0.6-1)
-
-[penguins-eggs-10.0.5-2
-[175](#penguins-eggs-10.0.5-2)](#penguins-eggs-10.0.5-2)
-
-[penguins-eggs-10.0.4
-[176](#penguins-eggs-10.0.4)](#penguins-eggs-10.0.4)
-
-[penguins-eggs-10.0.3
-[176](#penguins-eggs-10.0.3)](#penguins-eggs-10.0.3)
-
-[penguins-eggs-10.0.2
-[176](#penguins-eggs-10.0.2)](#penguins-eggs-10.0.2)
-
-[penguins-eggs-10.0.0
-[176](#penguins-eggs-10.0.0)](#penguins-eggs-10.0.0)
-
-[penguins-eggs-9.8.3 [177](#penguins-eggs-9.8.3)](#penguins-eggs-9.8.3)
-
-[penguins-eggs-9.8.2 [177](#penguins-eggs-9.8.2)](#penguins-eggs-9.8.2)
-
-[penguins-eggs-9.8.1 [177](#penguins-eggs-9.8.1)](#penguins-eggs-9.8.1)
-
-[penguins-eggs-9.8.0 [177](#penguins-eggs-9.8.0)](#penguins-eggs-9.8.0)
+* [Chapter 7)](/70-chapter-7.md#chapter-7)
+    * [Eggs Configuration](/70-chapter-7.md#eggs-configuration)
+    * [Part1: configuration automatically](/70-chapter-7.md#part1-configuration-automatically)
+    * [Eggs adaptive resolutions](/70-chapter-7.md#eggs-adaptive-resolutions)
+    * [eggs analyze](/70-chapter-7.md#eggs-analyze)
+    * [Eggs Config](/70-chapter-7.md#eggs-config)
+    * [eggs dad](/70-chapter-7.md#eggs-dad)
+    * [Eggs Configuration](/70-chapter-7.md#eggs-configuration-1)
+    * [Part2: configuration manually](/70-chapter-7.md#part2-configuration-manually)
+    * [Krill config file](/70-chapter-7.md#krill-config-file)
+    * [Tools.yaml](/70-chapter-7.md#tools.yaml)
+    * [Exclude.list files](/70-chapter-7.md#exclude.list-files)
+    * [Part3: Configuration status](/70-chapter-7.md#part3-configuration-status)
+    * [eggs status](/70-chapter-7.md#eggs-status)
+    * [Eggs Change log notes](/70-chapter-7.md#eggs-change-log-notes)
+    * [penguins-eggs-9.6.x](/70-chapter-7.md#penguins-eggs-9.6.x)
+    * [penguins-eggs-10.0.13](/70-chapter-7.md#penguins-eggs-10.0.13)
+    * [penguins-eggs-10.0.11-2](/70-chapter-7.md#penguins-eggs-10.0.11-2)
+    * [penguins-eggs-10.0.11-1](/70-chapter-7.md#penguins-eggs-10.0.11-1)
+    * [penguins-eggs-10.0.10-1](/70-chapter-7.md#penguins-eggs-10.0.10-1)
+    * [penguins-eggs-10.0.9-1](/70-chapter-7.md#penguins-eggs-10.0.9-1)
+    * [penguins-eggs-10.0.8-2](/70-chapter-7.md#penguins-eggs-10.0.8-2)
+    * [penguins-eggs-10.0.8-1](/70-chapter-7.md#penguins-eggs-10.0.8-1)
+    * [penguins-eggs-10.0.7-1](/70-chapter-7.md#penguins-eggs-10.0.7-1)
+    * [penguins-eggs-10.0.6-3](/70-chapter-7.md#penguins-eggs-10.0.6-3)
+    * [Note about bionic version](/70-chapter-7.md#note-about-bionic-version)
+    * [penguins-eggs-10.0.6-1](/70-chapter-7.md#penguins-eggs-10.0.6-1)
+    * [penguins-eggs-10.0.5-2](/70-chapter-7.md#penguins-eggs-10.0.5-2)
+    * [penguins-eggs-10.0.4](/70-chapter-7.md#penguins-eggs-10.0.4)
+    * [penguins-eggs-10.0.3](/70-chapter-7.md#penguins-eggs-10.0.3)
+    * [penguins-eggs-10.0.2](/70-chapter-7.md#penguins-eggs-10.0.2)
+    * [penguins-eggs-10.0.0](/70-chapter-7.md#penguins-eggs-10.0.0)
+    * [penguins-eggs-9.8.3](/70-chapter-7.md#penguins-eggs-9.8.3)
+    * [penguins-eggs-9.8.2](/70-chapter-7.md#penguins-eggs-9.8.2)
+    * [penguins-eggs-9.8.1](/70-chapter-7.md#penguins-eggs-9.8.1)
+    * [penguins-eggs-9.8.0](/70-chapter-7.md#penguins-eggs-9.8.0)
 
 [Chapter 8 [179](#chapter-8)](#chapter-8)
 
