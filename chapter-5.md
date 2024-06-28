@@ -34,7 +34,7 @@ There are multiple ways to install eggs as a .deb package.
 
 The most practical method is to add and use the `penguins-eggs-ppa` repository.
 
-## Method1: get-eggs (Arch/Debian/Devuan/Ubuntu)
+## Method1: using `get-eggs` (Arch/Debian/Devuan/Ubuntu)
 
 The `get-eggs` command is used to add the `penguins-eggs-ppa`
 repository and configure it on Arch, Debian, Devuan, Ubuntu, or their
@@ -46,9 +46,9 @@ cd get-eggs
 sudo ./get-eggs
 ```
 
-By executing this script with root privileges, it will add
+By executing `sudo ./get-eggs` with root privileges, it will add
 the necessary repositories to your system. On Arch Linux, it will
-add the chaotic-aur repository. On Debian-based systems, including 
+add the `chaotic-aur` repository while on Debian-based systems, including 
 Ubuntu, it will add `penguins-eggs-ppa`
 
 Please note that running scripts with root privileges should be done
@@ -95,38 +95,51 @@ dependencies required by the eggs package.
 
 More details:
 
-sourceForge.net is a widely recognized platform that
+[sourceForge.net](https://sourceforge.net) is a widely recognized platform that
 has been serving the software development community for many years.
+
 It has established itself as a reliable source for hosting and
-distributing open**-**source software projects. By hosting projects
-on SourceForge.net, developers can showcase their work, collaborate
+distributing open-source software projects. By hosting projects
+on sourceForge.net, developers can showcase their work, collaborate
 with other developers, and make their software easily accessible to
-users. When it comes to the installation of eggs,
-SourceForge.net provides a convenient location to download the
-necessary .deb package files. These files contain the software
-package that you need to install on your system. By navigating to
-the designated page for the penguins-eggs project on
-SourceForge.net, you can access the list of available .deb
+users. 
+
+When it comes to the installation of eggs, SourceForge.net provides a
+convenient location to download the necessary .deb package files. 
+
+These files contain the software package that you need to install 
+on your system. By navigating to the designated page for the 
+[penguins-eggs project](https://sourceforge.net/projects/penguins-eggs/)  on
+sourceforge.net, you can access the list of available .deb
 files.
 
 Downloading the appropriate .deb file for your system
-architecture is crucial for a successful installation. Whether you
-are using an AMD64 or i386 system, SourceForge.net offers the
-necessary files to cater to your specific requirements. Once you
-have downloaded the desired .deb file, you can proceed with the
-installation process. Using the `dpkg` command with the `-i`
-flag, you can install the eggs package onto your system. It is
-important to note that running the installation command as a superuser
-(using `sudo`) ensures that the necessary permissions are
-granted for the installation process.
+architecture is crucial for a successful installation. 
+
+Whether you are using an AMD64 or i386 system, sourceForge.net 
+offers the necessary files to cater to your specific requirements. 
+
+Once you have downloaded the desired .deb file, you can proceed 
+with the installation process. Using the `dpkg` command with the `-i`
+flag, you can install the eggs package onto your system. 
+
+It is important to note that running the installation command as a superuser
+(using `sudo`) ensures that the necessary permissions are granted for the
+installation process.
 
 During the installation, you may encounter dependency
-issues. Dependencies are additional software components that need to
+issues. 
+
+Dependencies are additional software components that need to
 be present on your system for the eggs package to function
-correctly. Resolving these dependencies is essential for a smooth
+correctly. 
+
+Resolving these dependencies is essential for a smooth
 installation. Fortunately, the \`apt\` package manager provides a
 convenient way to automatically resolve and install any missing
-dependencies. By running **\`sudo apt -f install\`**, you can prompt
+dependencies. 
+
+By running `sudo apt -f install`, you can prompt
 the package manager to fix any dependency-related issues.
 
 After successfully installing the eggs package and resolving any
@@ -140,8 +153,15 @@ By following these steps and utilizing sourceForge.net as a reliable
 source for the eggs package, you can ensure a seamless installation
 process and enjoy the benefits of this software on your system.
 
+Once `penguins-eggs` package is installed, you can easyly add `penguins-eggs-ppa`
+repository, just:
 
-## Method3: adding penguins-eggs-ppa (Debian/Devuan/Ubuntu)
+```
+sudo eggs tools ppa --add
+```
+
+
+## Method3: adding penguins-eggs-ppa manually (Debian/Devuan/Ubuntu)
 
 Using ppa depository on Debian based:
 
@@ -177,7 +197,7 @@ resolve any missing dependencies, and add the penguins-eggs-ppa
 repository for future updates.
 
 
-## Methos6: adding chaoth-aur repository by hands (Archlinux)
+## Methos6: adding chaoth-aur repository manually (Archlinux)
 
 To configure the Chaotic-AUR repository and install the
 penguins-eggs package on Arch Linux, follow these steps:
