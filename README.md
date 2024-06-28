@@ -2,10 +2,9 @@
 
 ## Contents
 
-* [What is the Penguins-eggs book?](/01-about.md#what-is-the-penguins-eggs-book)
-    * [Introduction](/02-introduction.md#introduction)
-    * [Contents at a Glance](/03-contents.md#contents) index
-    * [The road map of this book](/04-road-map.md#the-road-map-of-this-book)
+* [What is the Penguins-eggs book?](/1-about.md#what-is-the-penguins-eggs-book)
+    * [Introduction](/2-introduction.md#introduction)
+    * [The road map of this book](/3-road-map.md#the-road-map-of-this-book)
 * [Chapter 1](/chapter-1.md#chapter-1)
     * [What is Penguins-eggs?](/chapter-1.md#what-is-penguins-eggs)
     * [Why Penguins-eggs?](/chapter-1.md#why-penguins-eggs)

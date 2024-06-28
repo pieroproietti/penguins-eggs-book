@@ -133,4 +133,4 @@ manager.
 
 **Contact me**: piero.proietti@gmail.com
 
-![](media/image4.jpg)
+![image4.jpg](media/image4.jpg)
