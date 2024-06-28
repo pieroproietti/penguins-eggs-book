@@ -34,10 +34,7 @@ There are multiple ways to install eggs as a .deb package.
 
 The most practical method is to add and use the `penguins-eggs-ppa` repository.
 
-## Method1: get-eggs (Debian/Devuan/Ubuntu)
-
-Install penguins-eggs and configure it with a single
-command.
+## Method1: get-eggs (Arch/Debian/Devuan/Ubuntu)
 
 The `get-eggs` command is used to add the `penguins-eggs-ppa`
 repository and configure it on Arch, Debian, Devuan, Ubuntu, or their
@@ -51,14 +48,100 @@ sudo ./get-eggs
 
 By executing this script with root privileges, it will add
 the necessary repositories to your system. On Arch Linux, it will
-add the AUR repository (formerly known as addaura). On
-Debian-based systems, including Ubuntu, it will add [penguins-eggs-ppa]()
+add the chaotic-aur repository. On Debian-based systems, including 
+Ubuntu, it will add `penguins-eggs-ppa`
 
 Please note that running scripts with root privileges should be done
 with caution. Make sure you trust the source and understand the
 actions being performed by the script.
 
-## Method2: penguins-eggs-ppa (Debian/Devuan/Ubuntu)
+## Method2: download the package from sourceforge (Debian/Devuan/Ubuntu)
+
+If you prefer not to include the `penguins-eggs-ppa`
+repository in your system's repositories, you have an alternative
+method to install the eggs package. Follow these steps:
+
+1)  Visit the sourceforge site to download the latest version of the
+    eggs package in .deb format.
+
+2)  Once the package is downloaded, open a terminal and navigate to the
+    directory [DEBS](https://sourceforge.net/projects/penguins-eggs/files/DEBS/)  
+    where the .deb file is located.
+
+
+3)  Install the eggs package using the dpkg command with sudo. For
+    example:
+
+```
+sudo dpkg -i eggs-10.0.13.deb
+```
+
+4)  Since this is your first installation, there may be missing
+    dependencies preventing the package from being fully installed.
+    To resolve this, run the following command:
+
+```
+sudo apt install -f
+```
+
+This command will automatically install any missing
+dependencies required by the eggs package.
+
+5)  If you have the gdebi package manager installed on your system, you
+    can use it to install the eggs package in graphical mode. Simply
+    right-click on the .deb file, select "Open with GDebi
+    Package Installer," and follow the on-screen
+    instructions.
+
+More details:
+
+sourceForge.net is a widely recognized platform that
+has been serving the software development community for many years.
+It has established itself as a reliable source for hosting and
+distributing open**-**source software projects. By hosting projects
+on SourceForge.net, developers can showcase their work, collaborate
+with other developers, and make their software easily accessible to
+users. When it comes to the installation of eggs,
+SourceForge.net provides a convenient location to download the
+necessary .deb package files. These files contain the software
+package that you need to install on your system. By navigating to
+the designated page for the penguins-eggs project on
+SourceForge.net, you can access the list of available .deb
+files.
+
+Downloading the appropriate .deb file for your system
+architecture is crucial for a successful installation. Whether you
+are using an AMD64 or i386 system, SourceForge.net offers the
+necessary files to cater to your specific requirements. Once you
+have downloaded the desired .deb file, you can proceed with the
+installation process. Using the `dpkg` command with the `-i`
+flag, you can install the eggs package onto your system. It is
+important to note that running the installation command as a superuser
+(using `sudo`) ensures that the necessary permissions are
+granted for the installation process.
+
+During the installation, you may encounter dependency
+issues. Dependencies are additional software components that need to
+be present on your system for the eggs package to function
+correctly. Resolving these dependencies is essential for a smooth
+installation. Fortunately, the \`apt\` package manager provides a
+convenient way to automatically resolve and install any missing
+dependencies. By running **\`sudo apt -f install\`**, you can prompt
+the package manager to fix any dependency-related issues.
+
+After successfully installing the eggs package and resolving any
+dependencies, it is always a good idea to verify the installation.
+Using the `eggs status` command, you can check the current status of
+the eggs package on your system. This command provides information
+about the installed version and any relevant updates or
+notifications.
+
+By following these steps and utilizing sourceForge.net as a reliable
+source for the eggs package, you can ensure a seamless installation
+process and enjoy the benefits of this software on your system.
+
+
+## Method3: adding penguins-eggs-ppa (Debian/Devuan/Ubuntu)
 
 Using ppa depository on Debian based:
 
@@ -93,103 +176,8 @@ By following these steps, you can install the eggs package,
 resolve any missing dependencies, and add the penguins-eggs-ppa
 repository for future updates.
 
-##  Method4: download the package from sourceforge
 
-If you prefer not to include the `penguins-eggs-ppa`
-repository in your system's repositories, you have an alternative
-method to install the eggs package. Follow these steps:
-
-1)  Visit the sourceforge site to download the latest version of the
-    eggs package in .deb format.
-
-2)  Once the package is downloaded, open a terminal and navigate to the
-    directory where the .deb file is located.
-
-https://sourceforge.net/projects/penguins-eggs/files/DEBS/
-
-3)  Install the eggs package using the dpkg command with sudo. For
-    example:
-
-```
-sudo dpkg -i eggs-10.0.13.deb
-```
-
-4)  Since this is your first installation, there may be missing
-    dependencies preventing the package from being fully installed.
-    To resolve this, run the following command:
-
-```
-sudo apt install -f
-```
-
-This command will automatically install any missing
-dependencies required by the eggs package.
-
-5)  If you have the gdebi package manager installed on your system, you
-    can use it to install the eggs package in graphical mode. Simply
-    right-click on the .deb file, select "Open with GDebi
-    Package Installer," and follow the on-screen
-    instructions.
-
-More details:
-
-SourceForge.net is a widely recognized platform that
-has been serving the software development community for many years.
-It has established itself as a reliable source for hosting and
-distributing open**-**source software projects. By hosting projects
-on SourceForge.net, developers can showcase their work, collaborate
-with other developers, and make their software easily accessible to
-users. When it comes to the installation of eggs,
-SourceForge.net provides a convenient location to download the
-necessary .deb package files. These files contain the software
-package that you need to install on your system. By navigating to
-the designated page for the penguins-eggs project on
-SourceForge.net, you can access the list of available .deb
-files.
-
-Downloading the appropriate .deb file for your system
-architecture is crucial for a successful installation. Whether you
-are using an AMD64 or i386 system, SourceForge.net offers the
-necessary files to cater to your specific requirements. Once you
-have downloaded the desired .deb file, you can proceed with the
-installation process. Using the \`dpkg\` command with the \`**-**i\`
-flag, you can install the eggs package onto your system. It is
-important to note that running the installation command as a superuser
-**(**using \`sudo\`**)** ensures that the necessary permissions are
-granted for the installation process.
-
-During the installation, you may encounter dependency
-issues. Dependencies are additional software components that need to
-be present on your system for the eggs package to function
-correctly. Resolving these dependencies is essential for a smooth
-installation. Fortunately, the \`apt\` package manager provides a
-convenient way to automatically resolve and install any missing
-dependencies. By running **\`sudo apt -f install\`**, you can prompt
-the package manager to fix any dependency**-**related issues.
-
-After successfully installing the eggs package and resolving any
-dependencies, it is always a good idea to verify the installation.
-Using the `eggs status` command, you can check the current status of
-the eggs package on your system. This command provides information
-about the installed version and any relevant updates or
-notifications.
-
-By following these steps and utilizing SourceForge.net as a reliable
-source for the eggs package, you can ensure a seamless installation
-process and enjoy the benefits of this software on your system.
-
-## Method5: get-eggs (Arch linux)
-
-```
-git clone https://github.com/pieroproietti/get-eggs
-cd get-eggs
-sudo ./get-eggs
-```
-
-get-eggs, will autoconfigre chaotic-aur repository and will install penguins-eggs for you.
-
-
-## Methos6: Install from chaoth-aur repository (Archlinux)
+## Methos6: adding chaoth-aur repository by hands (Archlinux)
 
 To configure the Chaotic-AUR repository and install the
 penguins-eggs package on Arch Linux, follow these steps:
@@ -274,15 +262,16 @@ sudo pacman -Sy penguins-eggs
 ```
 
 By following these steps, you will successfully configure
-the Chaotic**-**AUR repository and install the penguins-eggs package
+the chaotic-aur repository and install the penguins-eggs package
 on your Arch Linux system.
 
-**on Arch Linux**, you have multiple options to install eggs. One
-popular choice is to use the yay AUR helper. Here's how you can
+**on Arch Linux**, you have multiple options to install eggs. 
+
+One popular choice is to use the yay, an AUR helper. Here's how you can
 install eggs using yay:
 
 1)  Open a terminal and run the following command to install yay if you
-    don\'t already have it:
+    don't already have it:
 
 ```
 sudo pacman -Sy yay
@@ -305,14 +294,13 @@ using git and pkgbuild commands. Here's how:
     the penguins-eggs AUR repository:
 
 ```
-git clone https://aur.archlinux.org/penguins-eggs.git
-penguins-eggs-aur
+git clone https://aur.archlinux.org/packages/penguins-eggs
 ```
 
 2)  Change your current directory to the newly cloned repository:
 
 ```
-cd penguins-eggs-aur
+cd penguins-eggs
 ```
 
 3)  Build and install the package using pkgbuild command:
@@ -352,7 +340,7 @@ any dependencies. By following these steps, you should be able to
 successfully install the penguins-eggs package on Manjaro using
 the pamac package manager.
 
-## Method7: installing by pnpm command
+## Method7: installing by npm command
 
 While it is technically possible to install penguins-eggs directly
 as an npm package, it is worth noting that the npm packages may still
@@ -440,7 +428,7 @@ Please note that this method may require more manual effort and may not
 be as straightforward as using the distribution-specific package
 managers like `apt`, pacman or pamac. 
 
-## Method 8: Installing Eggs from npm source
+## Method 8: Using penguins-eggs from npm source
 
 Using penguins-eggs from the source code can indeed provide benefits
 such as easier debugging and the ability to review the code running on
@@ -454,8 +442,8 @@ use penguins-eggs from the source code:
 
 sudo pamac install nodejs pnpm devel-base
 
-On Debian**/**Devuan**/**Ubuntu, it is recommended to use the NodeSource
-repository to install Node.js version 16.x.
+On Debian/Devuan/Ubuntu, it is recommended to use the NodeSource
+repository to install Node.js version 18.x.
 
 2)  Once Node.js and npm are installed, you can
     install pnpm globally by running the following command:
