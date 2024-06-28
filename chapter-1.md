@@ -126,12 +126,12 @@ accessibility within the landscape of Linux distributions. The
 integration of these installation mechanisms underscores Penguins Eggs
 Linux's unwavering commitment to accommodating diverse user needs
 and streamlining installation workflows with unparalleled flexibility
-and user**-**centric design.
+and user-centric design.
 
 ## Repository lists
 
 One of the key advantages of penguins-eggs is its commitment to
-utilizing only the original distro\'s packages. This means that no
+utilizing only the original distro's packages. This means that no
 modifications are made to your repository lists, ensuring a safe and
 reliable environment. penguins-eggs prioritizes maintaining the
 integrity and authenticity of your Linux distribution.
