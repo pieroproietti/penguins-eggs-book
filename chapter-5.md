@@ -189,7 +189,7 @@ sudo ./get-eggs
 get-eggs, will autoconfigre chaotic-aur repository and will install penguins-eggs for you.
 
 
-## Methos6: Install from chaothis-aur repository (Archlinux)
+## Methos6: Install from chaoth-aur repository (Archlinux)
 
 To configure the Chaotic-AUR repository and install the
 penguins-eggs package on Arch Linux, follow these steps:
