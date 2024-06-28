@@ -187,7 +187,7 @@
     * [penguins-eggs-9.8.1](/70-chapter-7.md#penguins-eggs-9.8.1)
     * [penguins-eggs-9.8.0](/70-chapter-7.md#penguins-eggs-9.8.0)
 
-* [Chapter 8 [179](#chapter-8)](/80-chapter-8.md#chapter-8)
+* [Chapter 8](/80-chapter-8.md#chapter-8)
     * [Producing ISO image file](/80-chapter-8.md#producing-iso-image-file)
     * [Step 1: cleaning the system](/80-chapter-8.md#step-1-cleaning-the-system)
     * [Cleaning with eggs](/80-chapter-8.md#cleaning-with-eggs)
@@ -201,23 +201,15 @@
     * [Step 5: eggs produce](/80-chapter-8.md#step-5-eggs-produce)
     * [eggs produce command](/80-chapter-8.md#eggs-produce-command)
      
-    [Chapter 9 [210](#chapter-9)](#chapter-9)
-    [After Producing [210](#after-producing)](#after-producing)
-    [eggs syncto command [210](#eggs-syncto-command)](#eggs-syncto-command)
-    [eggs syncfrom command
-[212](#eggs-syncfrom-command)](#eggs-syncfrom-command)
-
-[Testing the ISO [214](#testing-the-iso)](#testing-the-iso)
-
-[Testing the installation
-[215](#testing-the-installation)](#testing-the-installation)
-
-[Test Functionality [216](#test-functionality)](#test-functionality)
-
-[Test Customizations [218](#test-customizations)](#test-customizations)
-
-[Perform Regression Testing
-[219](#perform-regression-testing)](#perform-regression-testing)
+* [Chapter 9](/90-chapter-9.md#chapter-9)
+    * [After Producing](#after-producing)
+    * [eggs syncto command](#eggs-syncto-command)
+    * [eggs syncfrom command](#eggs-syncfrom-command)
+    * [Testing the ISO](#testing-the-iso)
+    * [Testing the installation](#testing-the-installation)
+    * [Test Functionality](#test-functionality)
+    * [Test Customizations](#test-customizations)
+    * [Perform Regression Testing](#perform-regression-testing)
 
 [Document and Report Issues
 [221](#document-and-report-issues)](#document-and-report-issues)
