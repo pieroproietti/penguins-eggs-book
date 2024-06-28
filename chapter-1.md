@@ -7,20 +7,25 @@ capability to transform your existing distro into a redistributable live
 ISO image. Notably, the tool also extends its support to Debian/Ubuntu
 flavors, making it compatible with variations such as Xubuntu, Kubuntu,
 and beyond, in addition to Linux distributions derived from these, such
-as Devuan, Linux Mint. Upon harnessing the power of
-Penguins' eggs, users gain the ability to fashion an installable live
-ISO embodying their Debian/Devuan/Ubuntu-based, Arch Linux, or Manjaro
-system, complete with all installed applications and personalized
+as Devuan, Linux Mint. 
+
+Upon harnessing the power of Penguins' eggs, users gain the ability to fashion an
+installable live ISO embodying their Debian/Devuan/Ubuntu-based, Arch Linux, or 
+Manjaro system, complete with all installed applications and personalized
 configurations housed within the home folder.
 
 eggs goes beyond creating live ISOs. It allows you to
 configure the generated ISO for offline installation, useful for
-environments without internet access. It also offers a scripting mode
-for managing ISOs through custom scripts. You can even personalize the
-look and feel of the live CD and Calamares installer with images. This
+environments without internet access. 
+
+It also offers a scripting mode for managing ISOs through custom scripts. 
+
+You can even personalize the look and feel of the live CD and Calamares installer with images. This
 customization power is driven by [penguins-wardrobe](https:github.com/piero.proietti/penguins-wardrobe), a repository
 that provides tools to tailor Linux systems, even for minimal
-command-line installations. It lets you create customized live ISOs
+command-line installations. 
+
+It lets you create customized live ISOs
 based on Debian, Ubuntu, and their derivatives. You can even use it to
 generate a complete backup of your existing Debian/Ubuntu system,
 including user data, all rolled into a bootable ISO. Using Penguins\'
@@ -50,7 +55,7 @@ eggs is a versatile tool that offers an array of features
 and benefits for Linux users. Whether you want to create an
 installable ISO from your current Linux system or explore various
 customization options, penguins-eggs has got you covered. To get
-started with penguins-eggs, you\'ll need to install it on your Linux
+started with penguins-eggs, you'll need to install it on your Linux
 distribution. The tool supports a wide range of Linux distributions
 and their major derivatives, including Arch, Debian, Devuan, Manjaro,
 Ubuntu, and more. Additionally, you can easily add support for
@@ -108,7 +113,7 @@ transformative leap in the domain of Linux distributions, affording
 users the ability to harness the unparalleled potential of PXE booting
 and network wide deployment with ease.
 
-## Supports Both TUI/GUI Installer
+## Supports Both TUI or GUI Installer
 
 To simplify the installation process, penguins-eggs provides its own
 system installer called `krill`. This installer is particularly useful
@@ -120,8 +125,7 @@ experience.
 
 penguins-eggs Linux spearheads a transformative revolution in the realm
 of system installation with the incorporation of its TUI
-(Text-based User Interface) GUI (Graphical User
-Interface) installer, setting a new standard of versatility and
+(Text-based User Interface), setting a new standard of versatility and
 accessibility within the landscape of Linux distributions. The
 integration of these installation mechanisms underscores Penguins Eggs
 Linux's unwavering commitment to accommodating diverse user needs
@@ -161,12 +165,15 @@ system that perfectly suits your needs. This minimalist approach is
 ideal for users who want a clean and efficient system without any
 unnecessary extras. Arch\'s popularity has led to the creation of
 several derivative distributions, each with its take on the Arch
-philosophy. Manjaro, for example, is a user-friendly version of Arch
+philosophy. 
+
+Manjaro, for example, is a user-friendly version of Arch
 that offers easier installation, pre-configured desktops, and a
 graphical package manager for a smoother experience.
 
-Debian derivatives is a godfather in the Linux world. This highly
-respected distro, known for its rock-solid stability, security, and
+Debian derivatives is a godfather in the Linux world. 
+
+This highly respected distro, known for its rock-solid stability, security, and
 dedication to free software, has been around since the early days.
 However, Debian\'s impact goes beyond its own desktop. It is the
 foundation for countless other distributions, including the ever-popular
@@ -192,7 +199,7 @@ system that is easy to use and works well without a lot of tinkering.
 Supports a wide range of hardware architectures.
 
 Supports: i386, amd64 and arm64 architecture, from old PCs, common PCs
-to single board computers like Raspberry Pi 4**/**5
+to single board computers like Raspberry Pi 4/5.
 
 The i386 architecture, originating from the Intel 80386 microprocessor,
 has long been a stalwart in the domain of personal computing.
