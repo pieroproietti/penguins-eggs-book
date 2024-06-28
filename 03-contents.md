@@ -108,66 +108,32 @@
     * [sshfs](/40-chapter-4.md#sshfs)
     * [syslinux-common](/40-chapter-4.md#syslinux-common-1)
     * [Genisoimage](/40-chapter-4.md#genisoimage-2)
-    
-[Chapter 5 [89](#chapter-5)](#chapter-5)
 
-[Installing Eggs [89](#installing-eggs)](#installing-eggs)
-
-[Installing Nodejs [89](#installing-nodejs)](#installing-nodejs)
-
-[DEB Supported Versions
-[89](#deb-supported-versions)](#deb-supported-versions)
-
-[Removing Nodejs [93](#removing-nodejs)](#removing-nodejs)
-
-[RPM Installation Instructions
-[94](#rpm-installation-instructions)](#rpm-installation-instructions)
-
-[Method1: [98](#method1)](#method1)
-
-[Install from source [98](#install-from-source)](#install-from-source)
-
-[Method2: [101](#method2)](#method2)
-
-[penguins-eggs-ppa [101](#penguins-eggs-ppa)](#penguins-eggs-ppa)
-
-[Method4: eggs package (Debian based)
-[103](#method4-eggs-package-debian-based)](#method4-eggs-package-debian-based)
-
-[Method5: installing on Arch Linux
-[107](#method5-installing-on-arch-linux)](#method5-installing-on-arch-linux)
-
-[Method6: Installing on Manjaro Linux
-[110](#method6-installing-on-manjaro-linux)](#method6-installing-on-manjaro-linux)
-
-[Method7: installing by npm command
-[111](#method7-installing-by-npm-command)](#method7-installing-by-npm-command)
-
-[installing node.js [111](#installing-node.js)](#installing-node.js)
-
-[Debian-based (e.g., Ubuntu, Linux Mint):
-[111](#debian-based-e.g.-ubuntu-linux-mint)](#debian-based-e.g.-ubuntu-linux-mint)
-
-[Arch-based (e.g., Arch Linux, Manjaro):
-[112](#arch-based-e.g.-arch-linux-manjaro)](#arch-based-e.g.-arch-linux-manjaro)
-
-[Red Hat-based (e.g., CentOS, RHEL):
-[112](#red-hat-based-e.g.-centos-rhel)](#red-hat-based-e.g.-centos-rhel)
-
-[Fedora-based (e.g., Fedora):
-[113](#fedora-based-e.g.-fedora)](#fedora-based-e.g.-fedora)
-
-[Method 8: Installing Eggs from npm source
-[115](#method-8-installing-eggs-from-npm-source)](#method-8-installing-eggs-from-npm-source)
-
-[Updating the eggs [116](#updating-the-eggs)](#updating-the-eggs)
-
-[eggs version [120](#eggs-version)](#eggs-version)
+[Chapter 5](/50-chapter-5.md#chapter-5)
+    * [Installing Eggs](/50-chapter-5.md#installing-eggs)
+    * [Installing Nodejs](/50-chapter-5.md#installing-nodejs)
+    * [DEB Supported Versions](/50-chapter-5.md#deb-supported-versions)
+    * [Removing Nodejs](/50-chapter-5.md#removing-nodejs)
+    * [RPM Installation Instructions](/50-chapter-5.md#rpm-installation-instructions)
+    * [Method1: ](/50-chapter-5.md#method1)
+    * [Install from source](/50-chapter-5.md#install-from-source)
+    * [Method2](/50-chapter-5.md#method2)
+    * [penguins-eggs-ppa](/50-chapter-5.md#penguins-eggs-ppa)
+    * [Method4: eggs package (Debian based)](/50-chapter-5.md#method4-eggs-package-debian-based)
+    * [Method5: installing on Arch Linux](/50-chapter-5.md#method5-installing-on-arch-linux)
+    * [Method6: Installing on Manjaro Linux](/50-chapter-5.md#method6-installing-on-manjaro-linux)
+    * [Method7: installing by npm command](/50-chapter-5.md#method7-installing-by-npm-command)
+    * [installing node.js](/50-chapter-5.md#installing-node.js)
+    * [Debian-based (e.g., Ubuntu, Linux Mint)](/50-chapter-5.md#debian-based-e.g.-ubuntu-linux-mint)
+    * [Arch-based (e.g., Arch Linux, Manjaro)](/50-chapter-5.md#arch-based-e.g.-arch-linux-manjaro)
+    * [Red Hat-based (e.g., CentOS, RHEL)](/50-chapter-5.md#red-hat-based-e.g.-centos-rhel)
+    * [Fedora-based](/50-chapter-5.md#fedora-based-e.g.-fedora)
+    * [Method 8: Installing Eggs from npm source](/50-chapter-5.md#method-8-installing-eggs-from-npm-source)
+    * [Updating the eggs](/50-chapter-5.md#updating-the-eggs)
+    * [eggs version](/50-chapter-5.md#eggs-version)
 
 [Chapter 6 [124](#chapter-6)](#chapter-6)
-
 [Eggs Installer [124](#eggs-installer)](#eggs-installer)
-
 [1.Calamares Installer (GUI):
 [124](#calamares-installer-gui)](#calamares-installer-gui)
 
