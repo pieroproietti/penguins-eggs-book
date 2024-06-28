@@ -211,14 +211,4 @@
     * [Test Customizations](#test-customizations)
     * [Perform Regression Testing](#perform-regression-testing)
 
-[Document and Report Issues
-[221](#document-and-report-issues)](#document-and-report-issues)
-
-[Eggs tools stat [222](#eggs-tools-stat)](#eggs-tools-stat)
-
-[Wardrobe users\' guide
-[226](#wardrobe-users-guide)](#wardrobe-users-guide)
-
-[Appendix 1 [238](#appendix-1)](#appendix-1)
-
-[Penguins Eggs Terms [238](#penguins-eggs-terms)](#penguins-eggs-terms)
+[Appendix](/100-appendix-1.md)
