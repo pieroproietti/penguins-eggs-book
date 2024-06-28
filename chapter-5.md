@@ -2,8 +2,7 @@
 
 # Installing Eggs
 
-[]{dir="rtl"}There are multiple ways to install eggs as a .deb
-package.
+There are multiple ways to install eggs as a .deb package.
 
 Important: Before installing Penguins' eggs, be aware that versions in
 the penguins-eggs-10.0.x series require Node.js version 18 or higher.
