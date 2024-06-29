@@ -312,29 +312,35 @@ usage, flags, and descriptions provided:
 
 The command `sudo eggs install` or `sudo eggs krill` provides various
 flags to customize the installation process. 
-
-You can specifyc a custom unattended configuration, domain name, 
-ip address, swap settings, and more. 
+```
+  -H, --halt            Halt the system after installation
+  -N, --none            Swap none: 256M
+  -S, --suspend         Swap suspend: RAM x 2
+  -b, --btrfs           Format btrfs
+  -c, --chroot          chroot before to end
+  -d, --domain=<value>  Domain name, defult: .local
+  -h, --help            Show CLI help.
+  -i, --ip              hostname as ip, eg: ip-192-168-1-33
+  -k, --crypted         Crypted CLI installation
+  -n, --nointeractive   no user interaction
+  -p, --pve             Proxmox VE install
+  -r, --random          Add random to hostname, eg: colibri-ay412dt
+  -s, --small           Swap small: RAM
+  -u, --unattended      Unattended installation
+  -v, --verbose         Verbose
+```
 
 The command must run with administrative privileges using `sudo`.
 The description mentions that it is a CLI system installer 
 where the °egg became a penguin,° possibly
 indicating a transition or transformation of some sort.
 
-The EXAMPLES: demonstrate different ways to use the command, such as
-running a standard installation, running an unattended installation, and
-running a custom installation with the configuration specified as it.
-
-## Config krill manually:
-
-`/etc/penguins-eggs/conf/krill.yaml`
-
-## The content of krill.yaml
+## `/etc/penguins-eggs.d/krill.yaml
 
 The YAML configuration file named `krill.yaml` is used for
 configuring the installation settings of krill.
 
-Let\'s go through the different sections of the configuration:
+Let's go show the different sections of the configuration:
 
 ```
  Penguins' eggs
@@ -377,61 +383,4 @@ domain: ''
 dns: ''
 ```
 
-
-* `language`: Specifies the language for the installation. In this
-case, it is set to \'en_US.UTF-8\' for English language with
-UTF-8 encoding.
-* `region`: Specifies the region/location. In this case, it is
-set to 'America'.
-* `zone`: specifies the zone within the region. In this case, it is
-set to `New_York`.
-* `keyboardModel`: Specifies the keyboard model. In this case, it is
-set to `pc105`.
-* `keyboardLayout`: Specifies the keyboard layout. In this case, it
-is set to `us`.
-* `keyboardVariant`: Specifies the keyboard variant. It is left
-empty ('') in this configuration.
-* `keyboardOption`: Specifies any additional keyboard options. It is
-left empty ('') in this configuration.
-* `installationDevice`: Specifies the installation device. It is
-left empty ('') in this configuration.
-* `installationMode`: Specifies the installation mode. It is set to
-`standard`.
-* `filesystemType`: Specifies the filesystem type. In this case, it
-is set to `ext4`.
-* `userSwapChoice`: Specifies the user\'s swap choice. It is set to
-`small`
-`name`: Specifies the default username. In this case, it is set to
-`artisan`.
-* `fullname`: Specifies the full name of the default user. In this
-case, it is set to `artisan`.
-* `password`: Specifies the password for the default user. In this
-case, it is set to `evolution`.
-* `rootPassword`: Specifies the root password. In this case, it is
-set to `evolution`.
-* `autologin`: Specifies whether autologin should be enabled for the
-default user. In this case, it is set to `true`.
-* `hostname`: Specifies the hostname. It is left empty
-'' in this configuration.
-* `iface`: Specifies the network interface. It is left empty
-'' in this configuration.
-* `addressType`: Specifies the type of address configuration
-(e.g., `dhcp` or `static`).** In this case, it is set to
-`dhcp`-
-* `address`: Specifies the IP address. It is left empty
-'' in this configuration.
-* `netmask`: Specifies the network mask. It is left empty
-'' in this configuration.
-* `gateway`: Specifies the gateway address. It is left empty
-'' in this configuration.
-* `domain`: Specifies the domain name. It is left empty
-'' in this configuration.
-* `dns`: Specifies the DNS server address. It is left empty
-'' in this configuration.
-
-**See more details and source code:**
-
-https://github.com/pieroproietti/penguins-eggs/tree/master/src/krill/modules
-
-![image43](media/image43.jpg){width="7.103583770778653in"
-height="9.05511811023622in"}
+![image43](media/image43.jpg)
