@@ -49,9 +49,7 @@ module: `packages.conf`, the same is valid for `partitions.conf` module.
 need dual boot, becouse is light and fastest, with the possibility
 to get unattended system installation with various parameters;
 
-# Installing with calamares installer (GUI)
-
-## What is calamares
+# calamares installer (GUI)
 
 Calamares is an open-source installation framework designed to
 simplify the installation process of Linux distributions. It
@@ -78,7 +76,7 @@ systems. It abstracts away many of the complexities of the
 installation process, making it accessible to a wider range of users and
 contributing to a more welcoming Linux ecosystem.
 
-## Calamares views
+## calamares views
 
   These are the commonly view in a typical Calamares
 installation:
@@ -109,7 +107,7 @@ process and may prompt users to reboot their system.
 Additionally, there are optional modules available in Calamares, 
 which are used for specific use cases or distributions:
 
-## Calamares installation 
+## calamares installation 
 
 Calamares is a great tool and can be found on Debian, Devuan, Manjaro and Ubuntu original repositories, but not on Arch repositories.
 
@@ -130,25 +128,25 @@ found in the following path:
 ```
 /etc/calamares
 ```
-
+### `/etc/calamares/`
 In this directory, you will find various configuration files that allow
 you to customize and fine-tune the behavior of Calamares during the
 installation process. These files include:
 
-### /etc/calamares/settings.conf
+#### `/etc/calamares/settings.conf`
 This file serves as the main configuration file
 for calamares. It contains global settings and options that
 determine the behavior of the installer. You can modify various
 parameters such as the theme, language, keyboard layout,
 partitioning scheme, and more.
 
-#### `sequence`
+##### `sequence`
 The provided sequence of steps and exec in the settings.conf file
 appears to be a configuration for an installation or deployment
 process. Here's a breakdown of the sequence and their corresponding
 actions:
 
-##### `show:`
+###### `show:`
 
 * `welcome`
 * `locale`
@@ -162,7 +160,7 @@ installation process, including welcome messages, language/locale
 selection, keyboard configuration, partitioning options, user account
 setup, and a summary of the installation choices.
 
-##### `exec:`
+###### `exec:`
 This section contains a series of actions to be executed
 during the installation process. Each action represents a specific
 task or operation:
@@ -196,7 +194,7 @@ task or operation:
 * `cleanup`: cleaup
 * `umount`: umount filesystem
 
-### /etc/calamares/branding
+#### `/etc/calamares/branding`
 
 This directory defines the branding information for
 Calamares. It allows you to specify the name, logo, and other visual
@@ -210,7 +208,7 @@ By customizing this file, you can create a consistent and personalized
 branding experience. Here is what you can specify in
 the `branding.desc` file:
 
-#### /etc/calamares/branding/branding-name/branding.desc
+##### `/etc/calamares/branding/branding-name/branding.desc`
 
 * `name`: You can set the name of your distribution or customize 
 the name that will be displayed during the installation. This helps users identify your distribution throughout the installation process.
@@ -229,7 +227,7 @@ helps create a consistent and recognizable experience for users during
 the installation process.
 
 
-#### /etc/calamares/branding/branding-name/show.qml
+##### `/etc/calamares/branding/branding-name/show.qml`
 
 The `/etc/calamares/branding/branding-name/show.qml` file refers to
 a specific QML (Qt Meta-Object Language) file used in the
@@ -262,7 +260,7 @@ a terminal:
 less /etc/calamares/branding/eggs/show.qml
 ```
 
-### /etc/calamares/modules
+### `/etc/calamares/modules`
 This directory lists the modules that calamares should
 load during the installation. Each module represents a specific step
 or functionality in the installation process.
@@ -307,9 +305,6 @@ The krill installer (TUI) in the eggs tool allows for a
 command-line installation experience. Here's a breakdown of the
 usage, flags, and descriptions provided:
 
-**Usage:**
-
-
 The command `sudo eggs install` or `sudo eggs krill` provides various
 flags to customize the installation process. 
 ```
@@ -335,12 +330,23 @@ The description mentions that it is a CLI system installer
 where the °egg became a penguin,° possibly
 indicating a transition or transformation of some sort.
 
-## `/etc/penguins-eggs.d/krill.yaml
+## `/etc/penguins-eggs.d/krlll` or `/etc/calamares/`
+krill uses for its configuration `/etc/penguins-eggs.d/krlll` or, if calamares is installed, exploits the latter's configuration in `/etc/calamares/`.
 
-The YAML configuration file named `krill.yaml` is used for
-configuring the installation settings of krill.
+Of this configuration, the only configuration actually used is `/etc/penguins-eggs.d/krlll/modules` and in particular, this modules are read and used:
+* `partition.conf`
+* `unpackfs`: Unpacks the file system.
+* `sources-yolk`: Configures software sources.
+* `removeuser`: remove live user
+* `sources-yolk-undo`: remove sources-yolk 
+* `cleanup`: cleaup
 
-Let's go show the different sections of the configuration:
+## `/etc/penguins-eggs.d/krill.yaml`
+
+The remain configurations of krill are stored on `/etc/penguins-eggs.d/krill.yaml` used for
+configuring the installation settings.
+
+This is a yaml file, and can be customized. Let's go show the different sections of the configuration:
 
 ```
  Penguins' eggs
