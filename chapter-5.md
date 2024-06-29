@@ -37,8 +37,14 @@ The most practical method is to add and use the `penguins-eggs-ppa` repository.
 ## Method1: using `get-eggs` (Arch/Debian/Devuan/Ubuntu)
 
 The `get-eggs` command is used to add the `penguins-eggs-ppa`
-repository and configure it on Arch, Debian, Devuan, Ubuntu, or their
-derivatives. Here's how you can use it:
+repository, nodesource repository - when need - and configure 
+penguins-eggs on Arch, Debian, Devuan, Ubuntu, or their
+derivatives. 
+
+You need just a prerequisites: `git`. If you don't have `git` installed, just install it before: 
+`sudo apt install git` on Debian, or `sudo pacman -Sy git` for Arch,
+
+Here's how you can use it, copy and paste:
 
 ```
 git clone https://github.com/pieroproietti/get-eggs
@@ -48,8 +54,11 @@ sudo ./get-eggs
 
 By executing `sudo ./get-eggs` with root privileges, it will add
 the necessary repositories to your system. On Arch Linux, it will
-add the `chaotic-aur` repository while on Debian-based systems, including 
+add the `chaotic-aur` repository while on Debian-based systems, including Devuan and
 Ubuntu, it will add `penguins-eggs-ppa`
+
+Not only, `get-eggs` will take cure to add [nodesource repository](https://github.com/nodesource/distributions) , 
+when `nodejs>18` is not available on the original repositories of the distro.
 
 Please note that running scripts with root privileges should be done
 with caution. Make sure you trust the source and understand the
