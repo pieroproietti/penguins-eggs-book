@@ -1,4 +1,3 @@
-
 # Chapter 8
 
 # Producing ISO image file
