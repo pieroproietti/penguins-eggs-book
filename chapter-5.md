@@ -142,101 +142,19 @@ sudo eggs tools ppa --add
 ```
 
 
-## Methos3: adding chaoth-aur repository manually (Archlinux)
+## Methos3: adding chaothic-aur repository manually (Archlinux)
 
-To configure the Chaotic-AUR repository and install the
-penguins-eggs package on Arch Linux, follow these steps:
+To configure the [chaotic-aur](https://aur.chaotic.cx/docs) follow the instructions on their site.
 
-1)  Import the Chaotic-AUR repository key by running the following
-    command:
+Finally, install the penguins-eggs package by running:
 
-```
-pacman-key --recv-key FBA220DFC880C036 --keyserver keyserver.ubuntu.com
-```
-
-Description: The pacman-key --recv-key command
-is used in Arch Linux-based distributions, such as Manjaro, to
-import and trust a specific GPG key. This command is typically used
-to validate the authenticity and integrity of packages downloaded from
-specific repositories.
-
-In the example you provided, FBA220DFC880C036 is the key ID that you
-want to import, and keyserver.ubuntu.com is the keyserver from
-which you want to retrieve the key.
-
-To import the key using pacman**-**key **\--**recv**-**key, follow these
-steps:
-
-Open a terminal or command prompt.
-
-Run the following command:
-
-```
-sudo pacman-key --recv-key FBA220DFC880C036 --keyserver keyserver.ubuntu.com
-```
-
-This command will retrieve the specified key from the
-keyserver and import it into your system\'s keyring. After the key
-is imported, you need to trust it by running the following command:
-
-```
-sudo pacman-key --lsign-key FBA220DFC880C036
-```
-
-This command will locally sign the key, indicating that you
-trust it.
-
-By importing and trusting the key, you can ensure the authenticity of
-packages signed with that key when you install them using pacman or
-related package managers.
-
-2)  Sign the imported key by running the following command:
-
-```
-sudo pacman-key --lsign-key FBA220DFC880C036
-```
-
-3)  Install the Chaotic-AUR keyring and mirrorlist packages by
-    running the following command:
-
-```
-sudo pacman -U https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-keyring.pkg.tar.zst https://cdn-mirror.chaotic.cx/chaotic-aur chaotic-mirrorlist.pkg.tar.zst
-```
-
-
-4)  Open the `/etc/pacman.conf` file in a text editor and add
-    the following lines at the end:
-
-```
-[chaotic-aur\]
-Include = /etc/pacman.d/chaotic-mirrorlist
-```
-
-5)  Save the changes and exit the text editor.
-
-6)  Update the package lists by running the following command:
-
-```
-sudo pacman -Sy
-```
-
-7)  Finally, install the penguins-eggs package by running the
-    following command:
 ```
 sudo pacman -Sy penguins-eggs
 ```
+## Method4: using yay (Archlinux)
 
-By following these steps, you will successfully configure
-the chaotic-aur repository and install the penguins-eggs package
-on your Arch Linux system.
-
-**on Arch Linux**, you have others options too to install penguins-eggs. 
-
-One popular choice is to use the yay, an AUR helper. Here's how you can
-install eggs using yay:
-
-1)  Open a terminal and run the following command to install yay if you
-    don't already have it:
+One popular choice on Arch is to use the yay, an AUR helper. 
+Here's how you can install penguins-eggs using yay:
 
 ```
 sudo pacman -Sy yay
@@ -250,6 +168,8 @@ sudo yay -S penguins-eggs
 
 yay will handle the installation process, including fetching the package
 from the AUR and resolving any dependencies.
+
+## Method5: build the package (Arch)
 
 Alternatively, if you prefer a more traditional approach, you can
 manually build and install the penguins-eggs package from the AUR
@@ -277,7 +197,7 @@ sudo makepkg -si
 This command will build the package and prompt you for confirmation
 before installing it.
 
-## Method4: Installing on Manjaro Linux
+## Method6: Installing on Manjaro Linux
 
 On Manjaro, you can easily install the penguins-eggs package from the Manjaro community repository
 using the pamac package manager. Here are the steps to install it:
@@ -305,96 +225,8 @@ any dependencies. By following these steps, you should be able to
 successfully install the penguins-eggs package on Manjaro using
 the pamac package manager.
 
-## Method7: installing by npm command
 
-While it is technically possible to install penguins-eggs directly
-as an npm package, it is worth noting that the npm packages may still
-have dependencies that need to be installed separately.
-Additionally, since penguins-eggs is developed with Node.js, it
-is more commonly distributed as a package for specific Linux
-distributions or available in the AUR. 
-
-If you still prefer to install penguins-eggs using npm and handle the installation of
-dependencies separately, you can follow these general steps:
-
-1)  Ensure that you have Node.js and npm installed on your
-    system.
-
-This is the website of npm how to install it:
-
-https://docs.npmjs.com/downloading-and-installing-node-js-and-npm
-
-or use the following steps based on your Linux distro:
-
-# installing node.js
-
-To install Node.js and npm on different Linux distributions, here
-are the steps for Debian**-**based, Arch**-**based, Red Hat**-**based,
-and Fedora**-**based systems:
-
-## Debian-based (e.g., Ubuntu, Linux Mint):
-
-1)  Open a terminal and update the package lists:
-
-```
-sudo apt update
-```
-
-2)  Install Node.js and npm:
-
-```
-sudo apt install nodejs npm
-```
-
-3)  Verify the installation:
-
-```
-node --version
-npm --version
-```
-
-## Arch-based (e.g., Arch Linux, Manjaro):
-
-1)  Open a terminal and update the package lists:
-
-```
-sudo pacman -Syu
-```
-
-2)  Install Node.js and npm:
-
-```
-sudo pacman -S nodejs npm
-```
-3)  Verify the installation:
-
-```
-node --version
-npm --version
-```
-
-2)  Once you have Node.js and npm installed, you can
-    install penguins-eggs by running the following command in a
-    terminal:
-
-```
-sudo npm install -g penguins-eggs
-```
-
-This command will install the penguins-eggs package globally on your
-system.
-
-3)  After installing penguins-eggs, you will need to manually handle
-    the installation of any dependencies that are required by the
-    package. You can refer to the documentation or instructions
-    provided with penguins-eggs to identify and install the
-    necessary dependencies.
-
-Please note that this method may require more manual effort and may not
-be as straightforward as using the distribution-specific package
-managers like `apt`, pacman or pamac. 
-
-## Method 8: Using penguins-eggs from npm source
+## Use penguins-eggs from npm source
 
 Using penguins-eggs from the source code can indeed provide benefits
 such as easier debugging and the ability to review the code running on
@@ -402,18 +234,17 @@ your machine. It can also offer greater security and the potential
 for collaboration on the project. Here are the steps to install and
 use penguins-eggs from the source code:
 
-1)  Install the required dependencies, including Node.js and
-    the pnpm package manager. On Manjaro, you can run the following
-    command to install them:
+1)  Install the required dependencies, including Node.js >18 and
+    the pnpm package manager. 
+    
+On Debian/Devuan/Ubuntu, can be necessary to configure and use the NodeSource
+repository to install Node.js > 18.x.
 
-```
-sudo pamac install nodejs pnpm devel-base
-```
+On Arch, a `sudo pacman -Syu nodejs`, will be enpught, on Manjaro, you can 
+run the following command: `sudo pamac install nodejs pnpm devel-base`
 
-On Debian/Devuan/Ubuntu, it is recommended to use the NodeSource
-repository to install Node.js version 18.x.
 
-2)  Once Node.js and npm are installed, you can
+2)  Once nodejs and npm are installed, you can
     install pnpm globally by running the following command:
 
 ```
@@ -429,7 +260,9 @@ git clone https://github.com/pieroproietti/penguins-eggs
 
 4)  Change your current directory to the penguins-eggs directory:
 
+```
 cd penguins-eggs
+```
 
 5)  Install the project dependencies using pnpm by running the following
     command:
@@ -437,6 +270,7 @@ cd penguins-eggs
 ```
 sudo pnpm install
 ```
+
 Note that pnpm is used instead of the traditional npm command, which
 allows for faster compilation.
 
@@ -461,141 +295,21 @@ Keep in mind that using the source code requires some technical
 knowledge and may involve additional steps compared to using precompiled
 packages.
 
+## creating deb packages
+If you was able to use penguins-eggs from the source, you can also
+generate deb packages. Just use:
+
+```
+pnpm deb
+```
+
 # Updating the eggs
 
-Once the package is installed, you can use the command 
-`eggs tools ppa --add` to add the repository `penguins-eggs-ppa` and get all the
-updates to eggs via the command apt. To do this simply issue the
-command:
+If you are on Debian and configured the `penguins-eggs-ppa` repository, then you can use just `sudo apt update` to update penguins-eggs.
 
+The same on Arch or Manjaro, with:
 ```
-sudo eggs tools ppa --add
+sudo pacmane -Syu
 ```
-
-
-The eggs tools ppa command is used to add or remove PPA (Personal
-Package Archive) repositories in the Debian family of operating
-systems. Here is a breakdown of its usage:
-
-In the EXAMPLES: section, you can find two usage EXAMPLES::
-
-```
-sudo eggs tools ppa \--add
-```
-
-This command adds the penguins-eggs PPA repository to the
-system. PPAs are commonly used in Debian**-**based systems to
-provide additional software packages that are not available in the
-official repositories.
-
-```
-sudo eggs tools ppa --remove
-```
-
-This command removes the penguins-eggs PPA repository from the
-system. Removing a PPA repository can be useful if you no longer
-need the packages provided by that repository or if you want to clean up
-your system. Please note that adding or removing PPA repositories
-can have implications for your system, such as introducing new software
-sources or removing access to certain packages. Exercise caution and
-ensure that you are familiar with the PPA and its contents before adding
-or removing it.
-
-Here's a more detailed description of each flag used in the eggs tools
-ppa command:
-
--   `-a, --add`: This flag adds the penguins-eggs PPA
-    repository to the system. PPAs are additional software
-    repositories commonly used in Debian**-**based systems to provide
-    access to packages not available in the official repositories.
-    Adding a PPA allows you to install software from that
-    repository.
-
--   `-h, --help`: This flag displays the help message for
-    the eggs tools ppa command. It provides information about the
-    command\'s usage, flags, and EXAMPLES:.
-
--   `-n, --nointeractive`: This flag allows the operation to be
-    performed without any user interaction. When this flag is used,
-    the command will not prompt for any confirmation or additional
-    input. It can be useful when you want to automate the process of
-    adding or removing a PPA repository.
-
--   `-r, --remove`: This flag removes the penguins-eggs PPA
-    repository from the system. Removing a PPA repository can be
-    useful if you no longer need the packages provided by that
-    repository or if you want to clean up your system.
-
--   `-v, --verbose`: This flag enables verbose output, providing
-    more detailed information during the execution of the eggs tools
-    ppa command. It can be helpful for understanding the progress
-    and actions taken during the operation.
-
-The eggs tools ppa command is used to add or remove PPA repositories in
-the Debian family of operating systems. Adding a PPA allows you to
-access additional software packages, while removing a PPA removes access
-to those packages.
-
-Here are a couple of EXAMPLES::
-```
-sudo eggs tools ppa --add
-```
-This command adds the penguins-eggs PPA repository to the system,
-allowing you to install software packages from that repository.
-
-```
-sudo eggs tools ppa --remove
-```
-This command removes the penguins-eggs PPA repository from the
-system, preventing further installations or updates from that
-repository. Please note that adding or removing PPA repositories can
-have implications for your system, such as introducing new software
-sources or removing access to certain packages. Exercise caution and
-ensure that you are familiar with the PPA and its contents before adding
-or removing it.
-
-**More details in source code:**
-
-https://github.com/pieroproietti/penguins-eggs/blob/master/src/commands/tools/ppa.ts
-
-# eggs version 
-
-The eggs version command is used to display information about the
-version of the **"**eggs**"** command**-**line interface **(**CLI**)**
-tool. Here is a breakdown of its usage:
-
-**USAGE**
-
-\$ eggs version \[\--json\] \[\--verbose\]
-
-![](media/image27.png){width="5.198173665791776in"
-height="0.9246205161854768in"}
-
-The command has the following flags:
-
-**FLAGS**
-
-`--verbose` Shows additional information about the CLI.
-
-`--json` Formats the output as JSON.
-
-By running the eggs version command without any flags, you will get the
-version of the **"**eggs**"** CLI tool. It will display the version
-number of the tool.
-
-Note:
-
-If you want more detailed information, you can use the \--verbose flag.
-This will show additional information about the CLI, including the
-architecture, Node.js version, operating system, and versions of any
-plugins being used.
-
-
-If you prefer the output to be in JSON format, you can use
-the **\--**json flag. This will format the output as JSON, which can
-be useful if you want to programmatically parse the version
-information. []{dir="rtl"}Remember to include the eggs command
-before the version subcommand when running the command.
-
 
 ![image30.jpg](media/image30.jpg)
