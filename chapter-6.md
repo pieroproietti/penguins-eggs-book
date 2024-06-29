@@ -1,45 +1,57 @@
-
 # Chapter 6
 
 # Installing the generated ISO image
 
-The eggs tool provides two different system installers for installing your
-distribution after creating the ISO file image:
+ISOs created by eggs, can use two differents system installer to install the system:
+* calamares system installer:
+* krill system installer: an inside a TUI installer built with eggs.
 
-## 1.Calamares Installer (GUI):
 
-1.  Calamares is a graphical installer framework that provides a
-    user-friendly interface for installing your distribution.
+## calamares Installer (GUI)
 
-2.  It offers a visual systematic installation process, making it easier
-    for users who prefer a graphical interface.
+[calamares](https://calamares.io/) is a graphical installer framework that provides a
+user-friendly interface for installing your distribution.
 
-3.  To use the Calamares installer, you can run the eggs
-    calamares command. This command allows you to configure,
-    install, or configure Calamares.
+It offers a visual systematic installation process, making it easier
+for users who prefer a graphical interface.
 
-## 2.Krill Installer (TUI):
+To use the Calamares installer, you can run the eggs
+calamares command. This command allows you to configure,
+install, or configure Calamares.
 
-4.  Krill is a command-line interface (CLI) system installer
-    provided by Eggs.
+## krill Installer (TUI):
+`krill` is a command-line interface (CLI) system installer
+provided by eggs.
 
-5.  It offers a text-based installation process, allowing you to
-    install your distribution without a graphical interface.
+It offers a text-based installation process, allowing you to
+install your distribution without a graphical interface.
 
-6.  The Krill installer is designed for users who prefer a
-    command-line installation experience.
+The `krill` installer is designed for users who need a
+command-line installation experience, it's little, but 
+it's look and feel take very much from the giant calamares,
+just little and CLI. Also his name: `krill`. come as an omage
+to the big `calamares` project.
 
-7.  To use the Krill installer, you can run the eggs
-    install command. This command installs Krill, transforming the
-    °egg° into a °penguin° and enabling the CLI system
-    installer functionality.
+To use the krill installer, just run: `eggs install` command. 
 
-**You can choose the installer that suits your preference and
-installation requirements.**
+## considerations
+* calamares let you to get dual boot (Windows/Linux), it's generally
+safe and it's the most diffused GUI installer;
+* calamares, as GUI software, need the presence of a GUI interface - 
+both X or Wayland, it's not available on CLI systems;
+* as external software, calamares must to be installed before produce the ISO;
+* krill - as part of eggs - is always availabe, for CLI and GUI systems;
+* if calamares is present, krill rely on calamares configuration under `/etc/calamares`,
+without calamares, krill generate it's own configuration on `/etc/penguins-eggs.d/krill.d`;
+* calamares and krill can install and remove packages during system installation, using the same 
+module: `packages.conf`, the same is valid for `partitions.conf` module.
+* sometime is convenient to use krill, in place of calamares, when we don't
+need dual boot, becouse is light and fastest, with the possibility
+to get unattended system installation with various parameters;
 
-## Method 1. Calamares installer (GUI)
+# Installing with calamares installer (GUI)
 
-# What is calamares
+## What is calamares
 
 Calamares is an open-source installation framework designed to
 simplify the installation process of Linux distributions. It
@@ -53,7 +65,7 @@ intuitive interface that guides users through the installation process,
 allowing them to configure various aspects of the system, such as disk
 partitioning, user accounts, localization settings, and more.
 
-Calamares is written in C**++** and uses the Qt framework for its
+Calamares is written in C++ and uses the Qt framework for its
 graphical user interface. It is designed to be highly customizable
 and extensible, allowing Linux distributions to tailor the installer to
 their specific needs. Distribution developers can customize the
@@ -66,95 +78,55 @@ systems. It abstracts away many of the complexities of the
 installation process, making it accessible to a wider range of users and
 contributing to a more welcoming Linux ecosystem.
 
-## Calamares modules
+## Calamares views
 
-  These are the commonly used modules in a typical Calamares
+  These are the commonly view in a typical Calamares
 installation:
 
-1)  Welcome: This module provides an introduction and overview of the
-    installation process. It may include information about the
-    distribution and its features.
-
-2)  Location: This module allows users to select their geographic
-    location, which is used to set the system\'s time zone.
-
-3)  Keyboard: This module enables users to choose their preferred
-    keyboard layout or input method.
-
-4)  Partitions: The partitions module allows users to configure disk
-    partitions for the installation. It provides options for
-    automatic partitioning or manual partitioning, including the ability
-    to create, resize, or format partitions.
-
-5)  Users: This module allows users to set up user accounts and
-    configure user-related settings, such as usernames, passwords,
-    and user privileges.
-
-6)  Summary: The summary module provides a summary of the chosen
-    installation settings and allows users to review and confirm their
-    choices before proceeding with the installation.
-
-7)  Install: This module handles the actual installation process,
-    copying the necessary files to the designated partitions and
-    configuring the system accordingly.
-
-8)  Finish: The finish module marks the completion of the installation
-    process and may prompt users to reboot their system.
+* Welcome: This module provides an introduction and overview of the
+installation process. It may include information about the
+distribution and its features.
+* Location: This module allows users to select their geographic
+location, which is used to set the system\'s time zone.
+* Keyboard: This module enables users to choose their preferred
+keyboard layout or input method.
+* Partitions: The partitions module allows users to configure disk
+partitions for the installation. It provides options for
+automatic partitioning or manual partitioning, including the ability
+to create, resize, or format partitions.
+* Users: This module allows users to set up user accounts and
+configure user-related settings, such as usernames, passwords,
+and user privileges.
+* Summary: The summary module provides a summary of the chosen
+installation settings and allows users to review and confirm their
+choices before proceeding with the installation.
+* Install: This module handles the actual installation process,
+copying the necessary files to the designated partitions and
+configuring the system accordingly.
+* Finish: The finish module marks the completion of the installation
+process and may prompt users to reboot their system.
 
 Additionally, there are optional modules available in Calamares, 
 which are used for specific use cases or distributions:
 
-1)  License: This module presents the end-user license agreement
-    (EULA) and requires users to accept the terms before
-    proceeding with the installation.
-
-2)  Netinstall: The netinstall module enables network-based
-    installation, allowing users to download and install packages
-    directly from the internet during the installation process.
-
-3)  Notesqml: This module provides a text-based note or information
-    to the user during the installation process.
-
-4)  Packagechooser: The packagechooser module allows users to select
-    additional software packages or components to be installed alongside
-    the base system.
-
-5)  Plasmalnf: This module is specific to KDE Plasma-based
-    distributions and provides additional configuration options for the
-    Plasma desktop environment.
-
-6)  Tracking: The tracking module allows distributions to collect
-    anonymous usage data or statistics regarding the installation
-    process, helping developers gather insights and improve the
-    installer.
-
-7)  Webview: This module integrates a web browser or web-based
-    interface within the installer, allowing users to access online
-    resources or perform specific tasks during the installation.
-
-These optional modules offer flexibility and customization options for
-specific installation scenarios or distribution requirements.
-
-# Calamares installation 
-
-How to install Calamares?
+## Calamares installation 
 
 Calamares is a great tool and can be found on Debian, Devuan, Manjaro and Ubuntu original repositories, but not on Arch repositories.
 
-Due the need to find it and configure it's policy to remove, the need to introduce root password from the live to install, the right way is to install i by eggs.
+Due the need to find it and configure it's policy to remove the need to introduce root password to start the installation from the live, the right way is to install i by eggs.
 
 ```
 sudo eggs calamares --install
 ```
-
 Wait for the installation process to complete. 
 The package manager will download and install Calamares along with 
 any necessary dependencies.
 
-# Calamares settings
+## Calamares configuration
 
-After installing Calamares, the configuration files can be
+After installing calamares, the configuration files can be
 found in the following path:
+
 ```
 /etc/calamares
 ```
@@ -163,100 +135,92 @@ In this directory, you will find various configuration files that allow
 you to customize and fine-tune the behavior of Calamares during the
 installation process. These files include:
 
-## settings.conf
-
-1.  **settings.conf**: This file serves as the main configuration file
-    for Calamares. It contains global settings and options that
-    determine the behavior of the installer. You can modify various
-    parameters such as the theme, language, keyboard layout,
-    partitioning scheme, and more.
+### /etc/calamares/settings.conf
+This file serves as the main configuration file
+for calamares. It contains global settings and options that
+determine the behavior of the installer. You can modify various
+parameters such as the theme, language, keyboard layout,
+partitioning scheme, and more.
 
 The provided sequence of steps and exec in the settings.conf file
 appears to be a configuration for an installation or deployment
-process. Here\'s a breakdown of the sequence and their corresponding
+process. Here's a breakdown of the sequence and their corresponding
 actions:
 
-1. Show Welcome, Locale, Keyboard, Partition, Users, Summary: These
+* Show:  Welcome, Locale, Keyboard, Partition, Users, Summary: These 
 are steps to display various screens or prompts to the user during the
 installation process, including welcome messages, language/locale
 selection, keyboard configuration, partitioning options, user account
 setup, and a summary of the installation choices.
 
-2. Exec: This section contains a series of actions to be executed
+* Exec: This section contains a series of actions to be executed
 during the installation process. Each action represents a specific
 task or operation:
 
--   Partition: Handles partitioning of the disk.
+* `partition`: Handles partitioning of the disk.
+* `mount`: Mounts the necessary file systems.
+* `unpackfs`: Unpacks the file system.
+* `sources-yolk`: Configures software sources.
+* `machineid`: Sets the machine ID.
+* `fstab`: Configures the file system table.
+* `locale`: Sets the system locale.
+* `keyboard`: Configures the keyboard layout.
+* `localecfg`: Configures locale-related settings.
+* `luksbootkeyfile`: Handles LUKS boot key file setup.
+* `users`: Sets up user accounts.
+* `displaymanager`: Configures the display manager.
+* `networkcfg`: Configures network settings.
+* `hwclock`: Handles hardware clock configuration.
+* `services-systemd`
+* `bootloader-config`
+* `grubcfg`
+* `bootloader`
+* `packages`
+* `luksbootkeyfile`
+* `plymouthcfg`
+* `initramfscfg`
+* `initramfs`
+* `dpkg-unsafe-io-undo`
+* `removeuser`
+* `sources-yolk-undo`
+* `cleanup`
+* `umount`
 
--   Mount: Mounts the necessary file systems.
+### /etc/calamares/branding
 
--   Unpackfs: Unpacks the file system.
-
--   Sources-yolk: Configures software sources.
-
--   Machineid: Sets the machine ID.
-
--   Fstab: Configures the file system table.
-
--   Locale: Sets the system locale.
-
--   Keyboard: Configures the keyboard layout.
-
--   Localecfg: Configures locale-related settings.
-
--   Luksbootkeyfile: Handles LUKS boot key file setup.
-
--   Users: Sets up user accounts.
-
--   Displaymanager: Configures the display manager.
-
--   Networkcfg: Configures network settings.
-
--   Hwclock: Handles hardware clock configuration.
-
-## Branding
-
-**2.branding**: This directory defines the branding information for
+This directory defines the branding information for
 Calamares. It allows you to specify the name, logo, and other visual
 elements that will be displayed during the installation process. By
 customizing this file, you can create a consistent branding experience
 for your distribution.
 
-![](media/image36.png){width="5.1050371828521435in"
-height="2.3582436570428698in"}
-
 The branding directory in Calamares allows you to define the branding
 information for your distribution during the installation process.
 By customizing this file, you can create a consistent and personalized
 branding experience. Here is what you can specify in
-the branding.desc file:
+the `branding.desc` file:
 
--   Name: You can set the name of your distribution or customize the
-    name that will be displayed during the installation. This helps
-    users identify your distribution throughout the installation
-    process.
+### /etc/calamares/branding/branding.desc
 
--   Logo: You can specify the logo or icon that represents your
-    distribution. This image will be displayed in various places
-    during the installation, such as the installer\'s welcome screen or
-    progress bar.
-
--   Visual Elements: Apart from the name and logo, you can also define
-    other visual elements to create a cohesive branding experience.
-    This may include specifying colors, fonts, or any other design
-    elements that align with your distribution\'s brand identity.
+* `name`: You can set the name of your distribution or customize 
+the name that will be displayed during the installation. This helps users identify your distribution throughout the installation process.
+* `logo`: You can specify the logo or icon that represents your
+distribution. This image will be displayed in various places
+during the installation, such as the installer\'s welcome screen or
+progress bar.
+* Visual Elements: Apart from the name and logo, you can also define
+other visual elements to create a cohesive branding experience.
+This may include specifying colors, fonts, or any other design
+elements that align with your distribution\'s brand identity.
 
 By customizing the branding.desc file, you can ensure that the
 installer reflects the unique identity of your distribution. It
 helps create a consistent and recognizable experience for users during
 the installation process.
 
-Default eggs branding.desc:
+Default eggs `branding.desc`
 
-![](media/image37.png){width="5.272345800524934in"
-height="3.5597944006999125in"}
-
-Show.qml file
+### show.qml
 
 The `/etc/calamares/branding/show.qml` file refers to
 a specific QML (Qt Meta-Object Language) file used in the
@@ -280,9 +244,8 @@ defines the layout, styling, and interactive elements of the installer
 screens, such as labels, buttons, input fields, and progress
 indicators.
 
-To view the contents of
-the `/etc/calamares/branding/show.qml` file on your
-system, you can use a text editor or command-line tools
+To view the contents of the `/etc/calamares/branding/show.qml` file 
+on your system, you can use a text editor or command-line tools
 like cat or less. For example, you can run the following command in
 a terminal:
 
@@ -290,9 +253,9 @@ a terminal:
 less /etc/calamares/branding/eggs/show.qml
 ```
 
-## modules
+### /etc/calamares/modules
 
-**3.modules**: This directory lists the modules that Calamares should
+This directory lists the modules that Calamares should
 load during the installation. Each module represents a specific step
 or functionality in the installation process.
 
@@ -301,36 +264,36 @@ available to the user during installation. EXAMPLES: of modules
 include partitioning, user account creation, bootloader installation,
 and more.
 
-**Partitioning**: The partitioning module handles the disk partitioning
+* Partitioning: The partitioning module handles the disk partitioning
 process, allowing users to create, resize, or delete partitions as
 needed.
 
--   User Account Creation: This module enables users to create user
-    accounts during the installation process, specifying usernames,
-    passwords, and other account details.
+* User Account Creation: This module enables users to create user
+accounts during the installation process, specifying usernames,
+passwords, and other account details.
 
--   Bootloader Installation: The bootloader module handles the
-    installation and configuration of the bootloader, allowing users to
-    choose the boot device and configure boot options.
+* Bootloader Installation: The bootloader module handles the
+installation and configuration of the bootloader, allowing users to
+choose the boot device and configure boot options.
 
--   Localization: This module allows users to select the system\'s
-    language, keyboard layout, timezone, and other regional
-    settings.
+* Localization: This module allows users to select the system\'s
+language, keyboard layout, timezone, and other regional
+settings.
 
--   Package Selection: The package selection module enables users to
-    choose the software packages they want to install, allowing for
-    customization and fine-tuning of the system\'s software
-    selection.
+* Package Selection: The package selection module enables users to
+choose the software packages they want to install, allowing for
+customization and fine-tuning of the system\'s software
+selection.
 
--   Summary and Installation: This module presents a summary of the
-    selected options and performs the actual installation process.
+* Summary and Installation: This module presents a summary of the
+selected options and performs the actual installation process.
 
 These are just a few EXAMPLES: of the modules that can be included in
 the modules.conf file. By modifying this file, you can enable or
 disable specific modules based on your requirements, thus controlling
 which features are available to the user during the installation.
 
-## Method2: The Krill installer (TUI)
+# Using Krill installer (TUI)
 
 The Krill installer (TUI) in the Eggs tool allows for a
 command-line installation experience. Here\'s a breakdown of the
