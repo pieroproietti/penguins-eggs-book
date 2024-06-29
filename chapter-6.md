@@ -142,18 +142,28 @@ determine the behavior of the installer. You can modify various
 parameters such as the theme, language, keyboard layout,
 partitioning scheme, and more.
 
+#### `sequence`
 The provided sequence of steps and exec in the settings.conf file
 appears to be a configuration for an installation or deployment
 process. Here's a breakdown of the sequence and their corresponding
 actions:
 
-* Show:  Welcome, Locale, Keyboard, Partition, Users, Summary: These 
-are steps to display various screens or prompts to the user during the
+##### `show:`
+
+* `welcome`
+* `locale`
+* `keyboard`
+* `partition`
+* `users`
+* `summary`
+
+These  are steps to display various screens or prompts to the user during the
 installation process, including welcome messages, language/locale
 selection, keyboard configuration, partitioning options, user account
 setup, and a summary of the installation choices.
 
-* Exec: This section contains a series of actions to be executed
+##### `exec:`
+This section contains a series of actions to be executed
 during the installation process. Each action represents a specific
 task or operation:
 
@@ -171,20 +181,20 @@ task or operation:
 * `displaymanager`: Configures the display manager.
 * `networkcfg`: Configures network settings.
 * `hwclock`: Handles hardware clock configuration.
-* `services-systemd`
-* `bootloader-config`
-* `grubcfg`
-* `bootloader`
-* `packages`
-* `luksbootkeyfile`
-* `plymouthcfg`
-* `initramfscfg`
-* `initramfs`
+* `services-systemd` : Configure systemd
+* `bootloader-config` : configura bootloader
+* `grubcfg` : configure grub
+* `bootloader`: install grub
+* `packages`: install/remove packages
+* `luksbootkeyfile`: 
+* `plymouthcfg`: configure plymouth
+* `initramfscfg`: configure initramfs
+* `initramfs`: create inittramfs
 * `dpkg-unsafe-io-undo`
-* `removeuser`
-* `sources-yolk-undo`
-* `cleanup`
-* `umount`
+* `removeuser`: remove live user
+* `sources-yolk-undo`: remove sources-yolk 
+* `cleanup`: cleaup
+* `umount`: umount filesystem
 
 ### /etc/calamares/branding
 
@@ -200,7 +210,7 @@ By customizing this file, you can create a consistent and personalized
 branding experience. Here is what you can specify in
 the `branding.desc` file:
 
-### /etc/calamares/branding/branding.desc
+#### /etc/calamares/branding/branding-name/branding.desc
 
 * `name`: You can set the name of your distribution or customize 
 the name that will be displayed during the installation. This helps users identify your distribution throughout the installation process.
@@ -218,22 +228,21 @@ installer reflects the unique identity of your distribution. It
 helps create a consistent and recognizable experience for users during
 the installation process.
 
-Default eggs `branding.desc`
 
-### show.qml
+#### /etc/calamares/branding/branding-name/show.qml
 
-The `/etc/calamares/branding/show.qml` file refers to
+The `/etc/calamares/branding/branding-name/show.qml` file refers to
 a specific QML (Qt Meta-Object Language) file used in the
 Calamares installer framework. This file is typically located in
-the `/etc/calamares/branding/` directory.
+the `/etc/calamares/branding/branding-name` directory.
 
-The purpose of the show.qml file within the branding
+The purpose of the `show.qml` file within the branding
 directory is to define the graphical user interface (GUI) for
 displaying screens or pages during the installation process,
 specifically for a particular branding or customization of the Calamares
 installer.
 
-By modifying the show.qml file, you can customize the appearance,
+By modifying the `show.qml` file, you can customize the appearance,
 layout, and behavior of the installer\'s user interface to match a
 specific branding or theme. This allows Linux distributions and
 system integrators to tailor the installation experience to their
@@ -254,8 +263,7 @@ less /etc/calamares/branding/eggs/show.qml
 ```
 
 ### /etc/calamares/modules
-
-This directory lists the modules that Calamares should
+This directory lists the modules that calamares should
 load during the installation. Each module represents a specific step
 or functionality in the installation process.
 
@@ -295,20 +303,22 @@ which features are available to the user during the installation.
 
 # Using Krill installer (TUI)
 
-The Krill installer (TUI) in the Eggs tool allows for a
-command-line installation experience. Here\'s a breakdown of the
+The krill installer (TUI) in the eggs tool allows for a
+command-line installation experience. Here's a breakdown of the
 usage, flags, and descriptions provided:
 
 **Usage:**
 
 
-The `eggs install` or `eggs krill` command seems to be a
-CLI system installer. It provides various flags to customize the
-installation process, such as specifying a custom unattended
-configuration, domain name, IP address, swap settings, Proxmox VE
-installation, and more. The command can be run with administrative
-privileges using sudo. The description mentions that it is a CLI
-system installer where the °egg became a penguin,° possibly
+The command `sudo eggs install` or `sudo eggs krill` provides various
+flags to customize the installation process. 
+
+You can specifyc a custom unattended configuration, domain name, 
+ip address, swap settings, and more. 
+
+The command must run with administrative privileges using `sudo`.
+The description mentions that it is a CLI system installer 
+where the °egg became a penguin,° possibly
 indicating a transition or transformation of some sort.
 
 The EXAMPLES: demonstrate different ways to use the command, such as
@@ -317,110 +327,107 @@ running a custom installation with the configuration specified as it.
 
 ## Config krill manually:
 
-Got the following path:
-
-![](media/image41.png){width="5.1821128608923885in"
-height="2.1504155730533685in"}
-
-Then you can see the krill config file:
-
-/etc/ penguins-eggs/conf/krill.yaml
-
-![](media/image42.png){width="5.158114610673666in"
-height="4.988772965879265in"}
+`/etc/penguins-eggs/conf/krill.yaml`
 
 ## The content of krill.yaml
 
-The YAML configuration file named °krill.yaml° for
-configuring the installation settings of the °eggs install° or
-°eggs krill° CLI system installer. Let\'s go through the
-different sections of the configuration:
+The YAML configuration file named `krill.yaml` is used for
+configuring the installation settings of krill.
 
-welcome
+Let\'s go through the different sections of the configuration:
 
-**language**: Specifies the language for the installation. In this
+```
+ Penguins' eggs
+# krill.yaml
+---
+# welcome (put your language, example: it_IT.UTF-8)
+language: 'en_US.UTF-8'
+
+# location (put your location, example region: "Europe", zone: "Rome")
+region: 'America'
+zone: 'New_York'
+
+# keyboard (put your values example: keyboardModel: "pc105", keyboardLayout: "it")
+keyboardModel: 'pc105'
+keyboardLayout: 'us'
+keyboardVariant: ''
+keyboardOption: ''
+
+# partition (leave it unchanged)
+installationDevice: ''
+installationMode: 'standard'
+filesystemType: 'ext4'
+userSwapChoice: 'small'
+
+# users (Here you can put your default user, password, etc)
+name: 'artisan'
+fullname: 'artisan'
+password: 'evolution'
+rootPassword: 'evolution'
+autologin: true
+hostname: ''
+
+# network (leave it unchanged)
+iface: ""
+addressType: 'dhcp'
+address: ''
+netmask: ''
+gateway: ''
+domain: ''
+dns: ''
+```
+
+
+* `language`: Specifies the language for the installation. In this
 case, it is set to \'en_US.UTF-8\' for English language with
 UTF-8 encoding.
-
-location
-
-**region**: Specifies the region/location. In this case, it is
-set to \'America\'.
-
-**zone**: Specifies the zone within the region. In this case, it is
-set to \'New_York\'.
-
-keyboard
-
-**keyboardModel**: Specifies the keyboard model. In this case, it is
-set to \'pc105\'.
-
-**keyboardLayout**: Specifies the keyboard layout. In this case, it
-is set to \'us\'.
-
-**keyboardVariant**: Specifies the keyboard variant. It is left
-empty (\'\') in this configuration.
-
-**keyboardOption**: Specifies any additional keyboard options. It is
-left empty (\'\') in this configuration.
-
-partition
-
-**installationDevice**: Specifies the installation device. It is
-left empty (\'\') in this configuration.
-
-**installationMode**: Specifies the installation mode. It is set to
-\'standard\'.
-
-**filesystemType**: Specifies the filesystem type. In this case, it
-is set to \'ext4\'.
-
-**userSwapChoice**: Specifies the user\'s swap choice. It is set to
-\'small\'.
-
-users
-
-**name**: Specifies the default username. In this case, it is set to
-\'artisan\'.
-
-**fullname**: Specifies the full name of the default user. In this
-case, it is set to \'artisan\'.
-
-**password**: Specifies the password for the default user. In this
-case, it is set to \'evolution\'.
-
-**rootPassword**: Specifies the root password. In this case, it is
-set to \'evolution\'.
-
-**autologin**: Specifies whether autologin should be enabled for the
-default user. In this case, it is set to \'true\'.
-
-**hostname**: Specifies the hostname. It is left empty
-(\'\') in this configuration.
-
-network
-
-**iface**: Specifies the network interface. It is left empty
-(\'\') in this configuration.
-
-**addressType**: Specifies the type of address configuration
-(e.g., dhcp or static**).** In this case, it is set to
-\'dhcp\'.
-
-**address**: Specifies the IP address. It is left empty
-(\'\') in this configuration.
-
-**netmask**: Specifies the network mask. It is left empty
-(\'\') in this configuration.
-
-**gateway**: Specifies the gateway address. It is left empty
-(\'\') in this configuration.
-
-**domain**: Specifies the domain name. It is left empty
-(\'\') in this configuration.
-
-**dns**: Specifies the DNS server address. It is left empty
-(\'\') in this configuration.
+* `region`: Specifies the region/location. In this case, it is
+set to 'America'.
+* `zone`: specifies the zone within the region. In this case, it is
+set to `New_York`.
+* `keyboardModel`: Specifies the keyboard model. In this case, it is
+set to `pc105`.
+* `keyboardLayout`: Specifies the keyboard layout. In this case, it
+is set to `us`.
+* `keyboardVariant`: Specifies the keyboard variant. It is left
+empty ('') in this configuration.
+* `keyboardOption`: Specifies any additional keyboard options. It is
+left empty ('') in this configuration.
+* `installationDevice`: Specifies the installation device. It is
+left empty ('') in this configuration.
+* `installationMode`: Specifies the installation mode. It is set to
+`standard`.
+* `filesystemType`: Specifies the filesystem type. In this case, it
+is set to `ext4`.
+* `userSwapChoice`: Specifies the user\'s swap choice. It is set to
+`small`
+`name`: Specifies the default username. In this case, it is set to
+`artisan`.
+* `fullname`: Specifies the full name of the default user. In this
+case, it is set to `artisan`.
+* `password`: Specifies the password for the default user. In this
+case, it is set to `evolution`.
+* `rootPassword`: Specifies the root password. In this case, it is
+set to `evolution`.
+* `autologin`: Specifies whether autologin should be enabled for the
+default user. In this case, it is set to `true`.
+* `hostname`: Specifies the hostname. It is left empty
+'' in this configuration.
+* `iface`: Specifies the network interface. It is left empty
+'' in this configuration.
+* `addressType`: Specifies the type of address configuration
+(e.g., `dhcp` or `static`).** In this case, it is set to
+`dhcp`-
+* `address`: Specifies the IP address. It is left empty
+'' in this configuration.
+* `netmask`: Specifies the network mask. It is left empty
+'' in this configuration.
+* `gateway`: Specifies the gateway address. It is left empty
+'' in this configuration.
+* `domain`: Specifies the domain name. It is left empty
+'' in this configuration.
+* `dns`: Specifies the DNS server address. It is left empty
+'' in this configuration.
 
 **See more details and source code:**
 
