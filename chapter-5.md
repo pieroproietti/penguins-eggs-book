@@ -2,34 +2,6 @@
 
 # Installing Eggs
 
-penguins-eggs, starting from version 10.x require nodejs>18, 
-Debian bookworm, Devuan daedalus and Ubuntu noble have nodejs on their
-repositories, others distros not.
-
-We need to add repository for nodejs>18 or better from [nodesource](https://github.com/nodesource/distributions).
-
-
-## Ubuntu 20.04 focal, Ubuntu 22.04 jammy
-
-```
-sudo apt-get install -y curl
-curl -fsSL https://deb.nodesource.com/setup_18.x -o nodesource_setup.sh
-sudo -E bash nodesource_setup.sh
-```
-
-## UBUNTU 18.04 bionic, Debian stretch and derivatives**
-
-If you are using Ubuntu 18.04 bionic, or derivatives, you can't use nodejs>16, but I have good news
-too: we have a special version called penguins-eggs-10.0.x-bionic-x.deb compiled against nodejs 16!
-
-Just add node16 repo from [nodesource](https://github.com/nodesource/distributions).
-
-```
-sudo apt-get install -y curl
-curl -fsSL https://deb.nodesource.com/setup_16.x -o nodesource_setup.sh
-sudo -E bash nodesource_setup.sh
-```
-
 There are multiple ways to install eggs as a .deb package.
 
 The most practical method is to add and use the `penguins-eggs-ppa` repository.
@@ -54,8 +26,8 @@ sudo ./get-eggs
 
 By executing `sudo ./get-eggs` with root privileges, it will add
 the necessary repositories to your system. On Arch Linux, it will
-add the `chaotic-aur` repository while on Debian-based systems, including Devuan and
-Ubuntu, it will add `penguins-eggs-ppa`
+add the [chaotic-aur](https://aur.chaotic.cx/) repository while on Debian-based systems, including Devuan and
+Ubuntu, it will add [penguins-eggs-ppa](https://github.com/pieroproietti/penguins-eggs-ppa).
 
 Not only, `get-eggs` will take cure to add [nodesource repository](https://github.com/nodesource/distributions) , 
 when `nodejs>18` is not available on the original repositories of the distro.
@@ -170,43 +142,7 @@ sudo eggs tools ppa --add
 ```
 
 
-## Method3: adding penguins-eggs-ppa manually (Debian/Devuan/Ubuntu)
-
-Using ppa depository on Debian based:
-
-To use the repository, follow these steps:
-
-1.  Copy and paste the following two lines into a terminal window:
-
-```
-curl -fsSL https://pieroproietti.github.io/penguins-eggs-ppa/KEY.gpg
-| sudo gpg \--dearmor -o /etc/apt/trusted.gpg.d/penguins-eggs.gpg
-$sudo echo "deb \[arch=\$(dpkg \--print-architecture)\]
-https://pieroproietti.github.io/penguins-eggs-ppa ./" | sudo tee
-/etc/apt/sources.list.d/penguins-eggs.list \> /dev/null
-```
-
-Now, you can use standard apt commands to install and upgrade the eggs
-package. Remember to run sudo apt update to update the package lists
-before installing or upgrading the eggs package.
-
-```
-sudo apt update
-sudo apt install penguins-eggs
-```
-
-Once the eggs package is successfully installed, you can
-use the eggs command-line tool to add the penguins-eggs-ppa
-repository and receive updates via apt. To add the repository,
-execute the following command:
-
-
-By following these steps, you can install the eggs package,
-resolve any missing dependencies, and add the penguins-eggs-ppa
-repository for future updates.
-
-
-## Methos6: adding chaoth-aur repository manually (Archlinux)
+## Methos3: adding chaoth-aur repository manually (Archlinux)
 
 To configure the Chaotic-AUR repository and install the
 penguins-eggs package on Arch Linux, follow these steps:
@@ -294,7 +230,7 @@ By following these steps, you will successfully configure
 the chaotic-aur repository and install the penguins-eggs package
 on your Arch Linux system.
 
-**on Arch Linux**, you have multiple options to install eggs. 
+**on Arch Linux**, you have others options too to install penguins-eggs. 
 
 One popular choice is to use the yay, an AUR helper. Here's how you can
 install eggs using yay:
@@ -341,7 +277,7 @@ sudo makepkg -si
 This command will build the package and prompt you for confirmation
 before installing it.
 
-## Method6: Installing on Manjaro Linux
+## Method4: Installing on Manjaro Linux
 
 On Manjaro, you can easily install the penguins-eggs package from the Manjaro community repository
 using the pamac package manager. Here are the steps to install it:
