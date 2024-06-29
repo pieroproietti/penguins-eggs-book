@@ -1,10 +1,10 @@
 # Chapter 5
 
-# Installing Eggs
+# Installing penguins-eggs
+penguins-eggs is the package name of the package containig the eggs tool.
 
-There are multiple ways to install eggs as a .deb package.
-
-The most practical method is to add and use the `penguins-eggs-ppa` repository.
+There are multiple ways to install penguins-eggs, the most practical way
+is to use [get-eggs](https://github.com/pieroproietti/get-eggs) repository.
 
 ## Method1: using `get-eggs` (Arch/Debian/Devuan/Ubuntu)
 
@@ -16,7 +16,7 @@ derivatives.
 You need just a prerequisites: `git`. If you don't have `git` installed, just install it before: 
 `sudo apt install git` on Debian, or `sudo pacman -Sy git` for Arch,
 
-Here's how you can use it, copy and paste:
+Here's how you can use it, just copy and paste:
 
 ```
 git clone https://github.com/pieroproietti/get-eggs
@@ -42,19 +42,17 @@ If you prefer not to include the `penguins-eggs-ppa`
 repository in your system's repositories, you have an alternative
 method to install the eggs package. Follow these steps:
 
-1)  Visit the sourceforge site to download the latest version of the
-    eggs package in .deb format.
+1)  Visit the [sourceforge page](https://sourceforge.net/projects/penguins-eggs/files/DEBS/) 
+    to download the latest version of the eggs package in .deb format.
 
-2)  Once the package is downloaded, open a terminal and navigate to the
-    directory [DEBS](https://sourceforge.net/projects/penguins-eggs/files/DEBS/)  
+2)  Once the package is downloaded, open a terminal and go 
     where the .deb file is located.
-
 
 3)  Install the eggs package using the dpkg command with sudo. For
     example:
 
 ```
-sudo dpkg -i eggs-10.0.13.deb
+sudo dpkg -i eggs-10.0.x-amd64.deb
 ```
 
 4)  Since this is your first installation, there may be missing
@@ -85,7 +83,7 @@ on sourceForge.net, developers can showcase their work, collaborate
 with other developers, and make their software easily accessible to
 users. 
 
-When it comes to the installation of eggs, SourceForge.net provides a
+When it comes to the installation of eggs, sourceForge.net provides a
 convenient location to download the necessary .deb package files. 
 
 These files contain the software package that you need to install 
@@ -226,7 +224,7 @@ successfully install the penguins-eggs package on Manjaro using
 the pamac package manager.
 
 
-## Use penguins-eggs from npm source
+## Use penguins-eggs from source code
 
 Using penguins-eggs from the source code can indeed provide benefits
 such as easier debugging and the ability to review the code running on
@@ -295,21 +293,23 @@ Keep in mind that using the source code requires some technical
 knowledge and may involve additional steps compared to using precompiled
 packages.
 
-## creating deb packages
-If you was able to use penguins-eggs from the source, you can also
-generate deb packages. Just use:
+Another advantage of using source code, come from the possibility to create your 
+de packages. Just use:
 
 ```
+cd penguins-eggs
 pnpm deb
 ```
+you will get your package under `./perrisbrewery/work...`.
 
-# Updating the eggs
+
+# Updating penguins-eggs
 
 If you are on Debian and configured the `penguins-eggs-ppa` repository, then you can use just `sudo apt update` to update penguins-eggs.
 
-The same on Arch or Manjaro, with:
+The same on Arch with `chaoric-aur` or in Manjaro using community repo, with:
 ```
-sudo pacmane -Syu
+sudo pacman -Syu
 ```
 
 ![image30.jpg](media/image30.jpg)
