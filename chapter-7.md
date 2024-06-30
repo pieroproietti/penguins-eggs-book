@@ -41,7 +41,19 @@ accurate descriptions of the purpose and functionalities of the
 configuration file. This configuration file will change with this
 command: we introduced this command before.
 
+
+## /etc/penguins-eggs.d/exclude.list
+This file is build from templates inside `/etc/penguins-eggs.d/exclude.list.d/`
+
 ## /etc/penguins-eggs.d/exclude.list.d/
+Here we have templates for exclude.list, we have templates for:
+* master.list
+* homes.list
+* usr.list
+* var.list
+
+When we produce an eggs, this templates are combinated to for an `/etc/penguins-eggs.d/exclude.list`. 
+If for same reasonm you don't want every time rebuild it, you can use flag `--static`.
 
 # Part3: Configuration status
 
