@@ -6,12 +6,12 @@ Producing a live image from a system without including any personal
 data. If you are referring to creating a live image of an
 operating system (such as a live Linux distribution), this
 generally does not include personal data unless specifically configured
-to do so. Live images typically run from a read**-**only medium like
+to do so. Live images typically run from a read-only medium like
 a CD, DVD, or USB drive and don't modify the host system unless
 explicitly instructed to do so. However, ensuring that personal data
 is not captured or transmitted is a matter of configuring the live image
 and the software it runs to avoid such behavior. If you have
-specific concerns about privacy and data security, it **is** important
+specific concerns about privacy and data security, it is important
 to carefully review the settings and documentation of the live image
 you're using.
 
@@ -27,7 +27,7 @@ installing it on their own machines.
 
 When creating a live image, the goal is to capture the entire operating
 system setup, including the necessary system files, applications, and
-configurations, while excluding any personal data or user**-**specific
+configurations, while excluding any personal data or user-specific
 information. This ensures that the live image can be used safely and
 doesn\'t expose any sensitive or private information. The process of
 producing a live image typically involves using specialized software or
@@ -38,7 +38,7 @@ operating system without affecting the host system or leaving any traces
 of personal data. Live images are commonly used for various
 purposes, such as testing new operating systems, providing a portable
 environment for troubleshooting or system recovery, or distributing
-pre**-**configured systems for educational or demonstration
+pre-configured systems for educational or demonstration
 purposes.
 
 # Step 1: cleaning the system
@@ -76,7 +76,7 @@ EXAMPLES
 
 ## Cleaning with bleachbit 
 
-BleachBit is a popular open**-**source system cleaning and privacy tool
+BleachBit is a popular open-source system cleaning and privacy tool
 for Linux operating systems. It helps you free up disk space,
 protect your privacy, and improve system performance by removing
 unnecessary files and data.
@@ -107,35 +107,33 @@ Here are some key features of BleachBit:
     offers secure file shredding options. This ensures that deleted
     files cannot be recovered using data recovery tools.
 
-6)  Command**-**Line Interface: BleachBit provides a command**-**line
+6)  Command-Line Interface: BleachBit provides a command-line
     interface for advanced users who prefer to automate or script
     cleaning operations.
 
 Run bleachbit with:
 
-\$ sudo bleachbit
-
-![BleachBit 1.9.3 on Windows
-10](media/image82.png){width="5.120833333333334in"
-height="4.028607830271216in"}
+```
+sudo bleachbit
+```
 
 To obtain the latest version of BleachBit, you can download the
 appropriate package for your Linux distribution from the official
 BleachBit website. Here are the steps to select the correct package:
 
 1)  Visit the BleachBit website
-    at [https:**//**www.bleachbit.org/](https://www.bleachbit.org/).
+    at [https://www.bleachbit.org/](https://www.bleachbit.org/).
 
 2)  Navigate to the °Download° section of the website.
 
 3)  Look for the available package options, which are typically provided
-    in .deb format for Debian**-**based distributions and .rpm
-    format for RPM**-**based distributions.
+    in .deb format for Debian-based distributions and .rpm
+    format for RPM-based distributions.
 
 4)  Identify your Linux distribution and select the corresponding
     package. For example, if you are using Ubuntu or a
-    Debian**-**based distribution, select the .deb package. If
-    you are using Fedora or a Red Hat**-**based distribution, select the
+    Debian-based distribution, select the .deb package. If
+    you are using Fedora or a Red Hat-based distribution, select the
     .rpm package.
 
 5)  Click on the download link for the selected package to begin
@@ -143,11 +141,11 @@ BleachBit website. Here are the steps to select the correct package:
 
 6)  Once the package is downloaded, you can install it using the
     appropriate package manager for your distribution. For example,
-    on Debian**-**based systems, you can use the dpkg command to install
-    the .deb package, and on RPM**-**based systems, you can use
+    on Debian-based systems, you can use the dpkg command to install
+    the .deb package, and on RPM-based systems, you can use
     the rpm or dnf command to install the .rpm package.
 
-BleachBit is indeed a feature**-**rich software designed to help you
+BleachBit is indeed a feature-rich software designed to help you
 clean your computer, free up space, and maintain your privacy.
 Here\'s a breakdown of its key features and uses:
 
@@ -170,13 +168,13 @@ Cross-Platform Compatibility:
 Open Source and Free:
 
 -   BleachBit is free of charge and does not have any hidden costs or
-    money trails. It is an open**-**source software, which means it
+    money trails. It is an open-source software, which means it
     can be shared, learned, and modified by users.
 
 No Adware or Malware:
 
 -   BleachBit is free from adware, spyware, malware, backdoors, browser
-    toolbars, or any °value**-**added software° that may
+    toolbars, or any °value-added software° that may
     compromise your system\'s security.
 
 Multi-Language Support:
@@ -197,13 +195,13 @@ Portable and Command-Line Support:
 -   The Windows version of BleachBit can be run without installation,
     making it portable and convenient.
 
--   It also provides a command**-**line interface, allowing advanced
+-   It also provides a command-line interface, allowing advanced
     users to automate cleaning operations through scripting.
 
 Customization and Updates:
 
 -   BleachBit allows users to write their own cleaners using CleanerML,
-    an XML**-**based markup language.
+    an XML-based markup language.
 
 -   It automatically imports and updates winapp2.ini cleaner files,
     providing access to over 2500 additional cleaners for Windows
@@ -220,7 +218,7 @@ Cleaners:
 
 -   It also provides advanced cleaners for specific tasks, such as
     clearing memory and swap on Linux, deleting broken shortcuts,
-    cleaning APT for Debian**-**based distributions, and more.
+    cleaning APT for Debian-based distributions, and more.
 
 Overall, BleachBit offers a comprehensive set of features to help you
 free up disk space, maintain your privacy, improve system performance,
@@ -232,45 +230,44 @@ tool for both Linux and Windows users.
 
 To see the help of cli commands of bleachbit instead of GUI ,Type :
 
-sudo bleachbit -h
-
-![](media/image83.png){width="4.867442038495188in"
-height="2.924165573053368in"}
+```
+bleachbit -h
+```
 
 Launch BleachBit: Once BleachBit is installed, you can launch it in
 either command line or graphical mode.
 
-**1.Command Line Mode**: Open a terminal and run the bleachbit command
+1.Command Line Mode: Open a terminal and run the bleachbit command
 followed by any desired options or arguments. For example, to clean
 the system, you can use the following command:
 
 First: type the following command to list and then clean.
 
-Sudo bleachbit --l
+```
+sudo bleachbit --l
+```
 
 For example:
 
-![](media/image84.png){width="5.2408541119860015in"
-height="2.160406824146982in"}
+```
+sudo bleachbit --clean apt.clean
+```
 
-bleachbit --clean apt.clean
-
-![](media/image85.png){width="5.256543088363954in"
-height="0.9433256780402449in"}
-
-**2.Graphical Mode:** If you prefer a graphical interface, simply search
+2.Graphical Mode: If you prefer a graphical interface, simply search
 for °BleachBit° in your application launcher or menu. Click
 on the BleachBit icon to launch the graphical interface, where you can
 select the cleaning options and perform the cleanup.
 
-\$ sudo bleachbit
+```
+sudo bleachbit
+```
 
 Or
 
-\$ sudo bleachbit \--gui
+```
+sudo bleachbit \--gui
+```
 
-![](media/image86.png){width="5.2312521872265965in"
-height="3.782205818022747in"}
 
 1.  Select Cleaning Options: In the BleachBit interface, you\'ll find a
     list of cleaning options for various categories such as system, web
@@ -309,8 +306,8 @@ Here are some key points about the /etc/skel directory:
     (such as .bashrc or .zshrc), example documents, and
     directories for organizing files.
 
-3)  System**-**wide Changes: Modifying the contents of
-    the /etc/skel directory can have system**-**wide
+3)  System-wide Changes: Modifying the contents of
+    the /etc/skel directory can have system-wide
     implications. Any changes made to this directory will be
     reflected in the home directories of all new user accounts created
     on the system.
@@ -319,7 +316,7 @@ Here are some key points about the /etc/skel directory:
     the /etc/skel directory to suit their needs. By adding
     or modifying files and directories in this directory, they can
     establish a consistent environment for new users. This can
-    include pre**-**configured settings, default document templates, or
+    include pre-configured settings, default document templates, or
     specific directory structures.
 
 5)  User Modifications: It\'s important to note that the contents of
@@ -414,7 +411,7 @@ this command with administrative privileges (sudo), the
 necessary configurations are applied to enable offline
 installations. The exact details of how the eggs tool
 handles offline installations may depend on its implementation and
-configuration. It could involve pre**-**downloading packages,
+configuration. It could involve pre-downloading packages,
 setting up a local package repository, or utilizing other mechanisms to
 enable installation without internet access.
 
@@ -542,7 +539,7 @@ want to ensure the privacy and confidentiality of the cloned system.
 * `--standard`: This option specifies the use of standard
 compression: plain `xz` during the image creation. It means that the
 resulting image file will be compressed using a standard compression
-algorithm, balancing the trade**-**off between compression speed and
+algorithm, balancing the trade-off between compression speed and
 the resulting size of the image.
 
 So, by using the `--standard` option, you can create an image
@@ -595,15 +592,15 @@ package, a configuration file, a library, or any other relevant
 component that plays a role in the execution or behavior of the
 command.
 
-1.  **\--**addons**=\<**value**\>\...**: This option allows you to
+1.  \--addons=\<value\>\...: This option allows you to
     specify addons to be used. The available addon options
     are adapt, ichoice, pve, and rsupport. You can include multiple
-    addons by providing them as a comma**-**separated list.
+    addons by providing them as a comma-separated list.
 
-The **\--**addons**=\<**value**\>\...** option allows you to specify
+The \--addons=\<value\>\... option allows you to specify
 addons to be used with the command. The available addon options
 are adapt, ichoice, pve, and rsupport. To include multiple addons,
-you can provide them as a comma**-**separated list. For example, if
+you can provide them as a comma-separated list. For example, if
 you want to include both adapt and pve addons, you would use the option
 like this:
 
@@ -614,13 +611,13 @@ its execution. The addons you specify can provide additional
 functionality, features, or configurations to enhance the command\'s
 behavior according to your needs. Make sure to consult the
 command\'s documentation or help text for more details on how to use
-the **\--**addons option and the specific effects of each addon.
+the \--addons option and the specific effects of each addon.
 
-The **\--**basename**=\<**value**\>** option allows you to set the
+The \--basename=\<value\> option allows you to set the
 basename for the resulting output or file generated by the command.
 The basename typically refers to the base name or identifier of the
 file. To set a custom value for the basename, you would
-replace **\<**value**\>** with the desired name or identifier you want
+replace \<value\> with the desired name or identifier you want
 to assign to the output. For example:
 
 By specifying `--excludes`, you can selectively apply or not same `exludes.list`
@@ -632,41 +629,41 @@ the installated system.
 1)  Maximizing compression: This action aims to optimize the compression
     of files or data, potentially resulting in smaller file sizes or
     more efficient storage utilization. By including
-    the **\--**release option, you instruct the command to prioritize
+    the \--release option, you instruct the command to prioritize
     compression during the release process.
 
 2)  Removing penguins-eggs: This action involves removing or
     excluding the penguins-eggs component from the release. The
     specific purpose or functionality of penguins-eggs depends on
-    the context of the command. By using the **\--**release option,
+    the context of the command. By using the \--release option,
     you indicate that you want to exclude this component from the final
     release.
 
 3)  Removing calamares after installation: Calamares is a popular
-    open**-**source installation framework. When you include
-    the **\--**release option, it signifies that you want to remove the
+    open-source installation framework. When you include
+    the \--release option, it signifies that you want to remove the
     Calamares component after the installation process is complete.
     This action can be useful if you no longer require the installation
     framework once the system is set up.
 
-The exact implications and effects of using the **\--**release option
+The exact implications and effects of using the \--release option
 may vary depending on the specific command and its implementation.
 It\'s important to consult the command\'s documentation or help text for
 further details on the actions performed during the release process and
 any additional considerations associated with this option.
 
-**\--**theme**=\<**value**\>**: This option allows you to set the theme
+\--theme=\<value\>: This option allows you to set the theme
 for the livecd, calamares branding, and partitions. You can provide
 a custom value to define the desired theme.
-The **\--**theme**=\<**value**\>** option enables you to set the theme
+The \--theme=\<value\> option enables you to set the theme
 for various components such as the livecd, calamares branding, and
 partitions. You can provide a custom value to define the desired
-theme. To set a custom theme, replace **\<**value**\>** with the
+theme. To set a custom theme, replace \<value\> with the
 name or identifier of the theme you wish to use. For instance:
 
 \--theme=mytheme
 
-In this example, the theme is set to °mytheme**".** By specifying a
+In this example, the theme is set to °mytheme". By specifying a
 theme, you can customize the appearance, styling, and visual elements of
 the livecd, calamares branding, and partitions according to your
 preferences or requirements. The specific effects of the theme
@@ -676,8 +673,8 @@ to understand the available themes, any specific requirements for using
 custom themes, and how they are applied to the respective
 components. Remember that the theme option provides an opportunity
 to personalize the visual aspects of the command\'s output, making it
-more aligned with your desired aesthetic or branding**.
-[]{dir="rtl"}**Here are some EXAMPLES: demonstrating the usage of
+more aligned with your desired aesthetic or branding.
+[]{dir="rtl"}Here are some EXAMPLES: demonstrating the usage of
 the sudo eggs produce command with different options:
 
 sudo eggs produce
@@ -698,7 +695,7 @@ option.
 sudo eggs produce \--max \--basename=colibri
 
 This command will execute the °produce° action with the max
-option and set the basename to °colibri**".**
+option and set the basename to °colibri".
 
 sudo eggs produce \--cryptedclone
 
@@ -713,14 +710,14 @@ option.
 sudo eggs produce \--basename=colibri
 
 This command will execute the °produce° action and set the
-basename to °colibri**".**
+basename to °colibri".
 
 sudo eggs produce \--basename=colibri \--theme /path/to/theme \--addons
 adapt
 
 This command will execute the °produce° action, set the basename
 to °colibri°, use a custom theme located at
-**"/**path/to/theme°, and include the °adapt°
+"/path/to/theme°, and include the °adapt°
 addon. Please note that these EXAMPLES: assume the existence of a
 valid sudo eggs produce command and may require additional parameters or
 options depending on the specific context. Make sure to consult the
@@ -755,7 +752,7 @@ sudo eggs produce \--basename=colibri \--theme /path/to/theme
 
 This command will execute the °produce° action, set the base
 name to °colibri°, and use a custom theme located at
-**"/**path/to/theme**".**
+"/path/to/theme".
 
 sudo eggs produce \--max \--filters custom \--theme=default
 
@@ -766,7 +763,7 @@ default theme.
 sudo eggs produce \--clone \--basename=backup
 
 This command will execute the °produce° action with the clone
-option and set the basename to °backup**".** Remember to adjust the
+option and set the basename to °backup". Remember to adjust the
 options and values according to your specific requirements and the
 available features of the sudo eggs produce command. Additionally,
 consult the command\'s documentation or help text for a comprehensive
@@ -788,7 +785,7 @@ height="1.3905653980752406in"}
 The default location of the ISO file when mounting it in a Linux
 system. In some cases, the ISO file may be mounted in
 the .mnt directory, which is a hidden directory. To access
-hidden directories in a file manager, you can typically press Ctrl **+**
+hidden directories in a file manager, you can typically press Ctrl +
 h to toggle the visibility of hidden files and
 directories.![](media/image99.png){width="4.3735323709536305in"
 height="1.2139807524059492in"}
