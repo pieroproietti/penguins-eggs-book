@@ -232,5 +232,47 @@ Equivalent of `accessories` but don't fail.
 
 
 ## `customize`
+`costomize` contains variables and scripts to finalize the installation and customize the result. It can contain:
+
+* dirs
+* hostname
+* script
+
+### `dirs`
+`dirs` is a boolean field, if true the directory `./dirs` inside the costume will be copied to the root of the system root.
+
+Example: We need to copy our user desktop customization in `/etc/skel` and our background to `/usr/share/background`.
+
+Simply put all in a directory called `./dirs`, inside our `colibri`:
+```
+- dirs   + etc   + skel  
+         + usr   + backgrounds  + colibri
+        
+```
+You can browse in on the [colibri](https://github.com/pieroproietti/penguins-wardrobe/tree/main/costumes/colibri/dirs) and it's not pratical? I think yes, all our customizations, at the price of a little and light directory structure.
+
+### `hostname`
+If `hostname` is `true` file `/etc/hostname` and `/etc/hosts` will be updated to the name of costume, in ourt case `colibri`.
+
+### scripts
+`scripts` contains an array of one or more scripts used to customize the resultant system.
+
+You can add other scripts and directories within del costume colibri or use the scripts contained in the scripts folder such as `../../scripts/config_desktop_link.sh`.
+
+Examples:
+```
+customize:
+  dirs: true
+  scripts:
+    - ../../scripts/config_desktop_link.sh
+    - ../../scripts/config_lightdm.sh
+```
+Scripts are called from customize/scripts and executed in the specific order.
+
+## reboot
+
+
+
+
 
 
