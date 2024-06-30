@@ -1,143 +1,8 @@
 # Chapter 9
 
-# After Producing
-
-## eggs syncto command
-
-The eggs syncto command allows you to save users and user data in a LUKS
-volume inside the ISO. Here is the breakdown of its usage:
-
-![](media/image102.png){width="5.511811023622047in"
-height="3.025008748906387in"}
-
-In the EXAMPLES: section, you can find two usage EXAMPLES::
-
-sudo eggs syncto
-
-This command saves users and user data in a LUKS volume inside the
-ISO. The necessary configurations and parameters should be set
-before running this command.
-
-sudo eggs syncto \--file /path/to/fileLUKS
-
-This command saves users and user data in the specified LUKS volume file
-located at **/**path**/**to**/**fileLUKS. It creates and encrypts
-the LUKS volume inside the ISO, preserving the necessary data.
-
-Here\'s a more detailed description of each flag used in the eggs
-syncto command:
-
--   **-**f, **\--**file**=\<**value**\>**: This flag is used to specify
-    the LUKS volume file that you want to create and encrypt. You
-    should provide the path to the LUKS volume file as
-    the **\<**value**\>.** This file will contain the saved users and
-    user data.
-
--   **-**h, **\--**help: This flag displays the help message for
-    the eggs syncto command. It provides information about the
-    command\'s usage, flags, and EXAMPLES:.
-
--   **-**v, **\--**verbose: This flag enables verbose output, providing
-    more detailed information during the execution of the eggs
-    syncto command. It can be helpful for troubleshooting or
-    understanding the synchronization process.
-
--   **\--**delete**=\<**value**\>**: This flag enables the rsync command
-    with the **\--**delete option. It allows the deletion of
-    extraneous files from the destination directories during the
-    synchronization process. You can provide **\<**value**\>** to
-    further configure the delete behavior
-    **(**e.g., **\--**delete**=**after**).**
-
-The eggs syncto command saves users and user data in a LUKS volume
-inside the ISO. Here are some usage EXAMPLES::
-
-sudo eggs syncto
-
-This command saves users and user data in a LUKS volume inside the
-ISO. The default configurations and parameters are assumed to be set
-correctly.
-
-sudo eggs syncto \--file /path/to/fileLUKS
-
-This command saves users and user data in the specified LUKS volume file
-located at **/**path**/**to**/**fileLUKS. It creates the LUKS volume
-and encrypts it inside the ISO, preserving the necessary data.
-
-## eggs syncfrom command
-
-The eggs syncfrom command is used to restore users and user data from
-LUKS volumes. Here is the usage and EXAMPLES: for this command:
-
-![](media/image103.png){width="5.103056649168854in"
-height="2.7931332020997375in"}
-
-In the EXAMPLES: section, you can use the eggs syncfrom command with
-various options:
-
-sudo eggs syncfrom
-
-This command will restore users and user data from a LUKS volume. It
-assumes the necessary parameters are provided either through default
-configurations or prior setup.
-
-sudo eggs syncfrom \--file /path/to/fileLUKS
-
-This command will restore users and user data from the specified LUKS
-volume file located at **/**path**/**to**/**fileLUKS. The command
-will decrypt the LUKS volume and sync the data accordingly. Please
-note that the exact behavior and requirements of the eggs
-syncfrom command may depend on the specific context and
-implementation. Make sure to consult the command\'s documentation or
-help text for accurate usage instructions and additional details. If
-you have any further questions or need assistance with the eggs
-syncfrom command. Here\'s a more detailed description of each flag
-used in the eggs syncfrom command:
-
--   **-**f, **\--**file**=\<**value**\>**: This flag is used to specify
-    the LUKS volume file that you want to decrypt and sync. You
-    should provide the path to the LUKS volume file as
-    the **\<**value**\>.**
-
--   **-**h, **\--**help: This flag displays the help message for
-    the eggs syncfrom command. It provides information about the
-    command\'s usage, flags, and EXAMPLES:.
-
--   **-**r, **\--**rootdir**=\<**value**\>**: This flag is used when
-    running the command from a live environment. It allows you to
-    specify the root directory of the installed system. You should
-    provide the path to the root directory as the **\<**value**\>.**
-
--   **-**v, **\--**verbose: This flag enables verbose output, providing
-    more detailed information during the execution of the eggs
-    syncfrom command. It can be helpful for troubleshooting or
-    understanding the synchronization process.
-
--   **\--**delete**=\<**value**\>**: This flag enables the rsync command
-    with the **\--**delete option. It allows the deletion of
-    extraneous files from the destination directories during the
-    synchronization process. You can provide **\<**value**\>** to
-    further configure the delete behavior
-    **(**e.g., **\--**delete**=**after**).**
-
-The eggs syncfrom command restores users and user data from a LUKS
-volume. Here are some usage EXAMPLES::
-
-sudo eggs syncfrom
-
-This command restores users and user data using the default
-configurations and assumes that the necessary parameters are already
-set.
-
-sudo eggs syncfrom \--file /path/to/fileLUKS
-
-This command restores users and user data from the specified LUKS volume
-file located at **/**path**/**to**/**fileLUKS. It decrypts the LUKS
-volume and performs the synchronization process accordingly.
-
 # Testing the ISO
 
-To test an ISO created with the **"**eggs**"** tool, you can follow
+To test an ISO created with the "eggs" tool, you can follow
 these general steps:
 
 1.  Prepare a Testing Environment: Set up a virtual machine or a
@@ -150,23 +15,21 @@ virtual machine or a physical system. Here\'s how you can do it:
 
 > 2.Virtual Machine Testing:
 
--   Install a virtualization software like VirtualBox, VMware, or KVM on
-    your computer.
+* Install a virtualization software, prefer KVM based, like `gnome-boxes`, `proxmox-ve`, etc, over proprietary `virtualbox` or `VMware`;
 
--   Create a new virtual machine using the virtualization software.
+* Create a new virtual machine using the virtualization software.
 
--   During the virtual machine creation process, configure the system
-    specifications such as CPU, memory, and storage based on your
-    requirements.
+* During the virtual machine creation process, configure the system
+specifications such as CPU, memory, and storage based on your
+requirements.
 
--   When prompted to select an ISO or boot media, choose the ISO file
-    created with the **"**eggs**"** tool.
+* When prompted to select an ISO or boot media, choose the ISO file
+created with the "eggs" tool.
 
--   Complete the virtual machine creation process and start the virtual
-    machine.
+* Complete the virtual machine creation process and start the virtual machine.
 
--   The virtual machine will boot from the ISO, allowing you to test the
-    operating system or software contained within the ISO.
+* The virtual machine will boot from the ISO, allowing you to test the
+operating system or software contained within the ISO.
 
 > 3. Physical System Testing:
 
@@ -191,7 +54,7 @@ environment to test your ISO and ensure its functionality and
 compatibility.
 
 > 4. Boot the ISO: Start the virtual machine or the target system
-> and boot from the ISO you created with the **"**eggs**"** tool.
+> and boot from the ISO you created with the "eggs" tool.
 > Ensure that the ISO is accessible during the boot process.
 >
 > 5. Test Installation: If the purpose of the ISO is to install an
@@ -207,7 +70,7 @@ ensure it completes successfully:
 1)  Start the system or virtual machine using the ISO as described in
     the previous steps.
 
-2)  Follow the on**-**screen instructions to begin the installation
+2)  Follow the on-screen instructions to begin the installation
     process.
 
 3)  Provide any required information, such as language preferences,
@@ -260,7 +123,7 @@ Here are the steps to follow:
     -   Ensure that the networking features are working correctly.
 
     -   Connect to the internet and verify if you can access websites or
-        perform network**-**related tasks.
+        perform network-related tasks.
 
     -   Test both wired and wireless connections if applicable.
 
@@ -272,7 +135,7 @@ Here are the steps to follow:
     -   Verify that graphics and animations are rendered smoothly
         without any visual artifacts or glitches.
 
-    -   Test playing videos or running graphics**-**intensive
+    -   Test playing videos or running graphics-intensive
         applications to ensure they function properly.
 
 4)  Sound and Audio:
@@ -280,8 +143,8 @@ Here are the steps to follow:
     -   Play audio files or videos with sound to confirm that the audio
         output is working as expected.
 
-    -   Test different audio inputs and outputs **(**e.g.,
-        speakers, headphones, microphone**)** if available.
+    -   Test different audio inputs and outputs (e.g.,
+        speakers, headphones, microphone) if available.
 
 5)  Hardware Compatibility:
 
@@ -321,7 +184,7 @@ Here are the steps to follow:
 ## Test Customizations
 
 Test Customizations: If the ISO includes any customizations or
-modifications, such as pre**-**installed software, configurations, or
+modifications, such as pre-installed software, configurations, or
 themes, verify that these changes are present and working as
 intended. When testing customizations or modifications included in
 an ISO, follow these steps to verify their presence and functionality:
@@ -332,9 +195,9 @@ an ISO, follow these steps to verify their presence and functionality:
 2)  Once the installation is complete, boot into the installed
     system.
 
-3)  Check for Pre**-**Installed Software:
+3)  Check for Pre-Installed Software:
 
-    -   Verify if the custom ISO includes any pre**-**installed software
+    -   Verify if the custom ISO includes any pre-installed software
         or applications.
 
     -   Launch these applications and ensure they open without any
@@ -534,7 +397,7 @@ and fix the problems.
 # Eggs tools stat 
 
 The eggs tools stat command is used to retrieve statistics from
-SourceForge, a web**-**based hosting service for software development
+SourceForge, a web-based hosting service for software development
 projects. Here is a breakdown of its usage:
 
 ![](media/image104.png){width="3.9616240157480314in"
@@ -572,7 +435,7 @@ the available data from the SourceForge API.
 The Penguins\' Wardrobe methodology allows for the tracking and reuse of
 steps taken during the development of a remastering project. It
 provides a way to create customizations starting from a minimal CLI
-system that is already installed, referred to as a **"**naked**"**
+system that is already installed, referred to as a "naked"
 system. You have used this methodology to create various generic
 customizations such as colibri, duck, owl, and eagle. Additionally,
 you have used it to create Linux systems with waydroids named wagtail,
@@ -581,33 +444,33 @@ respectively.
 
 It\'s worth noting that while the Penguins\' Wardrobe methodology is
 useful for remastering projects, it is not necessary to use it in
-conjunction with the **"**eggs**"** tool. You can still utilize the
-**"**eggs**"** tool for system customization based on your own
+conjunction with the "eggs" tool. You can still utilize the
+"eggs" tool for system customization based on your own
 methodologies and original customizations.
 
 The eggs wardrobe list command is used to list the costumes and
 accessories available in a wardrobe. Here is a breakdown of its
 usage:
 
-**USAGE**
+USAGE
 
 \$ eggs wardrobe list \[WARDROBE\] \[-h\] \[-v\]
 
-**ARGUMENTS**
+ARGUMENTS
 
 WARDROBE (optional) Specifies the name of the wardrobe to list.
 
-**FLAGS**
+FLAGS
 
 -h, \--help Displays the help message for the command.
 
 -v, \--verbose Enables verbose output.
 
-**DESCRIPTION**
+DESCRIPTION
 
 Lists the costumes and accessories available in a wardrobe.
 
-**EXAMPLES:**
+EXAMPLES:
 
 \$ eggs wardrobe list
 
@@ -616,7 +479,7 @@ Lists the costumes and accessories in the default wardrobe.
 \$ eggs wardrobe list your-wardrobe
 
 Lists the costumes and accessories in a specific wardrobe named
-**"**your**-**wardrobe**".** The command has the following EXAMPLES::
+"your-wardrobe". The command has the following EXAMPLES::
 
 \$ eggs wardrobe list
 
@@ -626,31 +489,31 @@ wardrobe.
 \$ eggs wardrobe list your-wardrobe
 
 This command lists the costumes and accessories in a specific wardrobe
-named **"**your**-**wardrobe**".** The actual implementation code for
+named "your-wardrobe". The actual implementation code for
 this command can be found in
-the src**/**commands**/**wardrobe**/**list.ts file. Here\'s a
+the src/commands/wardrobe/list.ts file. Here\'s a
 description of the flags in the eggs wardrobe list command:
 
-**FLAGS**
+FLAGS
 
 -h, \--help Displays the help message for the command.
 
 -v, \--verbose Enables verbose output.
 
--   **-**h, **\--**help: This flag displays the help message for
+-   -h, \--help: This flag displays the help message for
     the eggs wardrobe list command. It provides information about
     the command\'s usage, arguments, and flags.
 
--   **-**v, **\--**verbose: This flag enables verbose output when
+-   -v, \--verbose: This flag enables verbose output when
     listing the costumes and accessories in a wardrobe. Verbose
     output typically includes more detailed or additional information to
     provide a more comprehensive view of the output.
 
 The command allows for an optional argument:
 
-**ARGUMENTS**
+ARGUMENTS
 
-WARDROBE **(**optional**)** Specifies the name of the wardrobe to
+WARDROBE (optional) Specifies the name of the wardrobe to
 list.
 
 WARDROBE: This argument is optional and allows you to specify the name
@@ -661,12 +524,12 @@ default wardrobe.
 
 The command\'s description summarizes its purpose:
 
-**DESCRIPTION**
+DESCRIPTION
 
 Lists the costumes and accessories available in a wardrobe. The
 EXAMPLES: provided illustrate the usage of the command:
 
-**EXAMPLES:**
+EXAMPLES:
 
 \$ eggs wardrobe list
 
@@ -675,74 +538,19 @@ Lists the costumes and accessories in the default wardrobe.
 \$ eggs wardrobe list your-wardrobe
 
 Lists the costumes and accessories in a specific wardrobe named
-**"**your**-**wardrobe**".** The eggs wardrobe show command is used to
+"your-wardrobe". The eggs wardrobe show command is used to
 display costumes and accessories in a wardrobe. Here is the
 breakdown of its usage:
 
-**USAGE**
+USAGE
 
 \$ eggs wardrobe show \[COSTUME\] \[-h\] \[-j\] \[-v\] \[-w \<value\>\]
 
-**ARGUMENTS**
+ARGUMENTS
 
 COSTUME Specifies the costume or accessory to show.
 
-**FLAGS**
-
--h, \--help Show CLI help.
-
--j, \--json Output in JSON format.
-
--v, \--verbose Enables verbose output.
-
-**-w**, **\--wardrobe=\<value\> Specifies the wardrobe to show**
-costumes**/**accessories from.
-
-**DESCRIPTION**
-
-Shows costumes and accessories in a wardrobe.
-
-**EXAMPLES:**
-
-\$ eggs wardrobe show colibri
-
-Shows the costume or accessory named **"**colibri**"** in the default
-wardrobe.
-
-\$ eggs wardrobe show accessories/firmwares
-
-Shows the costume or accessory named **"**firmwares**"** in the
-**"**accessories**"** folder of the default wardrobe.
-
-\$ eggs wardrobe show accessories/
-
-Shows all costumes and accessories in the **"**accessories**"** folder
-of the default wardrobe. Here are some EXAMPLES: of how to use the
-command:
-
-\$ eggs wardrobe show colibri
-
-This command shows the costume or accessory named **"**colibri**"** in
-the default wardrobe.
-
-\$ eggs wardrobe show accessories/firmwares
-
-This command shows the costume or accessory named **"**firmwares**"** in
-the **"**accessories**"** folder of the default wardrobe.
-
-\$ eggs wardrobe show accessories/
-
-This command shows all costumes and accessories in the
-**"**accessories**"** folder of the default wardrobe. The actual
-implementation code for this command can be found in
-the src**/**commands**/**wardrobe**/**show.ts file.
-
-## 
-
-Here\'s a more detailed description of the flags in the eggs wardrobe
-show command:
-
-**FLAGS**
+FLAGS
 
 -h, \--help Show CLI help.
 
@@ -753,22 +561,77 @@ show command:
 -w, \--wardrobe=\<value\> Specifies the wardrobe to show
 costumes/accessories from.
 
--   **-**h, **\--**help: This flag displays the command line interface
-    **(**CLI**)** help for the eggs wardrobe show command. It
+DESCRIPTION
+
+Shows costumes and accessories in a wardrobe.
+
+EXAMPLES:
+
+\$ eggs wardrobe show colibri
+
+Shows the costume or accessory named "colibri" in the default
+wardrobe.
+
+\$ eggs wardrobe show accessories/firmwares
+
+Shows the costume or accessory named "firmwares" in the
+"accessories" folder of the default wardrobe.
+
+\$ eggs wardrobe show accessories/
+
+Shows all costumes and accessories in the "accessories" folder
+of the default wardrobe. Here are some EXAMPLES: of how to use the
+command:
+
+\$ eggs wardrobe show colibri
+
+This command shows the costume or accessory named "colibri" in
+the default wardrobe.
+
+\$ eggs wardrobe show accessories/firmwares
+
+This command shows the costume or accessory named "firmwares" in
+the "accessories" folder of the default wardrobe.
+
+\$ eggs wardrobe show accessories/
+
+This command shows all costumes and accessories in the
+"accessories" folder of the default wardrobe. The actual
+implementation code for this command can be found in
+the src/commands/wardrobe/show.ts file.
+
+## 
+
+Here\'s a more detailed description of the flags in the eggs wardrobe
+show command:
+
+FLAGS
+
+-h, \--help Show CLI help.
+
+-j, \--json Output in JSON format.
+
+-v, \--verbose Enables verbose output.
+
+-w, \--wardrobe=\<value\> Specifies the wardrobe to show
+costumes/accessories from.
+
+-   -h, \--help: This flag displays the command line interface
+    (CLI) help for the eggs wardrobe show command. It
     provides information on how to use the command and its available
     options.
 
--   **-**j, **\--**json: This flag formats the output in JSON
+-   -j, \--json: This flag formats the output in JSON
     format. When used, the command will display the costumes or
     accessories in a structured JSON format, which can be useful for
     programmatic processing or automation.
 
--   **-**v, **\--**verbose: This flag enables verbose output. When
+-   -v, \--verbose: This flag enables verbose output. When
     enabled, the command provides more detailed information or
     additional output, offering a more comprehensive view of the
     costumes and accessories in the wardrobe.
 
--   **-**w, **\--**wardrobe**=\<**value**\>**: This flag allows you to
+-   -w, \--wardrobe=\<value\>: This flag allows you to
     specify the wardrobe from which to show the costumes and
     accessories. You can provide the name of the wardrobe as the
     value for this flag. By default, the command shows the costumes
@@ -776,32 +639,32 @@ costumes/accessories from.
 
 The command\'s description summarizes its purpose:
 
-**DESCRIPTION**
+DESCRIPTION
 
 Shows costumes and accessories in a wardrobe.
 
 The EXAMPLES: provided illustrate the usage of the command:
 
-**EXAMPLES:**
+EXAMPLES:
 
 \$ eggs wardrobe show colibri
 
-Shows the costume or accessory named **"**colibri**"** in the default
+Shows the costume or accessory named "colibri" in the default
 wardrobe.
 
 \$ eggs wardrobe show accessories/firmwares
 
-Shows the costume or accessory named **"**firmwares**"** in the
-**"**accessories**"** folder of the default wardrobe.
+Shows the costume or accessory named "firmwares" in the
+"accessories" folder of the default wardrobe.
 
 \$ eggs wardrobe show accessories/
 
-Shows all costumes and accessories in the **"**accessories**"** folder
+Shows all costumes and accessories in the "accessories" folder
 of the default wardrobe. The eggs wardrobe get command is used to
 retrieve a wardrobe from a repository. Here is the breakdown of its
 usage:
 
-**USAGE**
+USAGE
 
 \$ eggs wardrobe get \[REPO\] \[-h\] \[-v\]
 
@@ -809,17 +672,17 @@ ARGUMENTS
 
 REPO Specifies the repository to get the wardrobe from.
 
-**FLAGS**
+FLAGS
 
 -h, \--help Show CLI help.
 
 -v, \--verbose Enables verbose output.
 
-**DESCRIPTION**
+DESCRIPTION
 
 Retrieves a wardrobe from a repository.
 
-**EXAMPLES:**
+EXAMPLES:
 
 \$ eggs wardrobe get
 
@@ -827,7 +690,7 @@ Retrieves the default wardrobe.
 
 \$ eggs wardrobe get your-wardrobe
 
-Retrieves the wardrobe named **"**your**-**wardrobe**".**
+Retrieves the wardrobe named "your-wardrobe".
 
 Here are some EXAMPLES: of how to use the command:
 
@@ -837,10 +700,10 @@ This command retrieves the default wardrobe.
 
 \$ eggs wardrobe get your-wardrobe
 
-This command retrieves the wardrobe named **"**your**-**wardrobe**".**
+This command retrieves the wardrobe named "your-wardrobe".
 
 The actual implementation code for this command can be found in
-the src**/**commands**/**wardrobe**/**get.ts file. Here\'s a
+the src/commands/wardrobe/get.ts file. Here\'s a
 more detailed description of the flags in the eggs wardrobe get command:
 
 FLAGS
@@ -849,19 +712,19 @@ FLAGS
 
 -v, \--verbose Enables verbose output.
 
--   **-**h, **\--**help: This flag displays the command line interface
-    **(**CLI**)** help for the eggs wardrobe get command. It
+-   -h, \--help: This flag displays the command line interface
+    (CLI) help for the eggs wardrobe get command. It
     provides information on how to use the command and its available
     options.
 
--   **-**v, **\--**verbose: This flag enables verbose output. When
+-   -v, \--verbose: This flag enables verbose output. When
     enabled, the command provides more detailed information or
     additional output, offering a more comprehensive view of the
     retrieval process.
 
 The command\'s description summarizes its purpose:
 
-**DESCRIPTION**
+DESCRIPTION
 
 Retrieves a wardrobe from a repository.
 
@@ -875,13 +738,13 @@ Retrieves the default wardrobe.
 
 \$ eggs wardrobe get your-wardrobe
 
-Retrieves the wardrobe named **"**your**-**wardrobe**".** In the first
+Retrieves the wardrobe named "your-wardrobe". In the first
 example, running the command without specifying a repository name
 retrieves the default wardrobe. This means that if you don\'t
 provide a specific repository, the command will retrieve the wardrobe
 that is set as the default. In the second example, running the
-command with a specific repository name **(**in this case,
-**"**your**-**wardrobe**")** retrieves the wardrobe with that name from
+command with a specific repository name (in this case,
+"your-wardrobe") retrieves the wardrobe with that name from
 the repository.
 
 The eggs wardrobe wear command is used to wear a costume or accessories
@@ -910,15 +773,15 @@ FLAGS
 
 -w, \--wardrobe=\<value\> Specifies the wardrobe to use.
 
-**DESCRIPTION**
+DESCRIPTION
 
 Wears a costume or accessories from a wardrobe.
 
-**EXAMPLES:**
+EXAMPLES:
 
 \$ sudo eggs wardrobe wear duck
 
-Wears the **"**duck**"** costume.
+Wears the "duck" costume.
 
 \$ sudo eggs wardrobe wear accessories/firmwares
 
@@ -926,14 +789,14 @@ Wears the accessories or firmwares from the default wardrobe.
 
 \$ sudo eggs wardrobe wear wagtail/waydroid
 
-Wears the **"**waydroid**"** costume from the **"**wagtail**"**
+Wears the "waydroid" costume from the "wagtail"
 wardrobe.
 
 Here are some EXAMPLES: of how to use the command:
 
 \$ sudo eggs wardrobe wear duck
 
-This command wears the **"**duck**"** costume.
+This command wears the "duck" costume.
 
 \$ sudo eggs wardrobe wear accessories/firmwares
 
@@ -942,12 +805,12 @@ wardrobe.
 
 \$ sudo eggs wardrobe wear wagtail/waydroid
 
-This command wears the **"**waydroid**"** costume from the
-**"**wagtail**"** wardrobe.
+This command wears the "waydroid" costume from the
+"wagtail" wardrobe.
 
 You can also use the flags to customize the behavior of the command.
-For example, you can use **-**a to disable the installation of
-accessories or **-**f to disable the installation of firmwares.
+For example, you can use -a to disable the installation of
+accessories or -f to disable the installation of firmwares.
 Please note that the sudo command is used in the EXAMPLES: to indicate
 that administrative privileges may be required to perform the wardrobe
 wear operation.
@@ -969,47 +832,47 @@ FLAGS
 
 -w, \--wardrobe=\<value\> Specifies the wardrobe to use.
 
--   **-**a, **\--**no_accessories: This flag disables the installation
+-   -a, \--no_accessories: This flag disables the installation
     of accessories. By using this flag, the command will only wear
     the costume specified and exclude any associated accessories.
 
--   **-**f, **\--**no_firmwares: This flag disables the installation of
+-   -f, \--no_firmwares: This flag disables the installation of
     firmwares. When enabled, the command will only wear the costume
     specified and exclude any firmwares that might be associated with
     it.
 
--   **-**h, **\--**help: This flag displays the command line interface
-    **(**CLI**)** help for the eggs wardrobe wear command. It
+-   -h, \--help: This flag displays the command line interface
+    (CLI) help for the eggs wardrobe wear command. It
     provides information on how to use the command and its available
     options.
 
--   **-**s, **\--**silent: This flag enables silent mode. When
+-   -s, \--silent: This flag enables silent mode. When
     enabled, the command will run without producing any additional
     output or prompts unless absolutely necessary.
 
--   **-**v, **\--**verbose: This flag enables verbose output. When
+-   -v, \--verbose: This flag enables verbose output. When
     enabled, the command provides more detailed information or
     additional output, offering a more comprehensive view of the wearing
     process.
 
--   **-**w, **\--**wardrobe**=\<**value**\>**: This flag allows you to
+-   -w, \--wardrobe=\<value\>: This flag allows you to
     specify the wardrobe to use. By providing a value, you can
     select a specific wardrobe from which to wear the costume or
     accessories.
 
 The command\'s description summarizes its purpose:
 
-**DESCRIPTION**
+DESCRIPTION
 
 Wears a costume or accessories from a wardrobe.
 
 The EXAMPLES: provided illustrate the usage of the command:
 
-**EXAMPLES:**
+EXAMPLES:
 
 \$ sudo eggs wardrobe wear duck
 
-Wears the **"**duck**"** costume.
+Wears the "duck" costume.
 
 \$ sudo eggs wardrobe wear accessories/firmwares
 
@@ -1017,19 +880,19 @@ Wears the accessories or firmwares from the default wardrobe.
 
 \$ sudo eggs wardrobe wear wagtail/waydroid
 
-Wears the **"**waydroid**"** costume from the **"**wagtail**"**
+Wears the "waydroid" costume from the "wagtail"
 wardrobe.
 
-In the first example, running the command with the **"**duck**"**
+In the first example, running the command with the "duck"
 costume specified will wear that specific costume.
 
 In the second example, running the command with
-**"**accessories**/**firmwares**"** specified will wear the accessories
+"accessories/firmwares" specified will wear the accessories
 or firmwares from the default wardrobe.
 
 In the third example, running the command with
-**"**wagtail**/**waydroid**"** specified will wear the
-**"**waydroid**"** costume from the **"**wagtail**"** wardrobe.
+"wagtail/waydroid" specified will wear the
+"waydroid" costume from the "wagtail" wardrobe.
 
 ![image108.jpg](media/image108.jpg){width="7.103472222222222in"
 height="9.052777777777777in"}
