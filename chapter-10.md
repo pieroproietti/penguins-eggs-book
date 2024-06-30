@@ -2,7 +2,7 @@
 
 # Testing the ISO
 
-To test an ISO created with the "eggs" tool, you can follow
+To test an ISO created with the `eggs` tool, you can follow
 these general steps:
 
 1.  Prepare a Testing Environment: Set up a virtual machine or a
