@@ -3,8 +3,8 @@
 # Producing ISO image file
 
 Producing a live image from a system without including any personal
-data. If you **are** referring to creating a live image of an
-operating system **(**such as a live Linux distribution**)**, this
+data. If you are referring to creating a live image of an
+operating system (such as a live Linux distribution), this
 generally does not include personal data unless specifically configured
 to do so. Live images typically run from a read**-**only medium like
 a CD, DVD, or USB drive and don't modify the host system unless
@@ -15,7 +15,7 @@ specific concerns about privacy and data security, it **is** important
 to carefully review the settings and documentation of the live image
 you're using.
 
-**"**Producing a live image from your system without your data**"**
+°Producing a live image from your system without your data°
 typically refers to creating a bootable image of an operating system
 that can be run directly from a USB drive, DVD, or other media without
 making any changes to the existing system or accessing the user\'s
@@ -45,47 +45,34 @@ purposes.
 
 ## Cleaning with eggs 
 
-The **eggs tools clean** command is used to clean various system logs
-and apt**-**related files. Here is the breakdown of its usage:
+The `eggs tools clean` command is used to clean various system logs
+and apt related files. Here is the breakdown of its usage:
 
-![](media/image79.png){width="3.2595319335083115in"
-height="2.355272309711286in"}
+```
+sudo eggs tools clean
+```
+As all the other eggs commands, you can call it with `--help` to have
+the complete list of flags and a sample.
 
-In the EXAMPLES: section, you can find one usage example:
+```
+eggs tool clean --help
 
-## sudo eggs tools clean []{dir="rtl"}-v
+clean system log, apt, etc
 
-![](media/image80.png){width="5.059278215223097in"
-height="1.6353346456692914in"}
+USAGE
+  $ eggs tools clean [-h] [-n] [-v]
 
-![](media/image81.png){width="5.511811023622047in"
-height="3.6208169291338583in"}
+FLAGS
+  -h, --help           Show CLI help.
+  -n, --nointeractive  no user interaction
+  -v, --verbose        verbose
 
-This command performs the cleanup process, which includes cleaning
-system logs, apt**-**related files, and other relevant items. It is
-recommended to run this command with administrative privileges
-**(**using sudo**)** to ensure proper access and permissions. Please
-note that the cleanup process may permanently delete some files or
-modify system configurations. Exercise caution when using this
-command, and ensure that you have a backup of any important data.
+DESCRIPTION
+  clean system log, apt, etc
 
-Here is a more detailed description of each flag used in the eggs tools
-clean command:
-
--   **-**h, **\--**help: This flag displays the help message for
-    the eggs tools clean command. It provides information about the
-    command\'s usage, flags, and EXAMPLES:.
-
--   **-**n, **\--**nointeractive: This flag allows the cleanup process
-    to be performed without any user interaction. When this flag is
-    used, the command will not prompt for any confirmation or additional
-    input. It can be useful when you want to automate the cleanup
-    process.
-
--   **-**v, **\--**verbose: This flag enables verbose output, providing
-    more detailed information during the execution of the eggs tools
-    clean command. It can be helpful for understanding the progress
-    and actions taken during the cleanup process.
+EXAMPLES
+  sudo eggs tools clean
+```
 
 ## Cleaning with bleachbit 
 
@@ -137,9 +124,9 @@ appropriate package for your Linux distribution from the official
 BleachBit website. Here are the steps to select the correct package:
 
 1)  Visit the BleachBit website
-    at [https:**//**www.bleachbit.org**/**](https://www.bleachbit.org/).
+    at [https:**//**www.bleachbit.org/](https://www.bleachbit.org/).
 
-2)  Navigate to the **"**Download**"** section of the website.
+2)  Navigate to the °Download° section of the website.
 
 3)  Look for the available package options, which are typically provided
     in .deb format for Debian**-**based distributions and .rpm
@@ -189,7 +176,7 @@ Open Source and Free:
 No Adware or Malware:
 
 -   BleachBit is free from adware, spyware, malware, backdoors, browser
-    toolbars, or any **"**value**-**added software**"** that may
+    toolbars, or any °value**-**added software° that may
     compromise your system\'s security.
 
 Multi-Language Support:
@@ -272,7 +259,7 @@ bleachbit --clean apt.clean
 height="0.9433256780402449in"}
 
 **2.Graphical Mode:** If you prefer a graphical interface, simply search
-for **"**BleachBit**"** in your application launcher or menu. Click
+for °BleachBit° in your application launcher or menu. Click
 on the BleachBit icon to launch the graphical interface, where you can
 select the cleaning options and perform the cleanup.
 
@@ -291,111 +278,70 @@ height="3.782205818022747in"}
     items you want to clean.
 
 2.  Start Cleaning: Once you have selected the desired cleaning options,
-    click on the **"**Delete**"** or **"**Clean**"** button to start the
+    click on the °Delete° or °Clean° button to start the
     cleaning process. BleachBit will perform the selected cleanup
     actions, deleting unnecessary files and freeing up disk space.
-
-# Step2: show the status
-
-eggs status 
-
-The eggs status command provides information about the status of eggs
-before creating an iso file. Here is the usage and EXAMPLES: for
-this command:
-
-**USAGE**
-
-\$ eggs status \[-h\] \[-v\]
-
-**FLAGS**
-
--h, \--help Show CLI help.
-
--v, \--verbose Enable verbose output.
-
-**DESCRIPTION**
-
-Get information about the status of eggs.
-
-**EXAMPLES:**
-
-\$ eggs status
-
-![](media/image87.png){width="5.081081583552056in"
-height="2.251165791776028in"}
-
-In the EXAMPLES: section, you can use the eggs status command as shown
-to retrieve information about the eggs\' status. This command does
-not require any additional options or arguments. Feel free to ask if
-you have any specific questions or need further assistance with the eggs
-status command!
 
 # Step3: preparing the skel folder 
 
 ## eggs tools skel 
 
 The eggs tools skel command is used to update the skeleton directory
-**(/**etc**/**skel**)** on a Linux system with the configuration files
-from a user\'s home directory. The **/**etc**/**skel directory is a
+`/etc/skel/` on a Linux system with the configuration files
+from a user\'s home directory. The `/etc/skel` directory is a
 special directory on Linux systems that serves as a template for new
 user accounts. When a new user account is created, the contents of
-the **/**etc**/**skel directory are copied into the user\'s home
-directory. This allows the new user to have a pre**-**configured set
+the `/etc/skel` directory are copied into the user\'s home
+directory. This allows the new user to have a pre-configured set
 of files and directories.
 
-![](media/image88.png){width="4.849734251968504in"
-height="2.693898731408574in"}
+Here are some key points about the /etc/skel directory:
 
-Here are some key points about the **/**etc**/**skel directory:
-
-1)  Purpose: The primary purpose of the **/**etc**/**skel directory is
+1)  Purpose: The primary purpose of the /etc/skel directory is
     to provide default configuration files and directories for new user
     accounts. It ensures that every new user starts with a basic set
     of files and directories that are commonly needed or desirable.
 
-2)  Contents: The **/**etc**/**skel directory typically contains a set
+2)  Contents: The /etc/skel directory typically contains a set
     of default files and directories that are copied into the user\'s
     home directory during account creation. This can include
     configuration files for various applications, default shell profiles
-    **(**such as .bashrc or .zshrc**)**, example documents, and
+    (such as .bashrc or .zshrc), example documents, and
     directories for organizing files.
 
 3)  System**-**wide Changes: Modifying the contents of
-    the **/**etc**/**skel directory can have system**-**wide
+    the /etc/skel directory can have system**-**wide
     implications. Any changes made to this directory will be
     reflected in the home directories of all new user accounts created
     on the system.
 
 4)  Customization: System administrators can customize
-    the **/**etc**/**skel directory to suit their needs. By adding
+    the /etc/skel directory to suit their needs. By adding
     or modifying files and directories in this directory, they can
     establish a consistent environment for new users. This can
     include pre**-**configured settings, default document templates, or
     specific directory structures.
 
 5)  User Modifications: It\'s important to note that the contents of
-    the **/**etc**/**skel directory only serve as initial defaults for
+    the /etc/skel directory only serve as initial defaults for
     new user accounts. Once a user account is created, the user has
     full control over their own home directory and can modify or remove
-    the files and directories provided by **/**etc**/**skel.
+    the files and directories provided by /etc/skel.
 
 6)  Security Considerations: When customizing
-    the **/**etc**/**skel directory, it\'s essential to ensure that
+    the /etc/skel directory, it\'s essential to ensure that
     sensitive information or potentially harmful files are not
     included. The directory should only contain files and
     directories that are safe and appropriate for all new users.
 
-In summary, the **/**etc**/**skel directory acts as a template for new
+In summary, the /etc/skel directory acts as a template for new
 user accounts on Linux systems. It provides default files and
 directories that are copied into the user\'s home directory during
-account creation. By customizing the contents of **/**etc**/**skel,
+account creation. By customizing the contents of /etc/skel,
 system administrators can establish a consistent environment for new
 users.
 
 Here is a breakdown of its usage:
-
-![](media/image89.png){width="4.259074803149606in"
-height="3.1728390201224848in"}
 
 The command has the following EXAMPLES::
 
@@ -403,29 +349,23 @@ sudo eggs tools skel
 
 and this will be the result:
 
-![](media/image90.png){width="5.641265310586177in"
-height="1.3565715223097112in"}
-
 Final:
 
-![](media/image91.png){width="5.423069772528434in"
-height="2.8446358267716536in"}
-
-you can manually add additional files to the **/**etc**/**skel directory
-by using the cp command. The **/**etc**/**skel directory serves as a
+you can manually add additional files to the /etc/skel directory
+by using the cp command. The /etc/skel directory serves as a
 template directory for creating new user home directories. When a
-new user is created, the contents of the **/**etc**/**skel directory are
+new user is created, the contents of the /etc/skel directory are
 copied to the user\'s home directory.
 
 To add files manually, you can use the following command:
 
-sudo cp -r /home/\$(whoami)/. /etc/skel/
+sudo cp -r /home/$(whoami). /etc/skel/ -R
 
-Replace **/**path**/**to**/**source**/**file with the actual path to the
+Replace /path/to/source/file with the actual path to the
 file you want to add. This command will copy the specified file to
-the **/**etc**/**skel directory.
+the /etc/skel directory.
 
-By adding files to the **/**etc**/**skel directory, any new user created
+By adding files to the /etc/skel directory, any new user created
 on the system will automatically have those files in their home
 directory. This can be useful for setting up default configurations
 or providing specific files for all new users.
@@ -437,51 +377,42 @@ from the current user\'s home directory.
 
 for example:
 
-\$ sudo eggs tools skel \--user david
+```
+sudo eggs tools skel --user david
+```
 
 This command updates the skeleton directory with the configuration files
 from the specified user\'s home directory
-**(**user**-**to**-**be**-**copied**).** The skeleton directory
-**(/**etc**/**skel**)** is used as a template when creating new user
+`user-to-be-copied`, The skeleton directory
+`/etc/skel` is used as a template when creating new user
 accounts on Linux systems. By updating it with the configuration
 files from a user\'s home directory, any new user accounts created on
 the system will have the same initial configuration as the specified
-user. Please note that the **/**etc**/**skel directory is typically
+user. Please note that the /etc/skel directory is typically
 used as a template for creating new user accounts. The contents of
 this directory are automatically copied to a new user\'s home directory
 when the account is created. Be cautious when modifying or replacing
-the contents of **/**etc**/**skel to avoid unintended consequences.
+the contents of `/etc/skel` to avoid unintended consequences.
 
 # Step 4: prepare ISO for offline installation
 
-The eggs tools yolk command is used to configure the **"**eggs**"** tool
+The eggs tools yolk command is used to configure the °eggs° tool
 to install software packages without requiring an internet
 connection.
 
-Here is a breakdown of its usage:
-
-![](media/image92.png){width="5.203339895013124in"
-height="2.1504352580927386in"}
-
 The command has the following example:
 
+```
 sudo eggs tools yolk
+```
 
-![](media/image93.png){width="4.547807305336833in"
-height="2.5386679790026245in"}
+The path of downloaded packages is: `/var/local/yolk`
 
-The path of downloaded packages is here:
-
-**/**var**/**local**/**yolk
-
-![](media/image94.png){width="5.357968066491688in"
-height="2.26920384951881in"}
-
-This command configures the **"**eggs**"** tool to install software
+This command configures calamares or krill to install software
 packages without relying on an internet connection. By executing
-this command with administrative privileges **(**sudo**)**, the
+this command with administrative privileges (sudo), the
 necessary configurations are applied to enable offline
-installations. The exact details of how the **"**eggs**"** tool
+installations. The exact details of how the eggs tool
 handles offline installations may depend on its implementation and
 configuration. It could involve pre**-**downloading packages,
 setting up a local package repository, or utilizing other mechanisms to
@@ -500,65 +431,64 @@ creating a bootable USB or testing your system in a virtual
 environment. Here are the options and flags available for the eggs
 produce command:
 
-![](media/image95.png){width="5.087951662292213in"
-height="4.425707567804024in"}
+As usual get a look to: `eggs produce --help`
 
-Options:
+```
+produce a live image from your system whithout your data
 
--   **\--**addons **\<**value**\>**: Specifies the additional addons to
-    be used during the image creation process. You can provide
-    multiple addons separated by commas, such as **\--**addons
-    adapt,ichoice,pve,rsupport.
+USAGE
+  $ eggs produce [--addons <value>...] [--basename <value>] [-c] [-C]
+    [--excludes <value>...] [-h] [--links <value>...] [-m] [-N] [-n] [-p] [-P
+    <value>] [--release] [-s] [-f] [--theme <value>] [-u] [-v] [-y]
 
--   **\--**basename **\<**value**\>**: Sets the base name for the
-    generated image file.
+FLAGS
+  -C, --cryptedclone         crypted clone
+  -N, --noicon               no icon eggs on desktop
+  -P, --prefix=<value>       prefix
+  -c, --clone                clone
+  -f, --standard             standard compression: xz -b 1M
+  -h, --help                 Show CLI help.
+  -m, --max                  max compression: xz -Xbcj ...
+  -n, --nointeractive        no user interaction
+  -p, --pendrive             optimized for pendrive: zstd -b 1M
+                             -Xcompression-level 15
+  -s, --script               script mode. Generate scripts to manage iso build
+  -u, --unsecure             /root contents are included on live
+  -v, --verbose              verbose
+  -y, --yolk                 force yolk renew
+      --addons=<value>...    addons to be used: adapt, ichoice, pve, rsupport
+      --basename=<value>     basename
+      --excludes=<value>...  use: static, homes, home
+      --links=<value>...     desktop links
+      --release              release: remove penguins-eggs, calamares and
+                             dependencies after installation
+      --theme=<value>        theme for livecd, calamares branding and partitions
 
--   **-**c, **\--**clone: Creates a clone of the system.
+DESCRIPTION
+  produce a live image from your system whithout your data
 
--   **-**C, **\--**cryptedclone: Creates a crypted clone of the
-    system.
+EXAMPLES
+  sudo eggs produce                    # fast compression
 
--   **-**f, **\--**standard: Uses standard compression during the image
-    creation.
+  sudo eggs produce --max              # max compression
 
--   **-**h, **\--**help: Displays the help information for the
-    command.
+  sudo eggs produce --pendrive         # compression optomized pendrive
 
--   **-**m, **\--**max: Uses maximum compression during the image
-    creation.
+  sudo eggs produce --clone            # clone
 
--   **-**n, **\--**nointeractive: Runs the command in
-    non**-**interactive mode, without any user interaction.
+  sudo eggs produce --cryptedclone     # crypted clone
 
--   **-**p **\<**value**\>**, **\--**prefix**=\<**value**\>**: Specifies
-    a prefix to be used for the generated image file.
+  sudo eggs produce --basename=colibri
 
--   **-**s, **\--**script: Generates scripts to manage ISO build in
-    script mode.
+  sudo eggs produce --theme lastos
 
--   **-**u, **\--**unsecure: Includes the contents
-    of **/**home**/**\* and the full contents of **/**root in the live
-    image.
+  sudo eggs produce --excludes static  # you can customize it
 
--   **-**v, **\--**verbose: Enables verbose output during the image
-    creation process.
+  sudo eggs produce --excludes homes   # exclude /home/*
 
--   **-**y, **\--**yolk: Forces the renewal of the yolk.
+  sudo eggs produce --excludes home    # exclude ~/*
 
-Flags:
-
--   **\--**release: Applies maximum compression,
-    removes penguins-eggs and calamares after installation.
-
--   **\--**theme **\<**value**\>**: Specifies the theme to be used for
-    the live CD, calamares branding, and partitions.
-
--   **\--**filters**=\<**value**\>\...**: Specifies the filters to be
-    used during the image creation. Multiple filters can be provided
-    separated by commas, such as **\--**filters custom,dev,homes.
-
--   **-**N, **\--**noicons: Disables the inclusion of icons in the live
-    image.
+```
 
 The command allows for various combinations of options and flags,
 depending on your specific requirements. The provided EXAMPLES:
@@ -588,10 +518,10 @@ resulting file. Here\'s an example:
 \--basename=colibri
 
 By using this option, the generated image file will have
-**"**colibri**"** as its base name. The actual file name may include
+°colibri° as its base name. The actual file name may include
 additional information, such as the image format or extension, but the
 base name you provide will be used as the starting point for the file
-name. You can replace **"**colibri**"** with any desired name for
+name. You can replace °colibri° with any desired name for
 the image file.
 
 -   **-**c, **\--**clone: This option allows you to create a clone of
@@ -649,8 +579,8 @@ smaller image file size.
     process according to specific requirements.
 
 -   **-**u, **\--**unsecure: Including this option instructs the command
-    to include the contents of **/**home**/**\* and the full contents
-    of **/**root on the live system. This option may be useful in
+    to include the contents of /home/\* and the full contents
+    of /root on the live system. This option may be useful in
     certain scenarios where you need to include additional files or
     configurations from these directories in the resulting live
     system.
@@ -704,7 +634,7 @@ to assign to the output. For example:
 
 \--basename=myoutput
 
-In this example, the basename is set to **"**myoutput**".** The command,
+In this example, the basename is set to °myoutput**".** The command,
 when executed, will use this custom basename to generate the output file
 or files associated with the operation. Setting a specific basename
 can be useful for organizing and identifying the resulting files,
@@ -772,7 +702,7 @@ name or identifier of the theme you wish to use. For instance:
 
 \--theme=mytheme
 
-In this example, the theme is set to **"**mytheme**".** By specifying a
+In this example, the theme is set to °mytheme**".** By specifying a
 theme, you can customize the appearance, styling, and visual elements of
 the livecd, calamares branding, and partitions according to your
 preferences or requirements. The specific effects of the theme
@@ -788,45 +718,45 @@ the sudo eggs produce command with different options:
 
 sudo eggs produce
 
-This command will execute the **"**produce**"** action without any
+This command will execute the °produce° action without any
 additional options.
 
 sudo eggs produce \--standard
 
-This command will execute the **"**produce**"** action with the standard
+This command will execute the °produce° action with the standard
 option.
 
 sudo eggs produce \--max
 
-This command will execute the **"**produce**"** action with the max
+This command will execute the °produce° action with the max
 option.
 
 sudo eggs produce \--max \--basename=colibri
 
-This command will execute the **"**produce**"** action with the max
-option and set the basename to **"**colibri**".**
+This command will execute the °produce° action with the max
+option and set the basename to °colibri**".**
 
 sudo eggs produce \--cryptedclone
 
-This command will execute the **"**produce**"** action with the
+This command will execute the °produce° action with the
 cryptedclone option.
 
 sudo eggs produce \--clone
 
-This command will execute the **"**produce**"** action with the clone
+This command will execute the °produce° action with the clone
 option.
 
 sudo eggs produce \--basename=colibri
 
-This command will execute the **"**produce**"** action and set the
-basename to **"**colibri**".**
+This command will execute the °produce° action and set the
+basename to °colibri**".**
 
 sudo eggs produce \--basename=colibri \--theme /path/to/theme \--addons
 adapt
 
-This command will execute the **"**produce**"** action, set the basename
-to **"**colibri**"**, use a custom theme located at
-**"/**path**/**to**/**theme**"**, and include the **"**adapt**"**
+This command will execute the °produce° action, set the basename
+to °colibri°, use a custom theme located at
+**"/**path/to/theme°, and include the °adapt°
 addon. Please note that these EXAMPLES: assume the existence of a
 valid sudo eggs produce command and may require additional parameters or
 options depending on the specific context. Make sure to consult the
@@ -836,43 +766,43 @@ usage scenarios for the sudo eggs produce command:
 
 sudo eggs produce \--addons adapt,debug
 
-This command will execute the **"**produce**"** action with the
-**"**adapt**"** and **"**debug**"** addons included.
+This command will execute the °produce° action with the
+°adapt° and °debug° addons included.
 
 sudo eggs produce --release
 
-This command will execute the **"**produce**"** action and apply
+This command will execute the °produce° action and apply
 specific actions during the release process, such as maximizing
 compression, removing penguins-eggs, and removing calamares after
 installation.
 
 sudo eggs produce \--filters custom,dev
 
-This command will execute the **"**produce**"** action and apply the
-**"**custom**"** and **"**dev**"** filters.
+This command will execute the °produce° action and apply the
+°custom° and °dev° filters.
 
 sudo eggs produce \--theme=mytheme
 
-This command will execute the **"**produce**"** action and set the theme
-to **"**mytheme**"** for the livecd, calamares branding, and
+This command will execute the °produce° action and set the theme
+to °mytheme° for the livecd, calamares branding, and
 partitions.
 
 sudo eggs produce \--basename=colibri \--theme /path/to/theme
 
-This command will execute the **"**produce**"** action, set the base
-name to **"**colibri**"**, and use a custom theme located at
-**"/**path**/**to**/**theme**".**
+This command will execute the °produce° action, set the base
+name to °colibri°, and use a custom theme located at
+**"/**path/to/theme**".**
 
 sudo eggs produce \--max \--filters custom \--theme=default
 
-This command will execute the **"**produce**"** action with the max
-option, apply the **"**custom**"** filter, and set the theme to the
+This command will execute the °produce° action with the max
+option, apply the °custom° filter, and set the theme to the
 default theme.
 
 sudo eggs produce \--clone \--basename=backup
 
-This command will execute the **"**produce**"** action with the clone
-option and set the basename to **"**backup**".** Remember to adjust the
+This command will execute the °produce° action with the clone
+option and set the basename to °backup**".** Remember to adjust the
 options and values according to your specific requirements and the
 available features of the sudo eggs produce command. Additionally,
 consult the command\'s documentation or help text for a comprehensive

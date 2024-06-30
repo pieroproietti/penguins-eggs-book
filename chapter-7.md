@@ -1,8 +1,8 @@
 # Chapter 7
 
-# Eggs Configuration 
+# eggs configuration 
 
-## Part1: configuration eggs
+## Part1: eggs configuration 
 
 You can configure eggs tool automatically using `sudo eggs dad --default`, 
 automatically with your custom values, using `sudo eggs dad --file custom.yaml`,
@@ -23,24 +23,27 @@ is: 
 ```
 
 After installing eggs, the main configuration file can be found at the
-above**-**mentioned path. This file allows manual configuration of
+above mentioned path. This file allows manual configuration of
 the eggs program.
 
-The contents of the configuration **eggs.yaml** file are as follows:
+The used values from `eggs.yaml` file are the follows:
 
-
-Now, let's provide some explanations for the lines in the configuration
-file:
-
-By modifying these configuration options within the file, you can
-manually configure the eggs program according to your specific
-requirements. []{dir="rtl"}The provided text has been rewritten, and
-additional explanations have been included for each line to enhance
-understanding. Information from the web has been used to provide
-accurate descriptions of the purpose and functionalities of the
-configuration file. This configuration file will change with this
-command: we introduced this command before.
-
+```
+force_installer: false
+initrd_img: /boot/initrd.img-6.8.8-1-pve
+make_efi: true
+make_isohybrid: true
+make_md5sum: false
+root_passwd: evolution
+snapshot_basename: father
+snapshot_dir: /home/eggs/
+snapshot_excludes: /etc/penguins-eggs.d/exclude.list
+snapshot_mnt: /home/eggs/.mnt/
+snapshot_prefix: egg-of_debian-bookworm-
+user_opt: live
+user_opt_passwd: evolution
+vmlinuz: /boot/vmlinuz-6.8.8-1-pve
+```
 
 ## /etc/penguins-eggs.d/exclude.list
 This file is build from templates inside `/etc/penguins-eggs.d/exclude.list.d/`
@@ -55,9 +58,7 @@ Here we have templates for exclude.list, we have templates for:
 When we produce an eggs, this templates are combinated to for an `/etc/penguins-eggs.d/exclude.list`. 
 If for same reasonm you don't want every time rebuild it, you can use flag `--static`.
 
-# Part3: Configuration status
-
 ## eggs status
+`eggs status` give a brief explanation on this values on the screen.
 
-# Eggs Change log notes
 
