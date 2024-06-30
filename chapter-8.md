@@ -496,40 +496,40 @@ demonstrate different usage scenarios for the eggs produce command.
 
 More details on options:
 
-The **\--**addons **\<**value**\>** 
+The ``--addons <value>`
 
-The **\--**addons **\<**value**\>** option allows you to specify
+The ``--addons <value>` option allows you to specify
 additional addons to be used during the image creation process. You
 can provide multiple addons by separating them with commas. For
-example, if you want to include the adapt, ichoice, pve,
-and rsupport addons, you would use the **\--**addons option like this:
+example, if you want to include the `adapt`, `ichoice`, `pve`,
+and `rsupport` addons, you would use the ``--addons <value>` option like this:
 
-\--addons adapt,ichoice,pve,rsupport
+`--addons adapt,ichoice,pve,rsupport`
 
 This will ensure that these addons are included when generating the live
 image of your system. Feel free to customize the list of addons
 according to your specific needs.
 
-The **\--**basename **\<**value**\>** option allows you to set the base
+The `--basename <value>` option allows you to set the base
 name for the generated ISO image file. When creating the live image,
 you can provide a custom name that will be used as the base for the
 resulting file. Here\'s an example:
 
-\--basename=colibri
+`--basename colibri-test`
 
 By using this option, the generated image file will have
-°colibri° as its base name. The actual file name may include
+`colibri-test` as its base name. The actual file name may include
 additional information, such as the image format or extension, but the
 base name you provide will be used as the starting point for the file
 name. You can replace °colibri° with any desired name for
 the image file.
 
--   **-**c, **\--**clone: This option allows you to create a clone of
-    the system. When used during the image creation process, it will
-    generate an exact copy of the system, including all files, settings,
-    and configurations.
+* `--clone`: This option allows you to create a clone of
+the system. When used during the image creation process, it will
+generate an full copy of the system, including all files, settings,
+and configurations.
 
-The **-**C, **\--**cryptedclone option is similar to the **-**c option,
+* `--cryptedclone` option is similar to the `--clone`,
 but with an added layer of security. When you use this option during
 the image creation process, it not only creates a clone of the system
 but also encrypts the resulting image.
@@ -539,59 +539,50 @@ secure and protected from unauthorized access. This can be
 particularly useful when dealing with sensitive information or when you
 want to ensure the privacy and confidentiality of the cloned system.
 
--   **-**f, **\--**standard: This option specifies the use of standard
-    compression during the image creation. It means that the
-    resulting image file will be compressed using a standard compression
-    algorithm, balancing the trade**-**off between compression speed and
-    the resulting size of the image.
+* `--standard`: This option specifies the use of standard
+compression: plain `xz` during the image creation. It means that the
+resulting image file will be compressed using a standard compression
+algorithm, balancing the trade**-**off between compression speed and
+the resulting size of the image.
 
-So, by using the **-**f, **\--**standard option, you can create an image
+So, by using the `--standard` option, you can create an image
 with a compressed file size while maintaining a reasonable compression
 speed.
 
--   **-**h, **\--**help: When used, this option displays the help
-    information for the command. It provides details about the
-    available options, their usage, and any additional information that
-    might be useful for understanding and using the command.
-
-**-**m, **\--**max: This option instructs the system to use maximum
+* `--max`: This option instructs the system to use maximum
 compression during the image creation. It applies a more aggressive
 compression algorithm, which may take more time but can result in a
 smaller image file size.
 
--   **-**n, **\--**nointeractive: When this option is used, the command
-    runs in non**-**interactive mode, meaning it does not require any
-    user interaction. It allows the command to be executed
-    automatically without any prompts or input required from the
-    user.
+* `nointeractive`: When this option is used, the command
+runs in non-interactive mode, meaning it does not require any
+user interaction. It allows the command to be executed
+automatically without any prompts or input required from the
+user.
 
--   **-**p, **\--**prefix**=\<**value**\>**: This option allows you to
-    specify a prefix value for the command. The exact functionality
-    and purpose of this prefix value may depend on the specific command
-    you are referring to. It could be used as a prefix for file
-    names, directories, or other elements involved in the command\'s
-    execution.
+* `--prefix`: This option allows you to specify a prefix value 
+for the command. The exact functionality and purpose of this 
+prefix value may depend on the specific command you are 
+referring to. It could be used as a prefix for file names, 
+directories, or other elements involved in the command's
+execution.
 
--   **-**s, **\--**script: When used, this option enables script mode
-    for the command. In script mode, the command generates scripts
-    that can be used to manage the ISO build. These scripts can be
-    helpful for automating certain tasks or customizing the ISO build
-    process according to specific requirements.
+* `--script`: When used, this option enables script mode
+for the command. In script mode, the command generates scripts
+that can be used to manage the ISO build. These scripts can be
+helpful for automating certain tasks or customizing the ISO build
+process according to specific requirements.
 
--   **-**u, **\--**unsecure: Including this option instructs the command
-    to include the contents of /home/\* and the full contents
-    of /root on the live system. This option may be useful in
-    certain scenarios where you need to include additional files or
-    configurations from these directories in the resulting live
-    system.
+* `unsecure`: Including this option instructs the command
+to include the contents of `/home/` and the full contents
+of `/root` on the live system. This option may be useful in
+certain scenarios where you need to include additional files or
+configurations from these directories in the resulting live
+system.
 
--   **-**v, **\--**verbose: When this option is used, the command runs
-    in verbose mode. This means that it provides more detailed and
-    extensive output during its execution. Verbose mode is
-    particularly helpful for obtaining additional information and
-    understanding the inner workings of the command.
+* `--verbose`
 
-  When you include the **-**y, **\--**yolk option with the command, it
+* `--yolk`: When you include `--yolk`, it
 forces the renewal of the yolk. The specific meaning and
 functionality of the yolk can vary depending on the context of the
 command you are referring to. In general, forcing a yolk renewal
@@ -632,38 +623,11 @@ file. To set a custom value for the basename, you would
 replace **\<**value**\>** with the desired name or identifier you want
 to assign to the output. For example:
 
-\--basename=myoutput
+By specifying `--excludes`, you can selectively apply or not same `exludes.list`
 
-In this example, the basename is set to °myoutput**".** The command,
-when executed, will use this custom basename to generate the output file
-or files associated with the operation. Setting a specific basename
-can be useful for organizing and identifying the resulting files,
-especially when dealing with multiple outputs or when you want to give
-them a descriptive name relevant to the task or purpose. Remember to
-refer to the command\'s documentation or help text for more information
-on how the basename is used and any specific requirements or limitations
-associated with setting a custom value.
-
-The **\--**filters**=\<**value**\>\...** option allows you to specify
-filters to be used with the command. The available filter options
-are custom, dev, and homes. Similar to the **\--**addons option, you
-can include multiple filters by separating them with commas. For
-example, if you want to include both the custom and dev filters, you
-would use the option like this:
-
-\--filters=custom,dev
-
-By specifying filters, you can selectively apply certain criteria or
-conditions to the command\'s execution. These filters can help
-narrow down the scope of the operation or customize the behavior
-according to specific requirements.
-
-When you include the **\--**release option with the command, it
-signifies that you want to apply specific actions during the release
-process. These actions typically involve tasks such as maximizing
-compression, removing penguins-eggs, and removing calamares after
-the installation. Here\'s a breakdown of the actions commonly
-associated with the **\--**release option:
+* `--release` for final release you can add this tag. It will force 
+calamares or krill to remove penguins-eggs, calamares it'self from
+the installated system.
 
 1)  Maximizing compression: This action aims to optimize the compression
     of files or data, potentially resulting in smaller file sizes or
