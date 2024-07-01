@@ -364,4 +364,21 @@ In [branding](https://github.com/pieroproietti/penguins-wardrobe/tree/main/vendo
 
 [livecd](https://github.com/pieroproietti/penguins-wardrobe/tree/main/vendors/neon/theme/livecd) contain `splash.png` ed i file: `grub.theme,cfg` ed `isolinux.theme.cfg`.
 
+# Others distros
 
+So far we have only discussed Debian bookworn, but wardobe technology is not limited to Debian, it also includes Devuan, Ubuntu and even Arch.
+
+While Devuan uses the same configuration: `debian.yaml` for arch and Ubuntu use their own configurations. So for Ubuntu we have a file: ubuntu.yaml that is evaluated for Ibintu distros. for Arch we have the corresponding `arch.yaml`.
+
+The functionality--except for the package names--is basically the same. Of course in Arch `pacman` will be used and the specified packages will have to exist in the libraries.
+
+# Limits
+Of course we are in a flowing river and, as in Chinese proverb, we can never bathe twice in the same river.
+
+Ubuntu, recently with the noble version changed the method of writing components, so the old `repo.lists` are no longer accepted.
+
+This affects the smooth operation of wardorbe, which adds and modifies repositories as needed.
+
+There would thus need to be continuous maintenance, both of the [tailor.ts](https://github.com/pieroproietti/penguins-eggs/blob/master/src/classes/tailor.ts) and the [penguins-wardrobe](https://github.com/pieroproietti/penguins-wardrobe) repository, which also depends on your response and participation in the project.
+
+The `colibru` costume is well tested and continuously updated, but I cannot say the same for other costumes or for Ubuntu noble.
