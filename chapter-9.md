@@ -342,6 +342,7 @@ Refer to the calamares site for reference information on configuring these files
     * `calamares`
       * `branding`
 
+In [branding](https://github.com/pieroproietti/penguins-wardrobe/tree/main/vendors/neon/theme/calamares/branding) are the customizations for calamares. Generally present, but not mandatory, is the `show.qml` file and images that must scroll during installation.
 
 #### `modules`
 
@@ -361,5 +362,6 @@ Refer to the calamares site for reference information on configuring these files
   * `theme`
     * `livecd`
 
-Contain the components for the grub and isolinux theme of the live image are given in livecd
+[livecd](https://github.com/pieroproietti/penguins-wardrobe/tree/main/vendors/neon/theme/livecd) contain `splash.png` ed i file: `grub.theme,cfg` ed `isolinux.theme.cfg`.
+
 
