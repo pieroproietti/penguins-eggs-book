@@ -14,6 +14,6 @@
 * [8. Wardrobe users' guide](chapter-8.md)
 * [9. Installing the generated ISO image](chapter-9.md)
 * [10. Testing the ISO](chapter-10.md)
-* [appendix 1](z-appendix-1.md)
+* [Appendix 1](z-appendix-1.md)
 * [Contents](z-contents.md)
 
