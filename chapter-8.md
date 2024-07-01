@@ -1,425 +1,384 @@
-# chapter-8
+# Chapter 10
 
-## Chapter 8
+# Wardrobe users' guide
 
-## Producing ISO image file
+The penguins' wardrobe methodology allows for the tracking and reuse of
+steps taken during the development of a remastering project. It
+provides a way to create customizations starting from a minimal CLI
+system that is already installed, referred to as a "naked"
+system. You have used this methodology to create various generic
+customizations such as colibri, duck, owl, and eagle. Additionally,
+you have used it to create Linux systems with waydroids named wagtail,
+warbler, and whipbird, based on Gnome, KDE Plasma, and Weston,
+respectively.
 
-Producing a live image from a system without including any personal data. If you are referring to creating a live image of an operating system (such as a live Linux distribution), this generally does not include personal data unless specifically configured to do so. Live images typically run from a read-only medium like a CD, DVD, or USB drive and don't modify the host system unless explicitly instructed to do so. However, ensuring that personal data is not captured or transmitted is a matter of configuring the live image and the software it runs to avoid such behavior. If you have specific concerns about privacy and data security, it is important to carefully review the settings and documentation of the live image you're using.
+It's worth noting that while the Penguins' Wardrobe methodology is
+useful for remastering projects, it is not necessary to use it in
+conjunction with the "eggs" tool. You can still utilize the
+"eggs" tool for system customization based on your own
+methodologies and original customizations.
 
-°Producing a live image from your system without your data° typically refers to creating a bootable image of an operating system that can be run directly from a USB drive, DVD, or other media without making any changes to the existing system or accessing the user's personal data. In this context, a live image is a snapshot or representation of an operating system that includes all the necessary files and configurations to run the system on a different computer. It allows users to experience and test an operating system without installing it on their own machines.
-
-When creating a live image, the goal is to capture the entire operating system setup, including the necessary system files, applications, and configurations, while excluding any personal data or user-specific information. This ensures that the live image can be used safely and doesn't expose any sensitive or private information. The process of producing a live image typically involves using specialized software or tools that can create an image file from an existing system, compressing it, and making it bootable on different hardware. This allows users to boot into the live image on another computer and experience the operating system without affecting the host system or leaving any traces of personal data. Live images are commonly used for various purposes, such as testing new operating systems, providing a portable environment for troubleshooting or system recovery, or distributing pre-configured systems for educational or demonstration purposes.
-
-## Step 1: cleaning the system
-
-### Cleaning with eggs
-
-The `eggs tools clean` command is used to clean various system logs and apt related files. Here is the breakdown of its usage:
-
-```
-sudo eggs tools clean
-```
-
-As all the other eggs commands, you can call it with `--help` to have the complete list of flags and a sample.
+Call `eggs wardrobe --help` to get all commands inside:
 
 ```
-eggs tool clean --help
-
-clean system log, apt, etc
-
-USAGE
-  $ eggs tools clean [-h] [-n] [-v]
-
-FLAGS
-  -h, --help           Show CLI help.
-  -n, --nointeractive  no user interaction
-  -v, --verbose        verbose
-
-DESCRIPTION
-  clean system log, apt, etc
-
-EXAMPLES
-  sudo eggs tools clean
+COMMANDS
+  wardrobe get   get warorobe
+  wardrobe list  list costumes and accessoires in wardrobe
+  wardrobe show  show costumes/accessories in wardrobe
+  wardrobe wear  wear costume/accessories from wardrobe
 ```
 
-### Cleaning with bleachbit
-
-BleachBit is a popular open-source system cleaning and privacy tool for Linux operating systems. It helps you free up disk space, protect your privacy, and improve system performance by removing unnecessary files and data.
-
-Here are some key features of BleachBit:
-
-1. Disk Cleanup: BleachBit can scan and clean up various system and application files, such as temporary files, cache files, log files, and other unnecessary data that can accumulate over time.
-2. Privacy Protection: BleachBit can help protect your privacy by securely deleting sensitive files, such as browser history, cookies, and temporary internet files. It can also clear the usage history of many applications, including web browsers, instant messengers, and more.
-3. Freeing Disk Space: By removing unnecessary files, BleachBit can free up valuable disk space on your Linux system. This can help improve system performance and make more room for important files and applications.
-4. Customizable Cleaning: BleachBit allows you to customize the cleaning process by selecting specific categories or types of files to clean. You can also exclude certain files or folders from being cleaned if desired.
-5. Shredding Files: In addition to regular file deletion, BleachBit offers secure file shredding options. This ensures that deleted files cannot be recovered using data recovery tools.
-6. Command-Line Interface: BleachBit provides a command-line interface for advanced users who prefer to automate or script cleaning operations.
-
-Run bleachbit with:
+## eggs wardrobe get
 
 ```
-sudo bleachbit
+eggs wardorbe get
 ```
 
-To obtain the latest version of BleachBit, you can download the appropriate package for your Linux distribution from the official BleachBit website. Here are the steps to select the correct package:
+clone the default repository: [penguins-wardrobe](https://github.com/piero.proietti/penguins-wardrobe) in a 
+folder `./wardorobe` on your home.
 
-1. Visit the BleachBit website at [https://www.bleachbit.org/](https://www.bleachbit.org/).
-2. Navigate to the °Download° section of the website.
-3. Look for the available package options, which are typically provided in .deb format for Debian-based distributions and .rpm format for RPM-based distributions.
-4. Identify your Linux distribution and select the corresponding package. For example, if you are using Ubuntu or a Debian-based distribution, select the .deb package. If you are using Fedora or a Red Hat-based distribution, select the .rpm package.
-5. Click on the download link for the selected package to begin downloading it to your system.
-6. Once the package is downloaded, you can install it using the appropriate package manager for your distribution. For example, on Debian-based systems, you can use the dpkg command to install the .deb package, and on RPM-based systems, you can use the rpm or dnf command to install the .rpm package.
-
-BleachBit is indeed a feature-rich software designed to help you clean your computer, free up space, and maintain your privacy. Here's a breakdown of its key features and uses:
-
-Privacy and File Deletion:
-
-* BleachBit offers secure file deletion, ensuring that deleted files cannot be recovered. It is designed to delete files so completely that even data recovery tools cannot retrieve them.
-* You can easily select the files you want to delete by checking the appropriate boxes and preview the changes before permanently deleting them.
-
-Cross-Platform Compatibility:
-
-* BleachBit is available for both Linux and Windows operating systems, allowing users of different platforms to benefit from its features.
-
-Open Source and Free:
-
-* BleachBit is free of charge and does not have any hidden costs or money trails. It is an open-source software, which means it can be shared, learned, and modified by users.
-
-No Adware or Malware:
-
-* BleachBit is free from adware, spyware, malware, backdoors, browser toolbars, or any °value-added software° that may compromise your system's security.
-
-Multi-Language Support:
-
-* It is translated into 65 languages, making it accessible to users worldwide.
-
-Shredding and Overwriting:
-
-* BleachBit includes features to shred files, hiding their contents and preventing data recovery.
-* It can also overwrite free disk space, ensuring that previously deleted files cannot be restored.
-
-Portable and Command-Line Support:
-
-* The Windows version of BleachBit can be run without installation, making it portable and convenient.
-* It also provides a command-line interface, allowing advanced users to automate cleaning operations through scripting.
-
-Customization and Updates:
-
-* BleachBit allows users to write their own cleaners using CleanerML, an XML-based markup language.
-* It automatically imports and updates winapp2.ini cleaner files, providing access to over 2500 additional cleaners for Windows users.
-* BleachBit frequently releases software updates with new features and improvements.
-
-Cleaners:
-
-* BleachBit includes a range of cleaners for popular applications like Google Chrome, Edge, Firefox, VLC, Acrobat Reader, and system logs and temporary files.
-* It also provides advanced cleaners for specific tasks, such as clearing memory and swap on Linux, deleting broken shortcuts, cleaning APT for Debian-based distributions, and more.
-
-Overall, BleachBit offers a comprehensive set of features to help you free up disk space, maintain your privacy, improve system performance, and prepare disk images for compression. Its customizable nature, frequent updates, and extensive range of cleaners make it a versatile tool for both Linux and Windows users.
-
-### Bleachbit help
-
-To see the help of cli commands of bleachbit instead of GUI ,Type :
+You can also, fork [penguins-wardrobe](https://github.com/piero.proietti/penguins-wardrobe) and work on your version:
 
 ```
-bleachbit -h
+eggs wardrobe get https://github.com/armando/armando-wardrobe
 ```
+## eggs wardrobe list
+`eggs wardobe list`
+List: costumes, accessories, servers and vendors/themes included on your wardrobe.
 
-Launch BleachBit: Once BleachBit is installed, you can launch it in either command line or graphical mode.
+## eggs wardrobe show
+show a costume or an accessory included in current wardrobe (~.wardrobe`)
 
-1.Command Line Mode: Open a terminal and run the bleachbit command followed by any desired options or arguments. For example, to clean the system, you can use the following command:
+## eggs wardrobe wear
+`sudo eggs wardrobe wear costume`
 
-First: type the following command to list and then clean.
+# How wardrobe work
 
-```
-sudo bleachbit --l
-```
+Penguins' wardrobe, is not part of eggs and its knowledge and use is not necessary to remaster your own system or to create your own original customizations. Rather, it is a methodology that allows-while developing a remastering project-to keep track of the steps taken and reuse them when needed.
 
-For example:
+It is a penguins-wardrobe repository consisting mainly of yaml files and simple bash scripts and used by eggs through the wardorobe command to create customizations of Linux systems from a minimal CLI system already installed, in our naked terminology.
 
-```
-sudo bleachbit --clean apt.clean
-```
+I have used this method both for creating some generic customizations: colibri, duck, owl and eagle, and for creating Linux systems with waydroid named: wagtail, warbler and whipbird and based on Gnome, KDE Plasma and Weston respectively.
 
-2.Graphical Mode: If you prefer a graphical interface, simply search for °BleachBit° in your application launcher or menu. Click on the BleachBit icon to launch the graphical interface, where you can select the cleaning options and perform the cleanup.
+You can ALWAYS use eggs from your original customizations without using the wardrobe command but following your own methodologies.
 
-```
-sudo bleachbit
-```
 
-Or
+## The wardrobe metaphor
+The metaphor consists of a `wardrobe` containing `costumes` and `accessories` for dressing systems.
 
-```
-sudo bleachbit \--gui
-```
+### penguins-wardrobe
 
-1. Select Cleaning Options: In the BleachBit interface, you'll find a list of cleaning options for various categories such as system, web browsers, applications, and more. Check the boxes next to the items you want to clean.
-2. Start Cleaning: Once you have selected the desired cleaning options, click on the °Delete° or °Clean° button to start the cleaning process. BleachBit will perform the selected cleanup actions, deleting unnecessary files and freeing up disk space.
+[penguins-wardrobe](https://github.com/armando/armando-wardrobe) is a repository, managed with git and organized by directories: `costumes`, `accessories`, `vendors/themes` and `documentation`. 
 
-## Step3: preparing the skel folder
+Its use - preferibility - involves forking it in order to create our own customizations, thus allowing both an easy organization of our work and the consolidation of our experiences, making it easier to search and reuse of work previously done or import work done by third parties.
 
-### eggs tools skel&#x20;
+It is possible to dress up a CLI system with a beautiful GUI interface, but it is also possible to use wardrobe to collect server configurations without necessarily a GUI.
 
-The eggs tools skel command is used to update the skeleton directory `/etc/skel/` on a Linux system with the configuration files from a user's home directory. The `/etc/skel` directory is a special directory on Linux systems that serves as a template for new user accounts. When a new user account is created, the contents of the `/etc/skel` directory are copied into the user's home directory. This allows the new user to have a pre-configured set of files and directories.
+This method has proven useful for development and work organization.
 
-Here are some key points about the /etc/skel directory:
+To show a wardrobe sample, I will refere to mine `colibri`, a customization I use to develop penguins-eggs in the version Debian bookworm.
 
-1. Purpose: The primary purpose of the /etc/skel directory is to provide default configuration files and directories for new user accounts. It ensures that every new user starts with a basic set of files and directories that are commonly needed or desirable.
-2. Contents: The /etc/skel directory typically contains a set of default files and directories that are copied into the user's home directory during account creation. This can include configuration files for various applications, default shell profiles (such as .bashrc or .zshrc), example documents, and directories for organizing files.
-3. System-wide Changes: Modifying the contents of the /etc/skel directory can have system-wide implications. Any changes made to this directory will be reflected in the home directories of all new user accounts created on the system.
-4. Customization: System administrators can customize the /etc/skel directory to suit their needs. By adding or modifying files and directories in this directory, they can establish a consistent environment for new users. This can include pre-configured settings, default document templates, or specific directory structures.
-5. User Modifications: It's important to note that the contents of the /etc/skel directory only serve as initial defaults for new user accounts. Once a user account is created, the user has full control over their own home directory and can modify or remove the files and directories provided by /etc/skel.
-6. Security Considerations: When customizing the /etc/skel directory, it's essential to ensure that sensitive information or potentially harmful files are not included. The directory should only contain files and directories that are safe and appropriate for all new users.
 
-In summary, the /etc/skel directory acts as a template for new user accounts on Linux systems. It provides default files and directories that are copied into the user's home directory during account creation. By customizing the contents of /etc/skel, system administrators can establish a consistent environment for new users.
+# costumes
+A costume essentially consists of a directory named with the name of the costume and a yaml file. eg: [debian.yaml](https://github.com/pieroproietti/penguins-wardrobe/blob/main/costumes/colibri/debian.yml).
 
-Here is a breakdown of its usage:
+`debian.yaml` specifies the composition of the costume, at its definition we find it in [i-materia.ts](https://github.com/pieroproietti/penguins-eggs/blob/master/src/interfaces/i-materia.ts), and it is parsed by the eggs [tailor.ts](https://github.com/pieroproietti/penguins-eggs/blob/master/src/classes/tailor.ts)class. 
 
-The command has the following EXAMPLES::
+Basically, we provide the directions and the tailor sews the suit for us.
 
-sudo eggs tools skel
-
-and this will be the result:
-
-Final:
-
-you can manually add additional files to the /etc/skel directory by using the cp command. The /etc/skel directory serves as a template directory for creating new user home directories. When a new user is created, the contents of the /etc/skel directory are copied to the user's home directory.
-
-To add files manually, you can use the following command:
-
-sudo cp -r /home/$(whoami). /etc/skel/ -R
-
-Replace /path/to/source/file with the actual path to the file you want to add. This command will copy the specified file to the /etc/skel directory.
-
-By adding files to the /etc/skel directory, any new user created on the system will automatically have those files in their home directory. This can be useful for setting up default configurations or providing specific files for all new users.
-
-This command updates the skeleton directory with the configuration files from the current user's home directory.
-
-$ sudo eggs tools skel --user user-to-be-copied
-
-for example:
+In wardrobe, so we just have information specifying mostly repositories and packages in yaml language. This example is from the `debian.yaml` file of my colibri. 
 
 ```
-sudo eggs tools skel --user david
+# wardrobe: .
+# costume: /colibri
+---
+name: colibri
+description: >-
+  desktop xfce4 plus all that I need to develop eggs, firmwares and anydesk
+  repos
+author: artisan
+release: 0.9.1
+distributions:
+  - bookworm
+...
+  hostname: true
+reboot: true
 ```
 
-This command updates the skeleton directory with the configuration files from the specified user's home directory `user-to-be-copied`, The skeleton directory `/etc/skel` is used as a template when creating new user accounts on Linux systems. By updating it with the configuration files from a user's home directory, any new user accounts created on the system will have the same initial configuration as the specified user. Please note that the /etc/skel directory is typically used as a template for creating new user accounts. The contents of this directory are automatically copied to a new user's home directory when the account is created. Be cautious when modifying or replacing the contents of `/etc/skel` to avoid unintended consequences.
+The syntax used is yaml, which is fairly easy to read, while for writing you can rely on numerous addons for virtually any editor.
 
-## Step 4: prepare ISO for offline installation
+Let's look at how the index.yaml file of a custom is composed.
 
-The eggs tools yolk command is used to configure the °eggs° tool to install software packages without requiring an internet connection.
+We can divide it into three parts:
 
-The command has the following example:
+* `header`
+* `sequence`
+* `customize`
 
-```
-sudo eggs tools yolk
-```
 
-The path of downloaded packages is: `/var/local/yolk`
+## header
 
-This command configures calamares or krill to install software packages without relying on an internet connection. By executing this command with administrative privileges (sudo), the necessary configurations are applied to enable offline installations. The exact details of how the eggs tool handles offline installations may depend on its implementation and configuration. It could involve pre-downloading packages, setting up a local package repository, or utilizing other mechanisms to enable installation without internet access.
-
-­~~­~~
-
-## Step 5: eggs produce&#x20;
-
-### eggs produce command
-
-The eggs produce command is used to create a live image of your system without including your personal data. It allows you to generate a snapshot of your system that can be used for various purposes such as creating a bootable USB or testing your system in a virtual environment. Here are the options and flags available for the eggs produce command:
-
-As usual get a look to: `eggs produce --help`
+It defines the name, author, description and release of the costume. An important part is distributions if the current distribution is not included the costume will not be applied.
 
 ```
-produce a live image from your system whithout your data
-
-USAGE
-  $ eggs produce [--addons <value>...] [--basename <value>] [-c] [-C]
-    [--excludes <value>...] [-h] [--links <value>...] [-m] [-N] [-n] [-p] [-P
-    <value>] [--release] [-s] [-f] [--theme <value>] [-u] [-v] [-y]
-
-FLAGS
-  -C, --cryptedclone         crypted clone
-  -N, --noicon               no icon eggs on desktop
-  -P, --prefix=<value>       prefix
-  -c, --clone                clone
-  -f, --standard             standard compression: xz -b 1M
-  -h, --help                 Show CLI help.
-  -m, --max                  max compression: xz -Xbcj ...
-  -n, --nointeractive        no user interaction
-  -p, --pendrive             optimized for pendrive: zstd -b 1M
-                             -Xcompression-level 15
-  -s, --script               script mode. Generate scripts to manage iso build
-  -u, --unsecure             /root contents are included on live
-  -v, --verbose              verbose
-  -y, --yolk                 force yolk renew
-      --addons=<value>...    addons to be used: adapt, ichoice, pve, rsupport
-      --basename=<value>     basename
-      --excludes=<value>...  use: static, homes, home
-      --links=<value>...     desktop links
-      --release              release: remove penguins-eggs, calamares and
-                             dependencies after installation
-      --theme=<value>        theme for livecd, calamares branding and partitions
-
-DESCRIPTION
-  produce a live image from your system whithout your data
-
-EXAMPLES
-  sudo eggs produce                    # fast compression
-
-  sudo eggs produce --max              # max compression
-
-  sudo eggs produce --pendrive         # compression optomized pendrive
-
-  sudo eggs produce --clone            # clone
-
-  sudo eggs produce --cryptedclone     # crypted clone
-
-  sudo eggs produce --basename=colibri
-
-  sudo eggs produce --theme lastos
-
-  sudo eggs produce --excludes static  # you can customize it
-
-  sudo eggs produce --excludes homes   # exclude /home/*
-
-  sudo eggs produce --excludes home    # exclude ~/*
-
+name: colibri
+description: >-
+  desktop xfce4 plus all that I need to develop eggs, firmwares and anydesk
+  repos
+author: artisan
+release: 0.0.3
+distributions:
+  - bullseye
+  - bookworm
 ```
 
-The command allows for various combinations of options and flags, depending on your specific requirements. The provided EXAMPLES: demonstrate different usage scenarios for the eggs produce command.
+## sequence
+The sequence is the crucial part of both costumes and accessories, it is performed in sequence-hence the name-and the idea was to make it minimal and indivisible. It can contain:
+
+* `repositories`
+  * `sources_list`
+  * `sources_list_d`
+* `preinst`
+* `packages`
+* `packages_no_install_recommends`
+* `try_packages`
+* `try_packages_no_install_recommends`
+* `debs`
+* `packages_python`
+* `accessories`
++ `try_accessories`
+
+The idea behind the sequence was to make it as atomic as possible.
+
+Let's see how the sequence is composed in detail.
+
+### `repositories`
+It defines what we need both in our `/etc/apt/surces.list` and -- mainly -- in the `/etc/apt/sources.list.d` directory.
+repositories, consists of two items:
+
+#### `sources_list`
+Specification of components to be used: `main`, `contrib`, `non-free-firmwares`, `non-free`.
+
+
+#### `sources_list_d`
+Specifies commands and scripts to add more repositories within `/etc/apt/sources.list.d`,
+
+### `preinst`
+We sometimes need to perform some actions before installing packages, we can add these actions in the form of scripts in this section.
+
+### `packages`
+A simple array of packages to install. It is the heart of the system.
+
+```
+  packages:
+    - adwaita-qt
+    - firefox-esr
+    - libxfce4ui-utils
+    - lightdm
+    - lightdm-gtk-greeter
+    - network-manager-gnome
+    - qt5ct
+    - spice-vdagent
+    - tango-icon-theme
+    - thunar
+    - thunar-archive-plugin 
+    - xarchiver
+    - xfce4-appfinder
+    - xfce4-notifyd
+    - xfce4-panel
+    - xfce4-pulseaudio-plugin
+    - xfce4-screenshooter
+    - xfce4-session
+    - xfce4-settings
+    - xfce4-terminal
+    - xfce4-whiskermenu-plugin
+    - xfconf
+    - xfdesktop4
+    - xfwm4
+    - plymouth
+    - plymouth-themes
+```
+
+
+### `packages_no_install_recommends`
+A simple array of packages to be installed, however, which are installed with the --no-install-recommends option.
+
+### `try_packages`
+It behaves like `packages` but does not fail if it does not find the package.
+
+### `try_packages_no_install_recommends`
+It works like `packages_no_install_recommends` but does not fail if it does not find the package.
+
+### `debs`
+This is a boolean field, if it is true, the contents of the `./debs` directory - inside the costume - will be installed with the command `dpkg -i ./debs/*.deb`.
+
+### `packages_python`
+A simple array of python packages that will be installed with `pip`.
+
+### `accessories`
+A list of accessories to be installed to complete the costume. example:
+
+```
+accessories:
+    base
+    eggs-dev # defined in /accessory
+    waydroid # defined in /accessory
+    ./firmwares # here we will use an accessory defined inside the costume, note ./
+```
 
-More details on options:
+### `try_accessories`
 
-The \`\`--addons \`
+Equivalent of `accessories` but don't fail.
+
+
+## `customize`
+`costomize` contains variables and scripts to finalize the installation and customize the result. It can contain:
 
-The ``--addons <value>` option allows you to specify additional addons to be used during the image creation process. You can provide multiple addons by separating them with commas. For example, if you want to include the `adapt`, `ichoice`, `pve`, and `rsupport` addons, you would use the`` --addons \` option like this:
+* dirs
+* hostname
+* script
 
-`--addons adapt,ichoice,pve,rsupport`
+### `dirs`
+`dirs` is a boolean field, if true the directory `./dirs` inside the costume will be copied to the root of the system root.
 
-This will ensure that these addons are included when generating the live image of your system. Feel free to customize the list of addons according to your specific needs.
+Example: We need to copy our user desktop customization in `/etc/skel` and our background to `/usr/share/background`.
 
-The `--basename <value>` option allows you to set the base name for the generated ISO image file. When creating the live image, you can provide a custom name that will be used as the base for the resulting file. Here's an example:
+Simply put all in a directory called `./dirs`, inside our `colibri`:
+```
+- dirs   + etc   + skel  
+         + usr   + backgrounds  + colibri
+        
+```
+You can browse in on the [colibri](https://github.com/pieroproietti/penguins-wardrobe/tree/main/costumes/colibri/dirs) and it's not pratical? I think yes, all our customizations, at the price of a little and light directory structure.
 
-`--basename colibri-test`
+### `hostname`
+If `hostname` is `true` file `/etc/hostname` and `/etc/hosts` will be updated to the name of costume, in ourt case `colibri`.
 
-By using this option, the generated image file will have `colibri-test` as its base name. The actual file name may include additional information, such as the image format or extension, but the base name you provide will be used as the starting point for the file name. You can replace °colibri° with any desired name for the image file.
+### scripts
+`scripts` contains an array of one or more scripts used to customize the resultant system.
 
-* `--clone`: This option allows you to create a clone of the system. When used during the image creation process, it will generate an full copy of the system, including all files, settings, and configurations.
-* `--cryptedclone` option is similar to the `--clone`, but with an added layer of security. When you use this option during the image creation process, it not only creates a clone of the system but also encrypts the resulting image.
+You can add other scripts and directories within del costume colibri or use the scripts contained in the scripts folder such as `../../scripts/config_desktop_link.sh`.
 
-By encrypting the image, it ensures that the data within the clone is secure and protected from unauthorized access. This can be particularly useful when dealing with sensitive information or when you want to ensure the privacy and confidentiality of the cloned system.
+Examples:
+```
+customize:
+  dirs: true
+  scripts:
+    - ../../scripts/config_desktop_link.sh
+    - ../../scripts/config_lightdm.sh
+```
+Scripts are called from customize/scripts and executed in the specific order.
 
-* `--standard`: This option specifies the use of standard compression: plain `xz` during the image creation. It means that the resulting image file will be compressed using a standard compression algorithm, balancing the trade-off between compression speed and the resulting size of the image.
+## reboot
+If true in system will be rebooted after dressing.
 
-So, by using the `--standard` option, you can create an image with a compressed file size while maintaining a reasonable compression speed.
 
-* `--max`: This option instructs the system to use maximum compression during the image creation. It applies a more aggressive compression algorithm, which may take more time but can result in a smaller image file size.
-* `nointeractive`: When this option is used, the command runs in non-interactive mode, meaning it does not require any user interaction. It allows the command to be executed automatically without any prompts or input required from the user.
-* `--prefix`: This option allows you to specify a prefix value for the command. The exact functionality and purpose of this prefix value may depend on the specific command you are referring to. It could be used as a prefix for file names, directories, or other elements involved in the command's execution.
-* `--script`: When used, this option enables script mode for the command. In script mode, the command generates scripts that can be used to manage the ISO build. These scripts can be helpful for automating certain tasks or customizing the ISO build process according to specific requirements.
-* `unsecure`: Including this option instructs the command to include the contents of `/home/` and the full contents of `/root` on the live system. This option may be useful in certain scenarios where you need to include additional files or configurations from these directories in the resulting live system.
-* `--verbose`
-* `--yolk`: When you include `--yolk`, it forces the renewal of the yolk. The specific meaning and functionality of the yolk can vary depending on the context of the command you are referring to. In general, forcing a yolk renewal typically implies that a specific component or configuration associated with the yolk will be updated or refreshed. The exact nature of the yolk and the changes made during renewal depend on the command and its specific implementation. The yolk could represent a variety of things depending on the context. It could refer to a software package, a configuration file, a library, or any other relevant component that plays a role in the execution or behavior of the command.
+# themes
+While `costumes` and `accessories` apply to an installed system, `themes` make it possible to customize the live image. It is possible to both customize the boot of ISO images and the appearance of the calamares GUI installer.
+Come per i costumes e gli accessories, i themes sono principalmente costituiti da una directory, dei file yaml, delle icone, sfondi e quant'altro necessario. L'idea è stata presa da calamares e dai suoi file di configurazione ed estesa ad aspetti più specifici di eggs come il boot live.
 
-1. \--addons=\<value>...: This option allows you to specify addons to be used. The available addon options are adapt, ichoice, pve, and rsupport. You can include multiple addons by providing them as a comma-separated list.
+educaandos-plus was the first external theme created, dozens of themes are currently available.
 
-The --addons=\<value>... option allows you to specify addons to be used with the command. The available addon options are adapt, ichoice, pve, and rsupport. To include multiple addons, you can provide them as a comma-separated list. For example, if you want to include both adapt and pve addons, you would use the option like this:
 
-\--addons=adapt,pve
+Let's analyze a theme
 
-This will instruct the command to include the specified addons during its execution. The addons you specify can provide additional functionality, features, or configurations to enhance the command's behavior according to your needs. Make sure to consult the command's documentation or help text for more details on how to use the --addons option and the specific effects of each addon.
+A theme consists of a simple directory under themes, named by the name of the vendor. In this example: vendor-theme, which is composed as follows:
 
-The --basename=\<value> option allows you to set the basename for the resulting output or file generated by the command. The basename typically refers to the base name or identifier of the file. To set a custom value for the basename, you would replace \<value> with the desired name or identifier you want to assign to the output. For example:
+```
+vendor-name/
+    theme
+        applications
+        artwork
+        calamares
+            branding
+            modules
+        livecd
+```
 
-By specifying `--excludes`, you can selectively apply or not same `exludes.list`
+# /vendors/[vendor-name]/theme
 
-* `--release` for final release you can add this tag. It will force calamares or krill to remove penguins-eggs, calamares it'self from the installated system.
+The [vendors](https://github.com/pieroproietti/penguins-wardrobe/tree/main/vendors) directory contains [vemdors] who can thus include their own themes in the wardrobe structure.
 
-1. Maximizing compression: This action aims to optimize the compression of files or data, potentially resulting in smaller file sizes or more efficient storage utilization. By including the --release option, you instruct the command to prioritize compression during the release process.
-2. Removing penguins-eggs: This action involves removing or excluding the penguins-eggs component from the release. The specific purpose or functionality of penguins-eggs depends on the context of the command. By using the --release option, you indicate that you want to exclude this component from the final release.
-3. Removing calamares after installation: Calamares is a popular open-source installation framework. When you include the --release option, it signifies that you want to remove the Calamares component after the installation process is complete. This action can be useful if you no longer require the installation framework once the system is set up.
+The theme directory is just the container for everything, the root so to speak of the theme itself.
 
-The exact implications and effects of using the --release option may vary depending on the specific command and its implementation. It's important to consult the command's documentation or help text for further details on the actions performed during the release process and any additional considerations associated with this option.
+## [vendor-name] contains the following structure:
 
-\--theme=\<value>: This option allows you to set the theme for the livecd, calamares branding, and partitions. You can provide a custom value to define the desired theme. The --theme=\<value> option enables you to set the theme for various components such as the livecd, calamares branding, and partitions. You can provide a custom value to define the desired theme. To set a custom theme, replace \<value> with the name or identifier of the theme you wish to use. For instance:
+° `vendor-name`
+  * `theme`
+    * `appplacetions`
+    * `artwork`
+    * `calamares`
+    * `livecd`
 
-\--theme=mytheme
+ake a closer look at the contents of these three folders wardrobe.
 
-In this example, the theme is set to °mytheme". By specifying a theme, you can customize the appearance, styling, and visual elements of the livecd, calamares branding, and partitions according to your preferences or requirements. The specific effects of the theme option may vary depending on the command and its implementation. It's recommended to consult the command's documentation or help text to understand the available themes, any specific requirements for using custom themes, and how they are applied to the respective components. Remember that the theme option provides an opportunity to personalize the visual aspects of the command's output, making it more aligned with your desired aesthetic or branding. \[]{dir="rtl"}Here are some EXAMPLES: demonstrating the usage of the sudo eggs produce command with different options:
+### `applications`
+Just a `.desktop` link that will be copied to `/usr/share/applications/` and the `Desktop` folder to start the calamares graphical installer.
 
-sudo eggs produce
+### `artwork`
+Contains the icon for your .desktop link, it will be copied to `/usr/share/icons/`.
 
-This command will execute the °produce° action without any additional options.
+###  `calamares`
+It contains the configuration for calamares and is the most important part of the theme.
 
-sudo eggs produce --standard
+`calamares` can have:
 
-This command will execute the °produce° action with the standard option.
+° `vendor-name`
+  * `theme`
+    * `calamares`
+      * `branding`
+      * `modules`
+      * `calamares-modules`
+      * `cfs.yml`
 
-sudo eggs produce --max
+The calamares configuration files are always written in yaml and contain documentation for the various options. The main settings.conf configuration file is automatically generated by eggs and only partition, locale and users are currently used by eggs and wardrobe.
 
-This command will execute the °produce° action with the max option.
+Refer to the calamares site for reference information on configuring these files basically.
 
-sudo eggs produce --max --basename=colibri
+#### `branding`
 
-This command will execute the °produce° action with the max option and set the basename to °colibri".
+° `vendor-name`
+  * `theme`
+    * `calamares`
+      * `branding`
 
-sudo eggs produce --cryptedclone
+In [branding](https://github.com/pieroproietti/penguins-wardrobe/tree/main/vendors/neon/theme/calamares/branding) are the customizations for calamares. Generally present, but not mandatory, is the `show.qml` file and images that must scroll during installation.
 
-This command will execute the °produce° action with the cryptedclone option.
+#### `modules`
 
-sudo eggs produce --clone
+° `vendor-name`
+  * `theme`
+    * `calamares`
+      * `modules`
+        * `locale.yml`
+        * `partitions.yml`
+        * `users.yml`
 
-This command will execute the °produce° action with the clone option.
+(*) In EducaAndOS in order to have administration rights for the user, we need to configure the user in a specific group, so it became necessary to add `users.yml`.
 
-sudo eggs produce --basename=colibri
 
-This command will execute the °produce° action and set the basename to °colibri".
+###  `livecd`
+° `vendor-name`
+  * `theme`
+    * `livecd`
 
-sudo eggs produce --basename=colibri --theme /path/to/theme --addons adapt
+[livecd](https://github.com/pieroproietti/penguins-wardrobe/tree/main/vendors/neon/theme/livecd) contain `splash.png` ed i file: `grub.theme,cfg` ed `isolinux.theme.cfg`.
 
-This command will execute the °produce° action, set the basename to °colibri°, use a custom theme located at "/path/to/theme°, and include the °adapt° addon. Please note that these EXAMPLES: assume the existence of a valid sudo eggs produce command and may require additional parameters or options depending on the specific context. Make sure to consult the command's documentation or help text for accurate usage instructions. Here are a few more EXAMPLES: showcasing different usage scenarios for the sudo eggs produce command:
+# Others distros
 
-sudo eggs produce --addons adapt,debug
+So far we have only discussed Debian bookworn, but wardobe technology is not limited to Debian, it also includes Devuan, Ubuntu and even Arch.
 
-This command will execute the °produce° action with the °adapt° and °debug° addons included.
+While Devuan uses the same configuration: `debian.yaml` for arch and Ubuntu use their own configurations. So for Ubuntu we have a file: ubuntu.yaml that is evaluated for Ibintu distros. for Arch we have the corresponding `arch.yaml`.
 
-sudo eggs produce --release
+The functionality--except for the package names--is basically the same. Of course in Arch `pacman` will be used and the specified packages will have to exist in the libraries.
 
-This command will execute the °produce° action and apply specific actions during the release process, such as maximizing compression, removing penguins-eggs, and removing calamares after installation.
+# Limits
+Of course we are in a flowing river and, as in Chinese proverb, we can never bathe twice in the same river.
 
-sudo eggs produce --filters custom,dev
+Ubuntu, recently with the noble version changed the method of writing components, so the old `repo.lists` are no longer accepted.
 
-This command will execute the °produce° action and apply the °custom° and °dev° filters.
+This affects the smooth operation of wardorbe, which adds and modifies repositories as needed.
 
-sudo eggs produce --theme=mytheme
+There would thus need to be continuous maintenance, both of the [tailor.ts](https://github.com/pieroproietti/penguins-eggs/blob/master/src/classes/tailor.ts) and the [penguins-wardrobe](https://github.com/pieroproietti/penguins-wardrobe) repository, which also depends on your response and participation in the project.
 
-This command will execute the °produce° action and set the theme to °mytheme° for the livecd, calamares branding, and partitions.
-
-sudo eggs produce --basename=colibri --theme /path/to/theme
-
-This command will execute the °produce° action, set the base name to °colibri°, and use a custom theme located at "/path/to/theme".
-
-sudo eggs produce --max --filters custom --theme=default
-
-This command will execute the °produce° action with the max option, apply the °custom° filter, and set the theme to the default theme.
-
-sudo eggs produce --clone --basename=backup
-
-This command will execute the °produce° action with the clone option and set the basename to °backup". Remember to adjust the options and values according to your specific requirements and the available features of the sudo eggs produce command. Additionally, consult the command's documentation or help text for a comprehensive understanding of the available options and their effects.
-
-![](media/image96.png){width="5.12823053368329in" height="2.910598206474191in"}
-
-After creating the ISO file:
-
-![](media/image97.png){width="4.943823272090989in" height="2.1905479002624673in"}
-
-The path of ISO file:
-
-![](media/image98.png){width="4.175096237970254in" height="1.3905653980752406in"}
-
-The default location of the ISO file when mounting it in a Linux system. In some cases, the ISO file may be mounted in the .mnt directory, which is a hidden directory. To access hidden directories in a file manager, you can typically press Ctrl + h to toggle the visibility of hidden files and directories.![](media/image99.png){width="4.3735323709536305in" height="1.2139807524059492in"}
-
-Default grub boot menu:
-
-![](media/image100.png){width="3.612580927384077in" height="1.8858366141732283in"}
-
-![image101.jpg](media/image101.jpg){width="7.103583770778653in" height="9.05511811023622in"}
+The `colibru` costume is well tested and continuously updated, but I cannot say the same for other costumes or for Ubuntu noble.
