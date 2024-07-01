@@ -1,5 +1,6 @@
 # Table of contents
 
+* [README](README.md)
 * [about](1-about.md)
 * [Introduction](2-introduction.md)
 * [The road map of this book](3-road-map.md)
@@ -14,5 +15,5 @@
 * [chapter 9](chapter-9.md)
 * [chapter 10](chapter-10.md)
 * [appendix 1](z-appendix-1.md)
-* [Contents](zz-CONTENTS.md)
-* [penguins-eggs-book](<README (1).md>)
+* [Contents](z-contents.md)
+
