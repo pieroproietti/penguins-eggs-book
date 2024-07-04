@@ -24,9 +24,11 @@ Then to see the result use button `sync` on [gitbook](https://app.gitbook.com)
 
 `git clone https://github.com/pieroproietti/penguins-eggs-book`
 
-### read the book
+### read the book on line
 
-`https://penguins-eggs.gitbook.io/penguins-eggs-book`
+[read the book online](https://penguins-eggs.gitbook.io/penguins-eggs-book)
+
+https://penguins-eggs.gitbook.io/penguins-eggs-book`
 
  
 
