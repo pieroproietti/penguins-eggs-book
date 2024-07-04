@@ -14,21 +14,21 @@ git commit
 git push
 ```
 
-The book will automatically synk after the push., you can see [here](https://penguins-eggs.gitbook.io/penguins-eggs-book)
+The book will automatically synk after your push, you can see it [here](https://penguins-eggs.gitbook.io/penguins-eggs-book)
 
 ## Repository
 
 `https://github.com/pieroproietti/penguins-eggs-book`
 
-### get the boot
+### cloning the book
 
 `git clone https://github.com/pieroproietti/penguins-eggs-book`
 
-### read the book on line
+### read the book
 
-[read the book online](https://penguins-eggs.gitbook.io/penguins-eggs-book)
+Just click [here](https://penguins-eggs.gitbook.io/penguins-eggs-book)
 
-https://penguins-eggs.gitbook.io/penguins-eggs-book`
+This is it's address: `https://penguins-eggs.gitbook.io/penguins-eggs-book`
 
  
 
