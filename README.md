@@ -18,7 +18,7 @@ Then to see the result use button `sync` on [gitbook](https://app.gitbook.com)
 
 ## Repository
 
-* https://github.com/pieroproietti/penguins-eggs-book
+`https://github.com/pieroproietti/penguins-eggs-book`
 
 ### get the boot
 
