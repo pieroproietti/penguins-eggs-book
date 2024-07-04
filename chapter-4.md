@@ -1,6 +1,6 @@
 # Chapter 4
 
-## Necessary file and tools
+# Necessary file and tools
 
 The `/etc` directory, short for **et cetera**, is a
 crucial component of Unix and Unix-like operating systems, including
