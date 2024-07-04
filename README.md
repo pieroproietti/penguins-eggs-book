@@ -22,7 +22,11 @@ Then to see the result use button `sync` on [gitbook](https://app.gitbook.com)
 
 ### get the boot
 
-`git clone https://github.com/pieroproietti/penguins-eggs-book
+`git clone https://github.com/pieroproietti/penguins-eggs-book`
+
+### read the book
+
+`https://penguins-eggs.gitbook.io/penguins-eggs-book`
 
  
 
