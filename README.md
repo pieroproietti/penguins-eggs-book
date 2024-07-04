@@ -14,7 +14,7 @@ git commit
 git push
 ```
 
-Then to see the result use button `sync` on [gitbook](https://app.gitbook.com)
+The book will automatically synk after the push., you can see [here](https://penguins-eggs.gitbook.io/penguins-eggs-book)
 
 ## Repository
 
