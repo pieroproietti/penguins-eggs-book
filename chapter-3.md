@@ -1,10 +1,8 @@
 # chapter-3
 
-## Chapter 3
+# Removing unnecessary tools and files
 
-## Unnecessary tools and files
-
-### Cleaning
+## Cleaning
 
 &#x20;**Building a Privacy-Focused Linux Environment: Protecting Your Digital Footprint**
 
@@ -18,7 +16,7 @@ Moreover, privacy-focused Linux environments often come pre-configured with priv
 
 These tools may include encryption software, anonymous web browsing tools, and privacy-focused search engines. The goal is to provide users with the means to protect their personal information, communication, and online activities from unauthorized access and surveillance.
 
-### how to create a privacy-focused Linux environment?
+## how to create a privacy-focused Linux environment?
 
 1. Choose a privacy-oriented Linux distribution.
 2. Install the operating system using full disk encryption to ensure that all data on your device is secure.

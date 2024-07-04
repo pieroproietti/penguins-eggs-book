@@ -1,4 +1,4 @@
-# Chapter 10
+# Chapter 8
 
 # Wardrobe users' guide
 

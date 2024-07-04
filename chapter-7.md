@@ -1,8 +1,6 @@
-# chapter-8
+# chapter-7
 
-## Chapter 8
-
-## Producing ISO image file
+# Producing ISO image file
 
 Producing a live image from a system without including any personal data. If you are referring to creating a live image of an operating system (such as a live Linux distribution), this generally does not include personal data unless specifically configured to do so. Live images typically run from a read-only medium like a CD, DVD, or USB drive and don't modify the host system unless explicitly instructed to do so. However, ensuring that personal data is not captured or transmitted is a matter of configuring the live image and the software it runs to avoid such behavior. If you have specific concerns about privacy and data security, it is important to carefully review the settings and documentation of the live image you're using.
 

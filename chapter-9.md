@@ -1,15 +1,13 @@
-# chapter-6
+# chapter-9
 
-## Chapter 6
-
-## Installing the generated ISO image
+# Installing the generated ISO image
 
 ISOs created by eggs, can use two differents system installer to install the system:
 
 * calamares system installer:
 * krill system installer: an inside a TUI installer built with eggs.
 
-### calamares Installer (GUI)
+## calamares Installer (GUI)
 
 [calamares](https://calamares.io/) is a graphical installer framework that provides a user-friendly interface for installing your distribution.
 
@@ -17,7 +15,7 @@ It offers a visual systematic installation process, making it easier for users w
 
 To use the Calamares installer, you can run the eggs calamares command. This command allows you to configure, install, or configure Calamares.
 
-### krill Installer (TUI):
+## krill Installer (TUI):
 
 `krill` is a command-line interface (CLI) system installer provided by eggs.
 
@@ -27,7 +25,7 @@ The `krill` installer is designed for users who need a command-line installation
 
 To use the krill installer, just run: `eggs install` command.
 
-### considerations
+## considerations
 
 * calamares let you to get dual boot (Windows/Linux), it's generally safe and it's the most diffused GUI installer;
 * calamares, as GUI software, need the presence of a GUI interface - both X or Wayland, it's not available on CLI systems;
@@ -37,13 +35,13 @@ To use the krill installer, just run: `eggs install` command.
 * calamares and krill can install and remove packages during system installation, using the same module: `packages.conf`, the same is valid for `partitions.conf` module.
 * sometime is convenient to use krill, in place of calamares, when we don't need dual boot, becouse is light and fastest, with the possibility to get unattended system installation with various parameters;
 
-## calamares installer (GUI)
+# calamares installer (GUI)
 
 Calamares is an open-source installation framework designed to simplify the installation process of Linux distributions. It provides a user-friendly, modular, and customizable graphical installer for Linux operating systems. Calamares aims to be distribution-agnostic, meaning it can be used by various Linux distributions with different desktop environments. The main goal of Calamares is to provide an easy-to-use installation experience for both novice and experienced users. It offers a simple and intuitive interface that guides users through the installation process, allowing them to configure various aspects of the system, such as disk partitioning, user accounts, localization settings, and more.
 
 Calamares is written in C++ and uses the Qt framework for its graphical user interface. It is designed to be highly customizable and extensible, allowing Linux distributions to tailor the installer to their specific needs. Distribution developers can customize the appearance, behavior, and functionality of Calamares by creating or modifying modules, which are individual components that handle specific installation tasks. By using Calamares, Linux distributions can provide a consistent and user-friendly installation experience, making it easier for users to install and try out their operating systems. It abstracts away many of the complexities of the installation process, making it accessible to a wider range of users and contributing to a more welcoming Linux ecosystem.
 
-### calamares views
+## calamares views
 
 &#x20; These are the commonly view in a typical Calamares installation:
 
@@ -58,7 +56,7 @@ Calamares is written in C++ and uses the Qt framework for its graphical user int
 
 Additionally, there are optional modules available in Calamares, which are used for specific use cases or distributions:
 
-### calamares installation
+## calamares installation
 
 Calamares is a great tool and can be found on Debian, Devuan, Manjaro and Ubuntu original repositories, but not on Arch repositories.
 
@@ -70,7 +68,7 @@ sudo eggs calamares --install
 
 Wait for the installation process to complete. The package manager will download and install Calamares along with any necessary dependencies.
 
-### Calamares configuration
+## Calamares configuration
 
 After installing calamares, the configuration files can be found in the following path:
 
@@ -78,7 +76,7 @@ After installing calamares, the configuration files can be found in the followin
 /etc/calamares
 ```
 
-#### `/etc/calamares/`
+### `/etc/calamares/`
 
 In this directory, you will find various configuration files that allow you to customize and fine-tune the behavior of Calamares during the installation process. These files include:
 
@@ -162,7 +160,7 @@ To view the contents of the `/etc/calamares/branding/show.qml` file on your syst
 less /etc/calamares/branding/eggs/show.qml
 ```
 
-#### `/etc/calamares/modules`
+### `/etc/calamares/modules`
 
 This directory lists the modules that calamares should load during the installation. Each module represents a specific step or functionality in the installation process.
 
@@ -177,7 +175,7 @@ By enabling or disabling modules, you can control which features are available t
 
 These are just a few EXAMPLES: of the modules that can be included in the modules.conf file. By modifying this file, you can enable or disable specific modules based on your requirements, thus controlling which features are available to the user during the installation.
 
-## Using Krill installer (TUI)
+# Using Krill installer (TUI)
 
 The krill installer (TUI) in the eggs tool allows for a command-line installation experience. Here's a breakdown of the usage, flags, and descriptions provided:
 
@@ -203,7 +201,7 @@ The command `sudo eggs install` or `sudo eggs krill` provides various flags to c
 
 The command must run with administrative privileges using `sudo`. The description mentions that it is a CLI system installer where the °egg became a penguin,° possibly indicating a transition or transformation of some sort.
 
-### `/etc/penguins-eggs.d/krlll` or `/etc/calamares/`
+## `/etc/penguins-eggs.d/krlll` or `/etc/calamares/`
 
 krill uses for its configuration `/etc/penguins-eggs.d/krlll` or, if calamares is installed, exploits the latter's configuration in `/etc/calamares/`.
 
@@ -216,7 +214,7 @@ Of this configuration, the only configuration actually used is `/etc/penguins-eg
 * `sources-yolk-undo`: remove sources-yolk
 * `cleanup`: cleaup
 
-### `/etc/penguins-eggs.d/krill.yaml`
+## `/etc/penguins-eggs.d/krill.yaml`
 
 The remain configurations of krill are stored on `/etc/penguins-eggs.d/krill.yaml` used for configuring the installation settings.
 
