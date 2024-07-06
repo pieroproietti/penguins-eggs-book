@@ -2,10 +2,10 @@
 
 # Installing the generated ISO image
 
-ISOs created by eggs, can use two differents system installer to install the system:
+ISOs created by eggs, can use two differents system installer:
 
-* calamares system installer:
-* krill system installer: an inside a TUI installer built with eggs.
+* calamares system installer: a GUI installer;
+* krill system installer: a TUI installer inside eggs.
 
 ## calamares Installer (GUI)
 

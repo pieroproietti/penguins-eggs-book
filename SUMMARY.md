@@ -1,7 +1,6 @@
 # Table of contents
 
-* [README](README.md) Instructions
-
+* [README](README.md)
 * [About](1-about.md)
 * [Introduction](2-introduction.md)
 * [The road map of this book](3-road-map.md)
