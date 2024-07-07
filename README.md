@@ -3,8 +3,7 @@
 I'm reporting here that my friend [Hossein Seilany
 ](https://github.com/hosseinseilani) (https://seilany.ir/) wrote about my remastering tool [penguins-eggs](https://github.com/pieroproietti/penguins-eggs), integrating with mine know how.
 
-It's really hard to write a book, Hosein is used to do it, I not so much.
-
+This is not the first book for Hossein Seilany, but it's the first for me and for me it's really hard.
 
 # Note
 I'm editing exclusively with git, using `code` then publing back.

@@ -1,4 +1,5 @@
 ![](/media/chapter-5/chapter-5.jpg)
+
 # Chapter 5
 
 # Installing penguins-eggs
