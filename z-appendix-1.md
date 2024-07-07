@@ -1,7 +1,5 @@
 # Appendix 1
 
-# 
-
 # Penguins Eggs Terms
 
 1)  Live CD: A Live CD is a bootable CD or DVD that contains a complete

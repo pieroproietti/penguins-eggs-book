@@ -15,7 +15,7 @@ virtual machine or a physical system. Here\'s how you can do it:
 
 > 2.Virtual Machine Testing:
 
-* Install a virtualization software, prefer KVM based, like `gnome-boxes`, `proxmox-ve`, etc, over proprietary `virtualbox` or `VMware`;
+* Install a virtualization software, prefer KVM based, like `gnome-boxes`, `proxmox-ve`, etc, over proprietary `virtualbox` or `VMware`.
 
 * Create a new virtual machine using the virtualization software.
 
