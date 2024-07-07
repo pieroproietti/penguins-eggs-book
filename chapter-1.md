@@ -224,4 +224,4 @@ modifications in the repository lists.
 Yuo can fine more information on [CHANGELOG](https://github.com/pieroproietti/penguins-eggs/blob/master/CHANGELOG.md#changelog) 
 on the [penguins-eggs repository](https://github.com/pieroproietti/penguins-eggs).
 
-![image6.jpg](media/image6.jpg)
+![](media/chapter-1/penguins-eggs-net.png)
