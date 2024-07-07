@@ -1,4 +1,5 @@
 ![](/media/chapter-6/chapter-6.jpg)
+
 # chapter-6
 
 # eggs configuration

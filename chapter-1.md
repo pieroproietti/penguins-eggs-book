@@ -1,4 +1,5 @@
 ![](/media/chapter-1/chapter-1.jpg)
+
 # Chapter 1
 # What is penguins' eggs?
 

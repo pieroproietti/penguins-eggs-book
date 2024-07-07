@@ -1,4 +1,5 @@
 ![](/media/chapter-3/chapter-3.jpg)
+
 # chapter-3
 
 # Removing unnecessary tools and files

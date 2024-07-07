@@ -1,4 +1,5 @@
 ![](/media/chapter-8/chapter-8.jpg)
+
 # Chapter 8
 
 # Wardrobe users' guide

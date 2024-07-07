@@ -1,4 +1,5 @@
 ![](/media/chapter-2/chapter-2.jpg)
+
 # Chapter 2
 
 # Pre-build and concept
