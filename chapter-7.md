@@ -1,3 +1,4 @@
+![](/media/chapter-7/chapter-7.jpg)
 # chapter-7
 
 # Producing ISO image file

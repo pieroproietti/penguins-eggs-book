@@ -1,3 +1,5 @@
+![](/media/chapter-9/chapter-9.jpg)
+
 # chapter-9
 
 # Installing the generated ISO image
