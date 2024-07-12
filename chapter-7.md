@@ -232,21 +232,21 @@ As usual get a look to: `eggs produce --help`
 produce a live image from your system whithout your data
 
 USAGE
-  $ eggs produce [--addons <value>...] [--basename <value>] [-c] [-C]
-    [--excludes <value>...] [-h] [--links <value>...] [-m] [-N] [-n] [-p] [-P
-    <value>] [--release] [-s] [-f] [--theme <value>] [-u] [-v] [-y]
+  $ eggs produce [--addons <value>...] [--basename <value>] [-c] [-C] [--excludes
+    <value>...] [-h] [--links <value>...] [-m] [-N] [-n] [-p] [-P <value>] [--release] [-s] [-f]
+    [--theme <value>] [-u] [-v] [-U] [-y]
 
 FLAGS
   -C, --cryptedclone         crypted clone
   -N, --noicon               no icon eggs on desktop
   -P, --prefix=<value>       prefix
+  -U, --udf                  use UDF format on ISO with genisoimage breacking 4.7 G limit
   -c, --clone                clone
   -f, --standard             standard compression: xz -b 1M
   -h, --help                 Show CLI help.
   -m, --max                  max compression: xz -Xbcj ...
   -n, --nointeractive        no user interaction
-  -p, --pendrive             optimized for pendrive: zstd -b 1M
-                             -Xcompression-level 15
+  -p, --pendrive             optimized for pendrive: zstd -b 1M -Xcompression-level 15
   -s, --script               script mode. Generate scripts to manage iso build
   -u, --unsecure             /root contents are included on live
   -v, --verbose              verbose
@@ -255,8 +255,8 @@ FLAGS
       --basename=<value>     basename
       --excludes=<value>...  use: static, homes, home
       --links=<value>...     desktop links
-      --release              release: remove penguins-eggs, calamares and
-                             dependencies after installation
+      --release              release: remove penguins-eggs, calamares and dependencies after
+                             installation
       --theme=<value>        theme for livecd, calamares branding and partitions
 
 DESCRIPTION
@@ -281,9 +281,7 @@ EXAMPLES
 
   sudo eggs produce --excludes homes   # exclude /home/*
 
-  sudo eggs produce --excludes home    # exclude ~/*
-
-```
+  sudo eggs produce --excludes home    # exclude ~/*```
 
 The command allows for various combinations of options and flags, depending on your specific requirements. The provided EXAMPLES: demonstrate different usage scenarios for the eggs produce command.
 
